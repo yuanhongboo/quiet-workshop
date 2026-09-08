@@ -1,17 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { ALL_LEVELS, GARDEN_LEVELS, LEVELS, getLevel, nextLevel } from '../src/levels.mjs';
-import { SEASON, SEASON_TWO, SEASONS, seasonForLevel, seasonLevelIds } from '../src/season.mjs';
+import { ALL_LEVELS, GARDEN_LEVELS, POST_LEVELS, LEVELS, getLevel, nextLevel } from '../src/levels.mjs';
+import { SEASON, SEASON_TWO, SEASON_THREE, SEASONS, seasonForLevel, seasonLevelIds } from '../src/season.mjs';
 import { makeState, packState, unpackState } from '../src/core.mjs';
 import { readLevel, saveLevel, resetLevel, seasonProgress, collectionStatus, levelUnlocked, seasonSaveKey } from '../src/progress.mjs';
 import { nearestAngle, nextInspectionAngle } from '../src/inspection.mjs';
 const storage=()=>{const data=new Map();return {getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,value)}};
 const finished=level=>{const s=makeState(null,level);s.surfaces.forEach(f=>f.finish());level.items.forEach(i=>s.placed.add(i.id));s.taskFields.forEach(f=>f.finish());for(const t of level.operation.tasks||[])s.taskValues[t.id]=t.target??1;s.operationValue=level.operation.target??s.operationValue;s.brewTime=level.operation.duration;s.completed=true;return s;};
 
-test('two catalogs keep stable first-season IDs and route all 18 levels within their own season',()=>{
- assert.equal(LEVELS.length,9);assert.equal(GARDEN_LEVELS.length,9);assert.equal(new Set(ALL_LEVELS.map(l=>l.id)).size,18);
+test('all catalogs keep stable earlier IDs and route 27 levels within their own season',()=>{
+ assert.equal(LEVELS.length,9);assert.equal(GARDEN_LEVELS.length,9);assert.equal(POST_LEVELS.length,9);assert.equal(new Set(ALL_LEVELS.map(l=>l.id)).size,27);
  for(const season of SEASONS){assert.equal(season.chapters.length,3);assert.equal(seasonLevelIds(season).length,9);for(const id of seasonLevelIds(season)){assert.equal(getLevel(id).id,id);assert.equal(seasonForLevel(id),season);assert.equal(seasonForLevel(nextLevel(id)),season);}}
- assert.equal(nextLevel('opening').id,'coffee');assert.equal(nextLevel('garden-awakening').id,'garden-pot');
+ assert.equal(nextLevel('opening').id,'coffee');assert.equal(nextLevel('garden-awakening').id,'garden-pot');assert.equal(nextLevel('post-opening').id,'post-box');
 });
 test('finishing all of season one cannot unlock or grant any second-season restoration',()=>{
  const store=storage();for(const l of LEVELS)assert.equal(saveLevel(store,finished(l)),true);

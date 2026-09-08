@@ -1,3 +1,4 @@
+import { seasonCardsMarkup, catalogSummary } from './cards.mjs';
 import { SEASONS, seasonLevelIds, seasonLabel, seasonForLevel } from '../src/season.mjs';
 import { getLevel } from '../src/levels.mjs';
 import { COLLECTION_KEY, collectionStatus, seasonProgress, selectedLevel } from '../src/progress.mjs';
@@ -11,12 +12,11 @@ const fixedUrl = typeof __LANDING_URL__ === 'string' ? __LANDING_URL__ : new URL
 const $=id=>document.getElementById(id);
 const storage=(()=>{try{return localStorage;}catch{return {getItem:()=>null};}})();
 const href=(season,id)=>{const url=new URL(releaseUrl);url.searchParams.set('season',season.id);if(id)url.searchParams.set('level',id);return url.href;};
-$('art-shop').innerHTML=seasonArtwork('opening');
-$('art-garden').innerHTML=gardenArtwork('garden-awakening');
+$('season-catalog').innerHTML=seasonCardsMarkup(SEASONS,releaseUrl);
 
 function refresh() {
   $('return-heading').textContent='今天，想收拾哪里？';
-  $('return-detail').textContent='两个季节，十八处慢慢变好的风景。';
+  $('return-detail').textContent=catalogSummary(SEASONS);
   $('resume-link').href='#seasons';
   $('resume-link').innerHTML='选个喜欢的地方 <span>↓</span>';
   for(const season of SEASONS){

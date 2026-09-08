@@ -1,3 +1,6 @@
+import { POST_EARLY_LEVELS } from './post-early-levels.mjs';
+import { POST_MIDDLE_LEVELS } from './post-middle-levels.mjs';
+import { POST_FINALE_LEVELS } from './post-finale-levels.mjs';
 import { GARDEN_EARLY_LEVELS } from './garden-early-levels.mjs';
 import { GARDEN_MIDDLE_LEVELS } from './garden-middle-levels.mjs';
 import { GARDEN_FINALE_LEVELS } from './garden-finale-levels.mjs';
@@ -406,7 +409,8 @@ export const LEVELS = Object.freeze([
   OPENING,
 ]);
 export const GARDEN_LEVELS = Object.freeze([...GARDEN_EARLY_LEVELS, ...GARDEN_MIDDLE_LEVELS, ...GARDEN_FINALE_LEVELS]);
-export const ALL_LEVELS = Object.freeze([...LEVELS, ...GARDEN_LEVELS]);
+export const POST_LEVELS = Object.freeze([...POST_EARLY_LEVELS, ...POST_MIDDLE_LEVELS, ...POST_FINALE_LEVELS]);
+export const ALL_LEVELS = Object.freeze([...LEVELS, ...GARDEN_LEVELS, ...POST_LEVELS]);
 export function getLevel(id) {
   return ALL_LEVELS.find((level) => level.id === id) || COFFEE;
 }

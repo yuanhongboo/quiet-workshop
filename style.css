@@ -2109,3 +2109,9 @@ body[data-season="rain-garden"] .brand-mark { color: #698863; }
   .header-actions { gap: 3px; }
   .header-actions button, body[data-season="rain-garden"] .header-actions button { width: 32px; height: 34px; min-width: 32px; }
 }
+
+body[data-season="lighthouse-post"] .left-shade { background:linear-gradient(90deg,#eef0e4f0 0%,#eef0e4c0 19%,#eef0e400 43%); }
+body[data-season="lighthouse-post"] .header-actions button[aria-pressed="true"] { background:#d0e0d8;border-color:#9ab6ad;color:#365950; }
+.shop-milestone.chapter-new { border-color:#a89264;background:#f0e4c7;color:#5b674e;box-shadow:inset 0 0 0 1px #b6a37533; }
+#chapter-continue { width:100%; }
+@media (max-width:700px) { body[data-season="lighthouse-post"] .left-shade { background:linear-gradient(180deg,#eef0e4d0 0%,#eef0e400 32%,#eef0e400 75%,#eef0e480 100%); } }

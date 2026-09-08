@@ -4,9 +4,9 @@
 
 The current product is a free, non-commercial game; third-party asset permissions still apply.
 
-This is a standalone, mobile-friendly browser game about cleaning, organizing and restoring. Preserve the calm, tactile experience: no countdown, punishment, forced precision or monetization prompts. Each season has one coherent setting, three chapters and nine levels; completed work accumulates in a final overview. Season one is 街角旧店. Season two is 雨后花房, released in 0.4.0. Both seasons have nine playable levels; verify current receipts before making release claims.
+This is a standalone, mobile-friendly browser game about cleaning, organizing and restoring. Preserve the calm, tactile experience: no countdown, punishment, forced precision or monetization prompts. Each season has one coherent setting, three chapters and nine levels; completed work accumulates in a final overview. Season one is 街角旧店. Season two is 雨后花房, released in 0.4.0. The third season, 海边来信, is released in 0.5.0. Each season has nine levels; verify current receipts before making release claims.
 
-The user has approved second-season development and moving the game into this independent project. Continue authorized implementation without repeated confirmation. Product quality is judged by visible feedback and playable completion, not by engine names or screenshots alone.
+The user has approved third-season development and moving the game into this independent project. Continue authorized implementation without repeated confirmation. Product quality is judged by visible feedback and playable completion, not by engine names or screenshots alone.
 
 ## Structure and commands
 
@@ -26,7 +26,7 @@ Use Node 22 or newer. `npm ci`; `npm run dev`; `npm test`; `npm run build`; `npm
 
 ## Implementation rules
 
-Use small, descriptive `.mjs` modules and kebab-case filenames. Keep level content separate from shared rules. Parameterize season-specific labels and behavior; do not copy the application once per season. Preserve old level IDs and save keys. A new season gets its own permanent collection ledger. A replay must not remove earned collection or unlocks; malformed saves must not grant completion.
+Use small, descriptive `.mjs` modules and kebab-case filenames. Keep level content separate from shared rules. Parameterize season-specific labels and behavior; do not copy the application once per season. Preserve old level IDs and save keys. A new season gets its own permanent collection ledger. Chapter completion in season three returns the player to the shared post office; record seen chapter tours separately from earned completion, and retain visits across replay. A replay must not remove earned collection or unlocks; malformed saves must not grant completion.
 
 3D upgrades must improve actions players can feel: inspect another side, fit a part, reveal a material, see a repaired object work. Keep single-finger cleaning easy; camera movement and cleaning must not compete for the same gesture. Provide visible focus/remaining-dirt guidance. Tasks and scene effects derive from saved game state. Returning after refresh must not skip or block completion.
 

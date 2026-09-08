@@ -1,8 +1,10 @@
+import { pendingChapterVisit, completedReturnChapter, markChapterVisited } from './chapter-progress.mjs';
+import { postArtwork } from './post-art.mjs';
 import { SOUNDTRACK } from './soundtrack.mjs';
 import { readAudioPreferences, saveAudioPreferences } from './audio-preferences.mjs';
 import { seasonArtwork } from './season-art.mjs';
 import { ActionController } from './action-controller.mjs';
-import { SEASON as SEASON_ONE, SEASON_TWO, SEASONS, seasonLevelIds, seasonForLevel, seasonLabel, getSeason } from './season.mjs';
+import { SEASON as SEASON_ONE, SEASONS, seasonLevelIds, seasonForLevel, seasonLabel, getSeason } from './season.mjs';
 import { gardenArtwork } from './garden-art.mjs';
 import { tasksFor, taskComplete } from './task-actions.mjs';
 import {
@@ -81,6 +83,8 @@ let point = { x: 0, y: 0 },
   completedCount = 0,
   seasonState = null,
   reportedMusicError = null,
+  chapterReturn = null,
+  pendingChapter = null,
   shopPreview = false,
   activeSeason = SEASON_ONE,
   gallerySeason = SEASON_ONE;
@@ -101,6 +105,7 @@ const actions = new ActionController(
 function refreshSeason() {
   seasonState = seasonProgress(storage, activeSeason);
   completedCount = seasonState.completedIds.size;
+  pendingChapter = pendingChapterVisit(storage, activeSeason, seasonState);
   if (state) state.seasonRestored = seasonState.restoredIds;
 }
 function nextSuggestion() {
@@ -115,30 +120,37 @@ function nextSuggestion() {
     ) || getLevel(activeSeason.openingId)
   );
 }
-async function showShop(season = activeSeason) {
+async function showShop(season = activeSeason, {chapter = null} = {}) {
   await audio.unlock({ musicActive: true }).catch(() => {});
-  return loadLevel(getLevel(season.openingId), { preview: true });
+  return loadLevel(getLevel(season.openingId), { preview: true, chapter: chapter?.id || chapter });
 }
 function refreshShop() {
   const count = seasonState.restoredIds.size;
   $('shop-description').textContent = seasonState.finished
     ? '九处风景都收拾好了。这里留下你亲手恢复的样子。'
-    : `已有 ${count} 处回到${activeSeason.overviewName || '小店'}。收好前 8 处，就能${activeSeason === SEASON_TWO ? '让花房苏醒' : '一起开门'}。`;
+    : `已有 ${count} 处回到${activeSeason.overviewName || '小店'}。收好前 8 处，就能${activeSeason.restoredHint}。`;
+  document.querySelector('#shop-panel .eyebrow').textContent = chapterReturn ? `${seasonLabel(activeSeason)} / 第${chapterReturn.number}章已收好` : `${seasonLabel(activeSeason)} / ${activeSeason.title}`;
+  document.querySelector('#shop-panel h2').innerHTML = chapterReturn?.returnTitle || activeSeason.overviewTitle;
+  if (chapterReturn) $('shop-description').textContent = chapterReturn.returnDescription;
+  $('chapter-continue').hidden = !chapterReturn;
+  $('begin-opening').hidden = !!chapterReturn;
+  if (chapterReturn) $('chapter-continue').innerHTML = pendingChapter && pendingChapter.id !== chapterReturn.id ? `第${pendingChapter.number}章也收好了 · 再看看 <span>↗</span>` : `接下来 · ${nextSuggestion().name} <span>↗</span>`;
   $('shop-milestones').replaceChildren();
   for (const id of activeSeason.restorationIds) {
     const item = getLevel(id),
       button = document.createElement('button');
     button.className = 'shop-milestone';
     button.classList.toggle('restored', seasonState.restoredIds.has(id));
+    button.classList.toggle('chapter-new', !!chapterReturn?.levelIds.includes(id));
     button.textContent = `${seasonState.restoredIds.has(id) ? '✓' : '○'} ${item.name}`;
     button.addEventListener('click', () => loadLevel(item));
     $('shop-milestones').append(button);
   }
   $('begin-opening').disabled = !seasonState.canOpen;
   $('begin-opening').innerHTML = seasonState.finished
-    ? `重温${activeSeason === SEASON_TWO ? '花房苏醒' : '小店开张'} <span>↗</span>`
+    ? `${activeSeason.reopeningLabel} <span>↗</span>`
     : seasonState.canOpen
-      ? `${activeSeason === SEASON_TWO ? '唤醒花房' : '准备开门'} <span>↗</span>`
+      ? `${activeSeason.openingLabel} <span>↗</span>`
       : `还差 ${activeSeason.restorationIds.length - count} 处焕新`;
 }
 function notify(text) {
@@ -184,7 +196,7 @@ function makeLists() {
     $('item-list').append(row);
   }
 }
-async function loadLevel(next, { reset = false, play = false, preview = false } = {}) {
+async function loadLevel(next, { reset = false, play = false, preview = false, chapter = null } = {}) {
   if (loading && state) return;
   stopInteractions();
   persist();
@@ -195,6 +207,7 @@ async function loadLevel(next, { reset = false, play = false, preview = false } 
       $('pause-dialog').querySelector('p:not(.eyebrow)').textContent = message;
     return;
   }
+  preview = preview && next.id === seasonForLevel(next).openingId;
   if (next.id === seasonForLevel(next).openingId && !levelUnlocked(storage, next)) preview = true;
   loading = true;
   document.body.dataset.state = 'loading';
@@ -216,10 +229,10 @@ async function loadLevel(next, { reset = false, play = false, preview = false } 
   document.title = `好好收拾 · ${seasonName}：${activeSeason.title}`;
   document.querySelector('.brand small').textContent = `${seasonName} · ${activeSeason.title}`;
   document.querySelector('#shop-panel .eyebrow').textContent = `${seasonName} / ${activeSeason.title}`;
-  document.querySelector('#shop-panel h2').innerHTML = activeSeason === SEASON_TWO ? '让一座花房，<br/>慢慢苏醒。' : '一点点，<br/>恢复日常。';
+  document.querySelector('#shop-panel h2').innerHTML = activeSeason.overviewTitle;
   $('finished-shop').textContent = `看看我的${placeName}`;
   $('shop-milestones').setAttribute('aria-label', `${placeName}恢复进度`);
-  $('inspect').hidden = activeSeason !== SEASON_TWO;
+  $('inspect').hidden = !activeSeason.inspection;
   shopPreview = preview;
   started = false;
   paused = false;
@@ -229,7 +242,9 @@ async function loadLevel(next, { reset = false, play = false, preview = false } 
   const saved = reset ? null : readLevel(storage, level);
   state = makeState(saved, level);
   refreshSeason();
+  chapterReturn = preview && level.id === activeSeason.openingId ? completedReturnChapter(storage, activeSeason, chapter, seasonState) : null;
   state.shopPreview = shopPreview;
+  state.chapterHighlights = new Set(chapterReturn?.levelIds || []);
   stage = stageFor(state);
   try {
     physics = await createPropsPhysics(state);
@@ -242,6 +257,7 @@ async function loadLevel(next, { reset = false, play = false, preview = false } 
     rememberSeason(storage, activeSeason);
     params.set('level', level.id);
     params.set('season', activeSeason.id);
+    if (chapterReturn) params.set('chapter', chapterReturn.id); else params.delete('chapter');
     history.replaceState(null, '', `${location.pathname}?${params}`);
     $('world').setAttribute('aria-label', `可清洁整理的${level.name}`);
     $('level-label').textContent = `${seasonName} · 第 ${level.number} 关 / ${level.name}`;
@@ -266,10 +282,10 @@ async function loadLevel(next, { reset = false, play = false, preview = false } 
         ? '继续收拾'
         : '开始收拾';
     if (level.id === activeSeason.openingId)
-      $('start-label').textContent = state.completed ? `看看${placeName}` : saved ? '继续准备' : activeSeason === SEASON_TWO ? '唤醒花房' : '准备开门';
+      $('start-label').textContent = state.completed ? `看看${placeName}` : saved ? '继续准备' : activeSeason.openingLabel;
     $('intro').hidden = shopPreview;
+    fitIntroTitle();
     $('shop-panel').hidden = !shopPreview;
-    refreshShop();
     $('hud').hidden = true;
     $('finished').hidden = true;
     $('pause').hidden = true;
@@ -293,7 +309,9 @@ async function loadLevel(next, { reset = false, play = false, preview = false } 
       $('speed-zone').style.width = `${((2 * op.tolerance) / (op.max - op.min)) * 100}%`;
     }
     loading = false;
+    if (chapterReturn) markChapterVisited(storage, activeSeason, chapterReturn.id, seasonState);
     refreshSeason();
+    refreshShop();
     $('start').disabled = false;
     lastTime = performance.now();
     updateHud();
@@ -396,7 +414,7 @@ function updateHud() {
   if (stage === 'ready' && level.operation.kind === 'tasks') {
     copy[1] = level.id === activeSeason.openingId ? `${activeSeason.overviewName || '小店'}准备好了。` : '小事都做好了。';
     copy[2] =
-      level.id === activeSeason.openingId ? (activeSeason === SEASON_TWO ? '让阳光，慢慢照进花房。' : '打开门，让日常重新开始。') : `最后，${level.actionLabel}。`;
+      level.id === activeSeason.openingId ? activeSeason.readyHint : `最后，${level.actionLabel}。`;
   }
   $('stage-label').textContent = copy[0];
   $('task-title').innerHTML = copy[1];
@@ -451,18 +469,19 @@ function updateHud() {
     $('item-name').textContent = item.name;
     $('item-hint').textContent = physics.nearSlot() ? '松手，就放好了' : item.hint;
   } else $('object-label').hidden = true;
-  $('inspect').hidden = activeSeason !== SEASON_TWO || shopPreview;
+  $('inspect').hidden = !activeSeason.inspection || shopPreview;
   $('inspect').setAttribute('aria-pressed', String(!!view.inspectClose));
   $('inspect').setAttribute('aria-label', view.inspectClose ? '回到全景' : '凑近看看');
-  $('view').setAttribute('aria-label', activeSeason === SEASON_TWO ? '转到另一面' : '换个角度');
-  $('view').title = activeSeason === SEASON_TWO ? '转到另一面 · 前 / 侧 / 后 / 侧' : '换个角度';
+  $('view').setAttribute('aria-label', activeSeason.inspection ? '转到另一面' : '换个角度');
+  $('view').title = activeSeason.inspection ? '转到另一面 · 前 / 侧 / 后 / 侧' : '换个角度';
   $('collection-count').textContent = `${completedCount} / ${seasonLevelIds(activeSeason).length} 已完成`;
-  $('next-level').innerHTML = seasonState.finished
+  $('next-level').innerHTML = pendingChapter ? `第${pendingChapter.number}章收好了 · 回${activeSeason.overviewName}看看 <span>↗</span>` : seasonState.finished
     ? `回到我的${activeSeason.overviewName || '小店'} <span>↗</span>`
     : `接下来 · ${nextSuggestion().name} <span>↗</span>`;
   Object.assign(document.body.dataset, {
     state: shopPreview ? 'overview' : started ? (paused ? 'paused' : stage) : 'ready',
     level: level.id,
+    chapter: chapterReturn?.id || '',
     held: physics.held || '',
     progress: String(Math.round(cleanProgress(state) * 100)),
   });
@@ -479,6 +498,9 @@ function updateHud() {
           canOpen: seasonState.canOpen,
           finished: seasonState.finished,
           preview: shopPreview,
+          chapter: chapterReturn?.id || null,
+          pendingChapter: pendingChapter?.id || null,
+          chapterHighlights: [...state.chapterHighlights],
         },
         tasks: tasksFor(level).map((task) => ({
           id: task.id,
@@ -903,11 +925,15 @@ $('compare').addEventListener('click', () => {
   audio.stopEffects();
 });
 $('next-level').addEventListener('click', () =>
-  seasonState.finished ? showShop() : loadLevel(nextSuggestion()),
+  pendingChapter ? showShop(activeSeason, {chapter:pendingChapter}) : seasonState.finished ? showShop() : loadLevel(nextSuggestion()),
 );
 $('finished-shop').addEventListener('click', () => showShop());
 $('gallery-shop').addEventListener('click', () => showShop(gallerySeason));
 $('shop-gallery').addEventListener('click', openGallery);
+$('chapter-continue').addEventListener('click', () => {
+  if (pendingChapter && pendingChapter.id !== chapterReturn?.id) showShop(activeSeason, {chapter:pendingChapter});
+  else loadLevel(nextSuggestion());
+});
 $('begin-opening').addEventListener('click', () => {
   if (seasonState.canOpen)
     loadLevel(getLevel(activeSeason.openingId), { reset: seasonState.finished, play: true });
@@ -920,9 +946,17 @@ $('inspect').addEventListener('click', () => {
   $('inspect').setAttribute('aria-label', close ? '回到全景' : '凑近看看');
   notify(close ? '凑近一点。点击清单，可以找到对应部位。' : '回到全景。');
 });
-window.addEventListener('resize', () => view?.resize());
+function fitIntroTitle() {
+  const title = $('intro-title');
+  title.style.fontSize = '';
+  if (!level || !activeSeason.fitIntroTitle || innerWidth <= 700 || $('intro').hidden) return;
+  const longest = Math.max(...level.title.split(/<br\s*\/?\s*>/i).map(line => Array.from(line.replace(/<[^>]*>/g, '')).length));
+  const available = $('intro').getBoundingClientRect().width - 8;
+  title.style.fontSize = `${Math.min(46, available / Math.max(1, longest * 1.05))}px`;
+}
+window.addEventListener('resize', () => { view?.resize(); fitIntroTitle(); });
 function artwork(id) {
-  const seasonal = gardenArtwork(id) || seasonArtwork(id);
+  const seasonal = postArtwork(id) || gardenArtwork(id) || seasonArtwork(id);
   if (seasonal) return seasonal;
   const art = {
     coffee:
@@ -1118,7 +1152,7 @@ function frame(now) {
 const routeSeason = params.has('season') ? getSeason(params.get('season')) : null;
 const initialLevel = params.has('level') ? getLevel(params.get('level')) : routeSeason ? getLevel(seasonLevelIds(routeSeason)[0]) : selectedLevel(storage);
 const firstVisit = storage.getItem(seasonSaveKey(seasonForLevel(initialLevel))) === null && !params.has('level') && !params.has('season');
-await loadLevel(initialLevel);
+await loadLevel(initialLevel, {preview:!!params.get('chapter'),chapter:params.get('chapter')});
 if (!loading && view) {
   requestAnimationFrame(frame);
   if (firstVisit) openGallery();

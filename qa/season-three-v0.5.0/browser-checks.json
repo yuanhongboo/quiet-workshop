@@ -1,0 +1,2779 @@
+[
+  {
+    "case": "post-box-full-play",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.00861011937773741,
+        "enabled": true,
+        "events": {
+          "clean": 3,
+          "done": 1,
+          "pick": 2,
+          "place": 2,
+          "switch": 1,
+          "task": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 61.68,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08659780577575965,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.5,
+      "held": null,
+      "items": [
+        {
+          "id": "post-box-lid",
+          "position": {
+            "x": 0,
+            "y": 1.5049999952316284,
+            "z": 0.1340000033378601
+          },
+          "screen": {
+            "x": 819.2171487636492,
+            "y": 303.222497130339
+          },
+          "slot": {
+            "x": 817.2454729548692,
+            "y": 305.4815146677927
+          }
+        },
+        {
+          "id": "post-box-name",
+          "position": {
+            "x": 0,
+            "y": 0.6899999976158142,
+            "z": 0.13500000536441803
+          },
+          "screen": {
+            "x": 814.2813816685571,
+            "y": 426.6519030257685
+          },
+          "slot": {
+            "x": 813.2416396119248,
+            "y": 428.83281867274746
+          }
+        }
+      ],
+      "level": "post-box",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "post-box-lid",
+        "post-box-name"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box"
+        ],
+        "finished": false,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "post-box-front",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-side",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-lip",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 694.9615832251695,
+              "y": 469.8575726212816
+            },
+            {
+              "x": 937.172476693316,
+              "y": 494.3604200454415
+            },
+            {
+              "x": 947.9283298913276,
+              "y": 338.37241045762914
+            },
+            {
+              "x": 696.8477681200247,
+              "y": 321.1126634226467
+            }
+          ],
+          "id": "post-box-front"
+        },
+        {
+          "corners": [
+            {
+              "x": 960.1051203348208,
+              "y": 488.5150953752409
+            },
+            {
+              "x": 964.1309049385922,
+              "y": 453.1733076153964
+            },
+            {
+              "x": 977.2674230631052,
+              "y": 276.83548960000195
+            },
+            {
+              "x": 974.1471900717954,
+              "y": 299.20138368601715
+            }
+          ],
+          "id": "post-box-side"
+        },
+        {
+          "corners": [
+            {
+              "x": 709.7539989640366,
+              "y": 268.0851973953057
+            },
+            {
+              "x": 938.3715739740464,
+              "y": 281.12513594589336
+            },
+            {
+              "x": 940.0748609031843,
+              "y": 255.3050154697601
+            },
+            {
+              "x": 710.133267653435,
+              "y": 243.4216208922783
+            }
+          ],
+          "id": "post-box-lip"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "post-box-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 813.3744067841021,
+            "y": 518.2080615440545
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-open",
+          "mode": "tap",
+          "screen": {
+            "x": 819.2171487636492,
+            "y": 303.222497130339
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-flag",
+          "mode": "tap",
+          "screen": {
+            "x": 977.297410952352,
+            "y": 385.5131360609726
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 138,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 92,
+          "textures": 17
+        },
+        "p95FrameMs": 8.400000000023283,
+        "samples": 600,
+        "triangles": 51254,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "chapter-one-return",
+    "data": {
+      "action": null,
+      "activeTask": "post-open-curtain",
+      "audio": {
+        "currentRms": 0.007846490688981954,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 49.48,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08840653758748893,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "post-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "welcome",
+        "chapterHighlights": [
+          "post-box",
+          "post-sorter",
+          "post-stamp"
+        ],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp"
+        ],
+        "finished": false,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "post-open-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 844.9814803564759,
+            "y": 242.4215689589279
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-light-beacon",
+          "mode": "tap",
+          "screen": {
+            "x": 894.0364297051501,
+            "y": 408.3537775820023
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-send-letter",
+          "mode": "hold",
+          "screen": {
+            "x": 504.60757632812425,
+            "y": 357.3081032667299
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-open-sign",
+          "mode": "tap",
+          "screen": {
+            "x": 633.4518536251046,
+            "y": 426.2076475266373
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 235,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 129,
+          "textures": 15
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 113114,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "chapter-two-return-phone",
+    "data": {
+      "action": null,
+      "activeTask": "post-open-curtain",
+      "audio": {
+        "currentRms": 0.015761491694682803,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 52.38,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08638070845477594,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "post-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "working",
+        "chapterHighlights": [
+          "post-typewriter",
+          "post-parcel",
+          "post-radio"
+        ],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio"
+        ],
+        "finished": false,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "post-open-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 288.3109954212589,
+            "y": 344.50632324874937
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-light-beacon",
+          "mode": "tap",
+          "screen": {
+            "x": 323.5729955022359,
+            "y": 453.9145894343331
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-send-letter",
+          "mode": "hold",
+          "screen": {
+            "x": 66.67358133287794,
+            "y": 418.6572499006619
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-open-sign",
+          "mode": "tap",
+          "screen": {
+            "x": 148.89552739982625,
+            "y": 461.9933976153034
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 348,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 184,
+          "textures": 14
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 159238,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "finale-full-interaction-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "enabled": true,
+          "playing": false
+        },
+        "peakRms": 0,
+        "state": "locked"
+      },
+      "before": false,
+      "brewTime": 7,
+      "held": null,
+      "items": [],
+      "level": "post-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "post-open-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 288.3109954212589,
+            "y": 344.50632324874937
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-light-beacon",
+          "mode": "tap",
+          "screen": {
+            "x": 323.5729955022359,
+            "y": 453.9145894343331
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-send-letter",
+          "mode": "hold",
+          "screen": {
+            "x": 66.67358133287794,
+            "y": 418.6572499006619
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-open-sign",
+          "mode": "tap",
+          "screen": {
+            "x": 148.89552739982625,
+            "y": 461.9933976153034
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 632,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 323,
+          "textures": 13
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 321586,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "finale-reload-completed-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.009265063730748748,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 12.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.053484501160512066,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 7,
+      "held": null,
+      "items": [],
+      "level": "post-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "post-open-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 288.3109954212589,
+            "y": 344.50632324874937
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-light-beacon",
+          "mode": "tap",
+          "screen": {
+            "x": 323.5729955022359,
+            "y": 453.9145894343331
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-send-letter",
+          "mode": "hold",
+          "screen": {
+            "x": 66.67358133287794,
+            "y": 418.6572499006619
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-open-sign",
+          "mode": "tap",
+          "screen": {
+            "x": 148.89552739982625,
+            "y": 461.9933976153034
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 632,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 323,
+          "textures": 13
+        },
+        "p95FrameMs": 8.700000000000728,
+        "samples": 600,
+        "triangles": 321586,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "post-typewriter-complete-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02637251075148295,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "type-paper",
+          "position": {
+            "x": 0,
+            "y": 1.3899999856948853,
+            "z": -0.6100000143051147
+          },
+          "screen": {
+            "x": 208.5650034029964,
+            "y": 370.44151667391554
+          },
+          "slot": {
+            "x": 207.85823834844817,
+            "y": 371.09663930050135
+          }
+        },
+        {
+          "id": "type-ribbon",
+          "position": {
+            "x": 0,
+            "y": 0.9350000023841858,
+            "z": -0.14000000059604645
+          },
+          "screen": {
+            "x": 197.2002195512806,
+            "y": 420.19419803762014
+          },
+          "slot": {
+            "x": 196.9558222770381,
+            "y": 416.5899987677052
+          }
+        },
+        {
+          "id": "type-lever",
+          "position": {
+            "x": -1.190000057220459,
+            "y": 1.100000023841858,
+            "z": -0.4300000071525574
+          },
+          "screen": {
+            "x": 105.03920285459924,
+            "y": 391.2292163129724
+          },
+          "slot": {
+            "x": 104.14267154388163,
+            "y": 390.23905047683064
+          }
+        }
+      ],
+      "level": "post-typewriter",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "type-paper",
+        "type-ribbon",
+        "type-lever"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "type-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "type-apron",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "type-side",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 114.80092450338732,
+              "y": 442.9378756643376
+            },
+            {
+              "x": 279.35726793322453,
+              "y": 457.613150190709
+            },
+            {
+              "x": 279.7223754455103,
+              "y": 436.89477429726514
+            },
+            {
+              "x": 114.46436711074408,
+              "y": 422.78780400385807
+            }
+          ],
+          "id": "type-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 92.00859350811147,
+              "y": 500.2803296053336
+            },
+            {
+              "x": 266.61877449631754,
+              "y": 517.8277400596754
+            },
+            {
+              "x": 266.84541234003285,
+              "y": 502.870020994332
+            },
+            {
+              "x": 91.6932037148664,
+              "y": 485.7519975652109
+            }
+          ],
+          "id": "type-apron"
+        },
+        {
+          "corners": [
+            {
+              "x": 289.480794024672,
+              "y": 460.475510515552
+            },
+            {
+              "x": 300.8896657497704,
+              "y": 444.48927735474115
+            },
+            {
+              "x": 301.35099838146465,
+              "y": 423.5767233005627
+            },
+            {
+              "x": 289.90643736933987,
+              "y": 438.9228944446677
+            }
+          ],
+          "id": "type-side"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "type-feed",
+          "mode": "dial",
+          "screen": {
+            "x": 205.18683358638768,
+            "y": 401.9847922036836
+          },
+          "value": 180
+        },
+        {
+          "done": true,
+          "id": "type-words",
+          "mode": "hold",
+          "screen": {
+            "x": 193.7524520647136,
+            "y": 502.94101731244064
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "type-return",
+          "mode": "tap",
+          "screen": {
+            "x": 105.03920285459924,
+            "y": 391.2292163129724
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 282,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 101,
+          "textures": 23
+        },
+        "p95FrameMs": 9.100000000000025,
+        "samples": 46,
+        "triangles": 72806,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "post-parcel-complete-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.026360220274851305,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.33,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4,
+      "held": null,
+      "items": [
+        {
+          "id": "parcel-gift",
+          "position": {
+            "x": -1,
+            "y": 1.2400000095367432,
+            "z": -0.05000000074505806
+          },
+          "screen": {
+            "x": 109.62989701856046,
+            "y": 374.7956501371147
+          },
+          "slot": {
+            "x": 110.06290461036816,
+            "y": 398.6273813053819
+          }
+        },
+        {
+          "id": "parcel-tape",
+          "position": {
+            "x": 0.7300000190734863,
+            "y": 0.18000000715255737,
+            "z": -0.4300000071525574
+          },
+          "screen": {
+            "x": 265.73615633863056,
+            "y": 467.0134006326357
+          },
+          "slot": {
+            "x": 265.62189383570416,
+            "y": 474.4540845401159
+          }
+        },
+        {
+          "id": "parcel-postage",
+          "position": {
+            "x": 1.4900000095367432,
+            "y": 0.07999999821186066,
+            "z": -0.4300000071525574
+          },
+          "screen": {
+            "x": 331.1746882682626,
+            "y": 481.5352005988315
+          },
+          "slot": {
+            "x": 331.22416661915975,
+            "y": 479.866750661121
+          }
+        }
+      ],
+      "level": "post-parcel",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "parcel-gift",
+        "parcel-tape",
+        "parcel-postage"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "parcel-mat",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "parcel-scale-front",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "parcel-scale-side",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 198.8443368294992,
+              "y": 493.7056029351737
+            },
+            {
+              "x": 353.3583395460905,
+              "y": 509.16162491442265
+            },
+            {
+              "x": 359.8123201540617,
+              "y": 496.6654427526577
+            },
+            {
+              "x": 208.51913602155497,
+              "y": 481.89095595000407
+            }
+          ],
+          "id": "parcel-mat"
+        },
+        {
+          "corners": [
+            {
+              "x": 60.690683736923475,
+              "y": 474.2724007525761
+            },
+            {
+              "x": 141.209103260393,
+              "y": 482.2402865936748
+            },
+            {
+              "x": 141.0705759471315,
+              "y": 470.416789623912
+            },
+            {
+              "x": 60.35005188698122,
+              "y": 462.6082937266475
+            }
+          ],
+          "id": "parcel-scale-front"
+        },
+        {
+          "corners": [
+            {
+              "x": 150.08057783311384,
+              "y": 468.97217065580014
+            },
+            {
+              "x": 164.075627184694,
+              "y": 454.2949278939698
+            },
+            {
+              "x": 163.83171629664858,
+              "y": 417.8627558771492
+            },
+            {
+              "x": 149.7157552443773,
+              "y": 431.57660080982726
+            }
+          ],
+          "id": "parcel-scale-side"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "parcel-balance",
+          "mode": "dial",
+          "screen": {
+            "x": 98.6622543942462,
+            "y": 472.4274497869843
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "parcel-wrap",
+          "mode": "hold",
+          "screen": {
+            "x": 109.62989701856046,
+            "y": 374.7956501371147
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "parcel-stamp",
+          "mode": "tap",
+          "screen": {
+            "x": 331.1746882682626,
+            "y": 481.5352005988315
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 134,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 79,
+          "textures": 17
+        },
+        "p95FrameMs": 8.400000000000091,
+        "samples": 44,
+        "triangles": 56138,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "post-bicycle-complete-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.026466129473336437,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.25,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4.8,
+      "held": null,
+      "items": [
+        {
+          "id": "bicycle-wheel",
+          "position": {
+            "x": 1.0299999713897705,
+            "y": 0.5899999737739563,
+            "z": -0.05999999865889549
+          },
+          "screen": {
+            "x": 287.71812863921986,
+            "y": 452.3989425665176
+          },
+          "slot": {
+            "x": 285.18625399877834,
+            "y": 455.77576765150974
+          }
+        },
+        {
+          "id": "bicycle-basket",
+          "position": {
+            "x": 1.0299999713897705,
+            "y": 1.4049999713897705,
+            "z": -0.019999999552965164
+          },
+          "screen": {
+            "x": 288.2620671900476,
+            "y": 380.7020526672531
+          },
+          "slot": {
+            "x": 287.82705641738164,
+            "y": 404.14886201427544
+          }
+        },
+        {
+          "id": "bicycle-bell-part",
+          "position": {
+            "x": 0.6899999976158142,
+            "y": 1.6699999570846558,
+            "z": 0.2450000047683716
+          },
+          "screen": {
+            "x": 251.61197192281463,
+            "y": 360.2519460579513
+          },
+          "slot": {
+            "x": 251.52925414133088,
+            "y": 367.6266012444906
+          }
+        }
+      ],
+      "level": "post-bicycle",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "bicycle-wheel",
+        "bicycle-basket",
+        "bicycle-bell-part"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "bicycle-frame",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "bicycle-fender",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "bicycle-rack",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 130.46685067618137,
+              "y": 413.8999964250887
+            },
+            {
+              "x": 222.75119384159836,
+              "y": 421.3632430937685
+            },
+            {
+              "x": 222.86532911969624,
+              "y": 400.85648044432867
+            },
+            {
+              "x": 130.20602302913468,
+              "y": 393.7172988897741
+            }
+          ],
+          "id": "bicycle-frame"
+        },
+        {
+          "corners": [
+            {
+              "x": 59.77577697572576,
+              "y": 407.6101304929993
+            },
+            {
+              "x": 143.5708828848558,
+              "y": 414.37760271274607
+            },
+            {
+              "x": 143.40780266086622,
+              "y": 398.5447512094349
+            },
+            {
+              "x": 59.35380493849081,
+              "y": 392.00798514579645
+            }
+          ],
+          "id": "bicycle-fender"
+        },
+        {
+          "corners": [
+            {
+              "x": 65.58051844395563,
+              "y": 385.8077872163442
+            },
+            {
+              "x": 132.56483469625496,
+              "y": 390.9310744411774
+            },
+            {
+              "x": 132.23309437733533,
+              "y": 364.27657713289784
+            },
+            {
+              "x": 64.90164637167373,
+              "y": 359.46673593214314
+            }
+          ],
+          "id": "bicycle-rack"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bicycle-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 242.12940710817912,
+            "y": 512.0269357052283
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bicycle-pedal",
+          "mode": "hold",
+          "screen": {
+            "x": 173.97812355985695,
+            "y": 449.9242421797112
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bicycle-bell",
+          "mode": "tap",
+          "screen": {
+            "x": 251.61197192281463,
+            "y": 360.2519460579513
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 302,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 163,
+          "textures": 15
+        },
+        "p95FrameMs": 9.399999999999975,
+        "samples": 33,
+        "triangles": 178066,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "post-beacon-complete-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02637251075148295,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 5.3,
+      "held": null,
+      "items": [
+        {
+          "id": "beacon-wick",
+          "position": {
+            "x": -0.2800000011920929,
+            "y": 1.0199999809265137,
+            "z": -0.019999999552965164
+          },
+          "screen": {
+            "x": 170.90258306923812,
+            "y": 406.5116533197498
+          },
+          "slot": {
+            "x": 171.00733107249448,
+            "y": 428.41887298985074
+          }
+        },
+        {
+          "id": "beacon-lens-ring",
+          "position": {
+            "x": -0.2800000011920929,
+            "y": 1.1299999952316284,
+            "z": 0.42500001192092896
+          },
+          "screen": {
+            "x": 158.66267203752292,
+            "y": 407.45263446140433
+          },
+          "slot": {
+            "x": 158.099618102798,
+            "y": 407.9439919443246
+          }
+        },
+        {
+          "id": "beacon-gear",
+          "position": {
+            "x": 0.6399999856948853,
+            "y": 0.4699999988079071,
+            "z": 0.18000000715255737
+          },
+          "screen": {
+            "x": 247.58142643242945,
+            "y": 467.0091494442857
+          },
+          "slot": {
+            "x": 246.9010714047111,
+            "y": 467.8431284004616
+          }
+        }
+      ],
+      "level": "post-beacon",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "beacon-wick",
+        "beacon-lens-ring",
+        "beacon-gear"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "beacon-glass",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "beacon-side",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "beacon-base",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 113.17437746336677,
+              "y": 450.1523866438569
+            },
+            {
+              "x": 208.8750461870704,
+              "y": 458.52171062348606
+            },
+            {
+              "x": 209.1483444771254,
+              "y": 360.2768585806065
+            },
+            {
+              "x": 111.59205460204409,
+              "y": 353.5381268050964
+            }
+          ],
+          "id": "beacon-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 213.74794659633588,
+              "y": 437.41074101734733
+            },
+            {
+              "x": 225.9619337238694,
+              "y": 424.49480549716344
+            },
+            {
+              "x": 226.3357217572127,
+              "y": 363.86902222635416
+            },
+            {
+              "x": 213.9811074866403,
+              "y": 375.1171149047132
+            }
+          ],
+          "id": "beacon-side"
+        },
+        {
+          "corners": [
+            {
+              "x": 99.61509703236491,
+              "y": 492.8129473036839
+            },
+            {
+              "x": 221.13987240622515,
+              "y": 504.4580094062704
+            },
+            {
+              "x": 221.2380643841183,
+              "y": 485.89443567941976
+            },
+            {
+              "x": 99.26494740906388,
+              "y": 474.62912242866
+            }
+          ],
+          "id": "beacon-base"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "beacon-angle",
+          "mode": "dial",
+          "screen": {
+            "x": 122.91346279613128,
+            "y": 471.2918151617326
+          },
+          "value": 35
+        },
+        {
+          "done": true,
+          "id": "beacon-turn",
+          "mode": "hold",
+          "screen": {
+            "x": 247.58142643242945,
+            "y": 467.0091494442857
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "beacon-light",
+          "mode": "tap",
+          "screen": {
+            "x": 193.2144686123061,
+            "y": 476.82799089791695
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 198,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 104,
+          "textures": 14
+        },
+        "p95FrameMs": 8.400000000000091,
+        "samples": 44,
+        "triangles": 84186,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "typewriter-operation-real-input-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "enabled": true,
+          "playing": false
+        },
+        "peakRms": 0,
+        "state": "locked"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "type-paper",
+          "position": {
+            "x": 0,
+            "y": 1.3899999856948853,
+            "z": -0.6100000143051147
+          },
+          "screen": {
+            "x": 208.86676978289552,
+            "y": 371.76996518318606
+          },
+          "slot": {
+            "x": 208.2050117185195,
+            "y": 372.4351011666174
+          }
+        },
+        {
+          "id": "type-ribbon",
+          "position": {
+            "x": 0,
+            "y": 0.9350000023841858,
+            "z": -0.14000000059604645
+          },
+          "screen": {
+            "x": 198.23440690095347,
+            "y": 418.8826499952633
+          },
+          "slot": {
+            "x": 198.0073393043676,
+            "y": 415.55159698642535
+          }
+        },
+        {
+          "id": "type-lever",
+          "position": {
+            "x": -1.190000057220459,
+            "y": 1.100000023841858,
+            "z": -0.4300000071525574
+          },
+          "screen": {
+            "x": 111.8101070279104,
+            "y": 390.8399761226966
+          },
+          "slot": {
+            "x": 110.98123322560444,
+            "y": 389.9695906205479
+          }
+        }
+      ],
+      "level": "post-typewriter",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "type-paper",
+        "type-ribbon",
+        "type-lever"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": false,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "type-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "type-apron",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "type-side",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 121.09441146674465,
+              "y": 439.6556141671674
+            },
+            {
+              "x": 274.9712978077445,
+              "y": 454.18437786077584
+            },
+            {
+              "x": 275.3173209581472,
+              "y": 434.96376308139605
+            },
+            {
+              "x": 120.7836710599969,
+              "y": 420.91711452206965
+            }
+          ],
+          "id": "type-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 100.06336814490744,
+              "y": 493.98301543144106
+            },
+            {
+              "x": 262.9092683584859,
+              "y": 511.09124295257254
+            },
+            {
+              "x": 263.12345483110465,
+              "y": 497.26004658509726
+            },
+            {
+              "x": 99.77290227532023,
+              "y": 480.51359026487665
+            }
+          ],
+          "id": "type-apron"
+        },
+        {
+          "corners": [
+            {
+              "x": 284.4264625561527,
+              "y": 456.8312590597779
+            },
+            {
+              "x": 295.2806167159669,
+              "y": 441.0136487528009
+            },
+            {
+              "x": 295.71843822449983,
+              "y": 421.5617453341335
+            },
+            {
+              "x": 284.82922643551655,
+              "y": 436.8362376231763
+            }
+          ],
+          "id": "type-side"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "type-feed",
+          "mode": "dial",
+          "screen": {
+            "x": 205.69806965259684,
+            "y": 401.3780937816454
+          },
+          "value": 180
+        },
+        {
+          "done": true,
+          "id": "type-words",
+          "mode": "hold",
+          "screen": {
+            "x": 195.00000000000009,
+            "y": 495.95793137052874
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "type-return",
+          "mode": "tap",
+          "screen": {
+            "x": 111.8101070279104,
+            "y": 390.8399761226966
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 289,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 101,
+          "textures": 23
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 72820,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "post-box-complete-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.021607948851925268,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.36,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.5,
+      "held": null,
+      "items": [
+        {
+          "id": "post-box-lid",
+          "position": {
+            "x": 0,
+            "y": 1.5049999952316284,
+            "z": 0.1340000033378601
+          },
+          "screen": {
+            "x": 191.34453191497812,
+            "y": 380.8626991483149
+          },
+          "slot": {
+            "x": 188.96562368243775,
+            "y": 382.25100910490266
+          }
+        },
+        {
+          "id": "post-box-name",
+          "position": {
+            "x": 0,
+            "y": 0.6899999976158142,
+            "z": 0.13500000536441803
+          },
+          "screen": {
+            "x": 191.36769644194288,
+            "y": 458.1712168559069
+          },
+          "slot": {
+            "x": 190.14349413057693,
+            "y": 459.3490282185727
+          }
+        }
+      ],
+      "level": "post-box",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "post-box-lid",
+        "post-box-name"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "post-box-front",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-side",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-lip",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 119.86198359639224,
+              "y": 487.3703147468497
+            },
+            {
+              "x": 267.2314172452115,
+              "y": 500.18631482953384
+            },
+            {
+              "x": 268.5159225544214,
+              "y": 402.41569594152867
+            },
+            {
+              "x": 118.56312459104116,
+              "y": 392.10998724753387
+            }
+          ],
+          "id": "post-box-front"
+        },
+        {
+          "corners": [
+            {
+              "x": 282.8905150086104,
+              "y": 497.0029971513464
+            },
+            {
+              "x": 297.1257491940465,
+              "y": 478.1433858228063
+            },
+            {
+              "x": 299.23618224343807,
+              "y": 364.07306452576927
+            },
+            {
+              "x": 284.78548855202774,
+              "y": 378.3957779387751
+            }
+          ],
+          "id": "post-box-side"
+        },
+        {
+          "corners": [
+            {
+              "x": 124.19400900798058,
+              "y": 353.5349734628647
+            },
+            {
+              "x": 260.3268389756984,
+              "y": 361.87525905375
+            },
+            {
+              "x": 260.4521791248895,
+              "y": 351.06123010131716
+            },
+            {
+              "x": 124.0616139938349,
+              "y": 342.9805924719571
+            }
+          ],
+          "id": "post-box-lip"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "post-box-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 194.99999999999991,
+            "y": 517.9871406092863
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-open",
+          "mode": "tap",
+          "screen": {
+            "x": 191.34453191497812,
+            "y": 380.8626991483149
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-box-flag",
+          "mode": "tap",
+          "screen": {
+            "x": 289.04824549590626,
+            "y": 431.71445657160245
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 136,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 80,
+          "textures": 17
+        },
+        "p95FrameMs": 9.899999999999975,
+        "samples": 46,
+        "triangles": 51250,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "post-sorter-complete-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02637251075148295,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.4,
+      "held": null,
+      "items": [
+        {
+          "id": "post-sorter-green",
+          "position": {
+            "x": -0.8600000143051147,
+            "y": 0.4449999928474426,
+            "z": -0.3100000023841858
+          },
+          "screen": {
+            "x": 126.083380978406,
+            "y": 459.0489382096311
+          },
+          "slot": {
+            "x": 119.83777281709956,
+            "y": 470.2726027285198
+          }
+        },
+        {
+          "id": "post-sorter-ivory",
+          "position": {
+            "x": 0,
+            "y": 0.4449999928474426,
+            "z": -0.3100000023841858
+          },
+          "screen": {
+            "x": 203.08688651037968,
+            "y": 465.37489911980464
+          },
+          "slot": {
+            "x": 197.6388450910939,
+            "y": 476.83896037138027
+          }
+        },
+        {
+          "id": "post-sorter-coral",
+          "position": {
+            "x": 0.8600000143051147,
+            "y": 0.4449999928474426,
+            "z": -0.3100000023841858
+          },
+          "screen": {
+            "x": 282.39274261766866,
+            "y": 471.89000180528234
+          },
+          "slot": {
+            "x": 277.79342644005044,
+            "y": 483.6039525812232
+          }
+        }
+      ],
+      "level": "post-sorter",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "post-sorter-green",
+        "post-sorter-ivory",
+        "post-sorter-coral"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "post-sorter-left",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-sorter-middle",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-sorter-right",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 110.56576463117986,
+              "y": 444.4006646986862
+            },
+            {
+              "x": 169.93404233120026,
+              "y": 449.12554039545375
+            },
+            {
+              "x": 169.56950202688225,
+              "y": 369.2537641672032
+            },
+            {
+              "x": 109.35184461704448,
+              "y": 365.37338008101347
+            }
+          ],
+          "id": "post-sorter-left"
+        },
+        {
+          "corners": [
+            {
+              "x": 184.76924036067743,
+              "y": 450.3062124536931
+            },
+            {
+              "x": 245.8498004012556,
+              "y": 455.16736162057526
+            },
+            {
+              "x": 246.6001280671087,
+              "y": 374.2175642931593
+            },
+            {
+              "x": 184.62002712653785,
+              "y": 370.22360956799696
+            }
+          ],
+          "id": "post-sorter-middle"
+        },
+        {
+          "corners": [
+            {
+              "x": 261.11596477670867,
+              "y": 456.3823325079724
+            },
+            {
+              "x": 323.98396828744944,
+              "y": 461.38573690843555
+            },
+            {
+              "x": 325.9154502160784,
+              "y": 379.32858865206424
+            },
+            {
+              "x": 262.09438265438297,
+              "y": 375.2160033144356
+            }
+          ],
+          "id": "post-sorter-right"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "post-sorter-bay",
+          "mode": "tap",
+          "screen": {
+            "x": 114.32165773758766,
+            "y": 339.56145823120556
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-sorter-hill",
+          "mode": "tap",
+          "screen": {
+            "x": 194.53698652074308,
+            "y": 344.32860704320404
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-sorter-street",
+          "mode": "tap",
+          "screen": {
+            "x": 277.2580179366192,
+            "y": 349.2446682577322
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "post-sorter-drawer",
+          "mode": "hold",
+          "screen": {
+            "x": 191.26376973655573,
+            "y": 501.39416686995816
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 176,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 100,
+          "textures": 32
+        },
+        "p95FrameMs": 9,
+        "samples": 46,
+        "triangles": 68526,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "post-stamp-complete-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02637251075148295,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4,
+      "held": null,
+      "items": [
+        {
+          "id": "post-stamp-foot",
+          "position": {
+            "x": 0.44999998807907104,
+            "y": 0.23499999940395355,
+            "z": -0.07999999821186066
+          },
+          "screen": {
+            "x": 238.64771302797277,
+            "y": 487.5953214200013
+          },
+          "slot": {
+            "x": 231.80060231443707,
+            "y": 501.64837622343146
+          }
+        },
+        {
+          "id": "post-stamp-ring",
+          "position": {
+            "x": 0.44999998807907104,
+            "y": 1.065000057220459,
+            "z": 0.11500000208616255
+          },
+          "screen": {
+            "x": 234.4998769336084,
+            "y": 415.2225844926416
+          },
+          "slot": {
+            "x": 231.8799654631606,
+            "y": 417.801263221445
+          }
+        },
+        {
+          "id": "post-stamp-letter",
+          "position": {
+            "x": 0.44999998807907104,
+            "y": 0.3659999966621399,
+            "z": 0.20999999344348907
+          },
+          "screen": {
+            "x": 231.67838763999416,
+            "y": 483.68771076106253
+          },
+          "slot": {
+            "x": 231.67519105211645,
+            "y": 484.1549619849036
+          }
+        }
+      ],
+      "level": "post-stamp",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "post-stamp-foot",
+        "post-stamp-ring",
+        "post-stamp-letter"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon",
+          "post-opening"
+        ],
+        "finished": true,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "post-box",
+          "post-sorter",
+          "post-stamp",
+          "post-typewriter",
+          "post-parcel",
+          "post-radio",
+          "post-bicycle",
+          "post-beacon"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "post-stamp-beam",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-stamp-ink",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "post-stamp-wood",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 180.4957627388228,
+              "y": 373.1322479415152
+            },
+            {
+              "x": 307.51621118162166,
+              "y": 381.55361725114
+            },
+            {
+              "x": 307.990104692545,
+              "y": 358.54947604859785
+            },
+            {
+              "x": 180.4361127610943,
+              "y": 350.63523519432897
+            }
+          ],
+          "id": "post-stamp-beam"
+        },
+        {
+          "corners": [
+            {
+              "x": 39.33415349414849,
+              "y": 478.7292775381895
+            },
+            {
+              "x": 118.25989096547168,
+              "y": 485.7245988327627
+            },
+            {
+              "x": 136.91549483374163,
+              "y": 468.9524430959947
+            },
+            {
+              "x": 60.53414986286958,
+              "y": 462.4509581598107
+            }
+          ],
+          "id": "post-stamp-ink"
+        },
+        {
+          "corners": [
+            {
+              "x": 53.951730865440155,
+              "y": 515.1876341904324
+            },
+            {
+              "x": 304.5569204320992,
+              "y": 539.1062401552604
+            },
+            {
+              "x": 304.83573349540194,
+              "y": 525.6072345653083
+            },
+            {
+              "x": 53.609434712922706,
+              "y": 502.2570934844584
+            }
+          ],
+          "id": "post-stamp-wood"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "post-stamp-align",
+          "mode": "dial",
+          "screen": {
+            "x": 234.4998769336084,
+            "y": 415.2225844926416
+          },
+          "value": 30
+        },
+        {
+          "done": true,
+          "id": "post-stamp-press",
+          "mode": "hold",
+          "screen": {
+            "x": 194.99999999999991,
+            "y": 507.5774716488229
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.5.0",
+      "view": {
+        "calls": 199,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 112,
+          "textures": 17
+        },
+        "p95FrameMs": 10.299999999999956,
+        "samples": 45,
+        "triangles": 93590,
+        "width": 390
+      }
+    }
+  }
+]

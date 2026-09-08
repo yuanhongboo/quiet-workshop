@@ -1,3 +1,4 @@
+import { buildPostScene } from './post-scenes.mjs';
 import { buildGardenScene } from './garden-scenes.mjs';
 import { nearestAngle, nextInspectionAngle } from './inspection.mjs';
 import { SurfaceGuide } from './surface-guide.mjs';
@@ -52,6 +53,7 @@ export class WorkshopView {
     this.canvas = canvas;
     this.state = state;
     this.level = state.level;
+    this.inspectable = this.level.inspection ?? this.level.sceneFamily === 'garden';
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color(this.level.room?.wall || '#dadbd0');
     this.renderer = new THREE.WebGLRenderer({
@@ -122,7 +124,8 @@ export class WorkshopView {
     rim.position.set(4, 3, -2);
     this.scene.add(rim);
     if (!this.level.room?.custom) this.buildRoom();
-    if (this.level.sceneFamily === 'garden') this.extra = buildGardenScene(this);
+    if (this.level.sceneFamily === 'post') this.extra = buildPostScene(this);
+    else if (this.level.sceneFamily === 'garden') this.extra = buildGardenScene(this);
     else if (this.level.id === 'coffee') {
       this.buildMachine();
       this.buildProps();
@@ -763,7 +766,7 @@ export class WorkshopView {
   get focus() { return this._focus; }
   set focus(id) {
     this._focus = id;
-    if (this.level?.sceneFamily === 'garden') {
+    if (this.inspectable) {
       const field = this.level.surfaces.find(surface => surface.id === id);
       this.targetAngle = nearestAngle(this.angle, field?.camera?.angle ?? 0.28);
     }
@@ -773,7 +776,7 @@ export class WorkshopView {
     return this.inspectClose;
   }
   nextView() {
-    if (this.level.sceneFamily === 'garden') {
+    if (this.inspectable) {
       this.targetAngle = nextInspectionAngle(this.targetAngle);
       return;
     }
@@ -803,7 +806,7 @@ export class WorkshopView {
   ) {
     this.time = time;
     this.before = before;
-    if (this.level.sceneFamily === 'garden' && this.lastStage !== stage) {
+    if (this.inspectable && this.lastStage !== stage) {
       if (stage !== 'clean') { this.targetAngle = nearestAngle(this.angle, 0.28); this.inspectClose = false; }
       else this.focus = this._focus;
       this.lastStage = stage;
@@ -962,9 +965,9 @@ export class WorkshopView {
       const fit = 1.45 / aspect;
       distance *= fit;
       height = lookY + (height - lookY) * fit;
-      if (this.level.sceneFamily !== 'garden') lookX = -1.4;
+      if (!this.inspectable) lookX = -1.4;
     }
-    if (this.level.sceneFamily === 'garden' && innerWidth <= 700 && stage === 'clean') {
+    if (this.inspectable && innerWidth <= 700 && stage === 'clean') {
       const spec = this.state.surfaces.find(field => field.spec.id === this.focus)?.spec;
       if (spec) {
         const minDistance = (spec.width * 1.12) / (2 * Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2)) * aspect);
@@ -974,7 +977,7 @@ export class WorkshopView {
         }
       }
     }
-    if (this.level.sceneFamily === 'garden' && this.inspectClose && stage !== 'overview') {
+    if (this.inspectable && this.inspectClose && stage !== 'overview') {
       const spec = stage === 'clean' ? this.state.surfaces.find(field => field.spec.id === this.focus)?.spec : null;
       const settings = spec?.camera;
       if (settings) {
@@ -985,7 +988,7 @@ export class WorkshopView {
       distance *= innerWidth <= 700 ? 0.8 : 0.76;
       height = lookY + (height - lookY) * 0.76;
     }
-    if (this.level.sceneFamily === 'garden' && innerWidth > 700) {
+    if (this.inspectable && innerWidth > 700) {
       const shift = aspect < 1.3 ? 1.32 : 0.72;
       lookX -= Math.cos(this.angle) * shift;
       lookZ += Math.sin(this.angle) * shift;
@@ -993,9 +996,9 @@ export class WorkshopView {
     const target = new THREE.Vector3(lookX, lookY, lookZ),
       position = new THREE.Vector3(
         Math.sin(this.angle) * distance +
-          (this.level.sceneFamily === 'garden' || (aspect < 0.8 && innerWidth <= 700 && this.level.id !== 'coffee') ? lookX : 0),
+          (this.inspectable || (aspect < 0.8 && innerWidth <= 700 && this.level.id !== 'coffee') ? lookX : 0),
         height,
-        Math.cos(this.angle) * distance + (this.level.sceneFamily === 'garden' ? lookZ : 0),
+        Math.cos(this.angle) * distance + (this.inspectable ? lookZ : 0),
       );
     if (!this.cameraReady) {
       this.camera.position.copy(position);
