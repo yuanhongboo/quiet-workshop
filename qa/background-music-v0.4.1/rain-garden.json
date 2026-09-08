@@ -1,0 +1,10 @@
+{
+  "theme": "rain-garden",
+  "seconds": 35,
+  "sampleRate": 24000,
+  "masterGain": 0.38,
+  "channels": 2,
+  "peak": 0.25955504179000854,
+  "rms": 0.06729462858613577,
+  "silentSecondsAfterIntro": 0
+}

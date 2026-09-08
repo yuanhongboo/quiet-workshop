@@ -2092,3 +2092,20 @@ body[data-season="rain-garden"] .brand-mark { color: #698863; }
   body[data-season="rain-garden"] .header-actions button { width: 34px; height: 34px; min-width: 34px; }
   body[data-season="rain-garden"] .left-shade { background: linear-gradient(180deg,#edf0e3cf 0%,#edf0e300 32%,#edf0e300 75%,#edf0e37a 100%); }
 }
+
+/* Separate music control keeps ambient music optional while leaving tactile sounds. */
+#music[aria-pressed="false"] { background: #e9eadb80; }
+@media (max-width:700px) {
+  .header-actions { gap: 4px; }
+  .header-actions button { width: 34px; height: 34px; min-width: 34px; }
+  .header-actions button svg { width: 19px; height: 19px; }
+}
+@media (max-width:380px) {
+  header { left: 14px; right: 12px; }
+  .brand { gap: 5px; }
+  .brand-mark { font-size: 25px; }
+  .brand > span:last-child { font-size: 12px; letter-spacing: .05em; }
+  .brand small { font-size: 6px; }
+  .header-actions { gap: 3px; }
+  .header-actions button, body[data-season="rain-garden"] .header-actions button { width: 32px; height: 34px; min-width: 32px; }
+}

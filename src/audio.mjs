@@ -1,6 +1,10 @@
+import { BackgroundMusic } from './background-music.mjs';
 export class WorkshopAudio {
   constructor() {
     this.enabled = true;
+    this.musicEnabled = true;
+    this.backgroundMusic = null;
+    this.scrubActive = false;
     this.context = null;
     this.events = {};
     this.transients = new Set();
@@ -15,6 +19,8 @@ export class WorkshopAudio {
     this.setEnabled(this.enabled);
   }
   init() {
+    this.backgroundMusic?.dispose();
+    this.backgroundMusic = null;
     const c = (this.context = new AudioContext());
     this.master = c.createGain();
     this.master.gain.value = 0.38;
@@ -82,7 +88,12 @@ export class WorkshopAudio {
     if (this.master)
       this.master.gain.setTargetAtTime(enabled ? 0.38 : 0, this.context.currentTime, 0.06);
   }
+  setMusicEnabled(enabled) {
+    this.musicEnabled = !!enabled;
+    this.backgroundMusic?.setEnabled(this.musicEnabled);
+  }
   setScrub(active, material = 'enamel', movement = 1) {
+    this.scrubActive = !!active;
     if (!this.context) return;
     this.scrub.gain.setTargetAtTime(
       active ? 0.55 + Math.min(movement, 1) * 0.4 : 0,
@@ -120,6 +131,7 @@ export class WorkshopAudio {
       this.frictionFilter.frequency.setTargetAtTime(settings[0], this.context.currentTime, 0.1);
   }
   stopEffects() {
+    this.backgroundMusic?.setActive(false);
     this.setScrub(false);
     this.setBrew(false);
     this.setWater(false);
@@ -194,11 +206,12 @@ export class WorkshopAudio {
         this.tone(sequence[(this.noteIndex - 1) % sequence.length] / 2, 2.8, 0.018);
       this.nextNote = now + 0.7;
     }
-    if (active && profile.garden && now >= (this.nextGardenNote || 0)) {
-      const notes = [659.25, 783.99, 987.77, 880];
-      this.tone(notes[(this.gardenNoteIndex || 0) % notes.length], 1.9, 0.006);
-      this.gardenNoteIndex = (this.gardenNoteIndex || 0) + 1;
-      this.nextGardenNote = now + 9.5;
+    if (profile.musicTheme) {
+      this.backgroundMusic ||= new BackgroundMusic(this.context, this.master);
+      this.backgroundMusic.setTheme(profile.musicTheme);
+      this.backgroundMusic.setEnabled(this.musicEnabled);
+      this.backgroundMusic.setActive(active);
+      this.backgroundMusic.setDucked(this.scrubActive || pouring || coffee || music || !!(active && actionId && profile.actionSound));
     }
     const clock = active && level === 'clock' && ['brew', 'done'].includes(stage);
     if (clock && now >= this.nextTick) {
@@ -301,6 +314,7 @@ export class WorkshopAudio {
   }
   update() {
     if (!this.context || this.context.state !== 'running') return;
+    this.backgroundMusic?.update();
     this.analyser.getFloatTimeDomainData(this.samples);
     this.rms = Math.sqrt(this.samples.reduce((sum, v) => sum + v * v, 0) / this.samples.length);
     this.peak = Math.max(this.peak, this.rms);

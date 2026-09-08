@@ -1,0 +1,6 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { AUDIO_PREFERENCES_KEY, readAudioPreferences, saveAudioPreferences } from '../src/audio-preferences.mjs';
+const store=()=>{const map=new Map();return{getItem:key=>map.get(key)??null,setItem:(key,value)=>map.set(key,value),map};};
+test('music preferences survive reload independently from master sound and game saves',()=>{const s=store();s.setItem('quiet-workshop:coffee:2','keep-my-game');assert.equal(saveAudioPreferences(s,{enabled:true,musicEnabled:false}),true);assert.deepEqual(readAudioPreferences(s),{enabled:true,musicEnabled:false});assert.equal(s.getItem('quiet-workshop:coffee:2'),'keep-my-game');assert.equal(s.map.size,2);});
+test('invalid preferences and unavailable storage do not stop audio controls from working',()=>{for(const raw of ['{','null','false',JSON.stringify({version:2,enabled:false}),' '.repeat(1001)]){const s=store();s.setItem(AUDIO_PREFERENCES_KEY,raw);assert.deepEqual(readAudioPreferences(s),{enabled:true,musicEnabled:true});}const unavailable={getItem(){throw Error('blocked');},setItem(){throw Error('blocked');}};assert.deepEqual(readAudioPreferences(unavailable),{enabled:true,musicEnabled:true});assert.equal(saveAudioPreferences(unavailable,{enabled:false,musicEnabled:false}),false);});

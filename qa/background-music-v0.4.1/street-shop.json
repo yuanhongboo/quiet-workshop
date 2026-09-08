@@ -1,0 +1,10 @@
+{
+  "theme": "street-shop",
+  "seconds": 35,
+  "sampleRate": 24000,
+  "masterGain": 0.38,
+  "channels": 2,
+  "peak": 0.25870487093925476,
+  "rms": 0.066169833073836,
+  "silentSecondsAfterIntro": 0
+}

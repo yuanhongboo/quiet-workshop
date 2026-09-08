@@ -1,0 +1,220 @@
+[
+  {
+    "case": "playing-garden",
+    "audio": {
+      "currentRms": 0.10030540200529056,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "bar": 4,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": true,
+        "loopSeconds": 96,
+        "maxVoices": 11,
+        "playing": true,
+        "position": 9.33,
+        "sampleBytes": 3228120,
+        "scheduledNotes": 26,
+        "theme": "rain-garden",
+        "title": "雨停以后",
+        "voices": 8
+      },
+      "peakRms": 0.11642326738334208,
+      "state": "running"
+    }
+  },
+  {
+    "case": "music-muted",
+    "audio": {
+      "currentRms": 0,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "bar": 4,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": false,
+        "loopSeconds": 96,
+        "maxVoices": 11,
+        "playing": false,
+        "position": 9.4,
+        "sampleBytes": 3228120,
+        "scheduledNotes": 26,
+        "theme": "rain-garden",
+        "title": "雨停以后",
+        "voices": 0
+      },
+      "peakRms": 0.11642326738334208,
+      "state": "running"
+    }
+  },
+  {
+    "case": "effects-without-music",
+    "audio": {
+      "currentRms": 0.00013609093470374572,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "bar": 4,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": false,
+        "loopSeconds": 96,
+        "maxVoices": 11,
+        "playing": false,
+        "position": 9.4,
+        "sampleBytes": 3228120,
+        "scheduledNotes": 26,
+        "theme": "rain-garden",
+        "title": "雨停以后",
+        "voices": 0
+      },
+      "peakRms": 0.11642326738334208,
+      "state": "running"
+    },
+    "progress": "15"
+  },
+  {
+    "case": "paused",
+    "audio": {
+      "currentRms": 0.08511841987612809,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": false,
+        "bar": 1,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": true,
+        "loopSeconds": 96,
+        "maxVoices": 5,
+        "playing": false,
+        "position": 0.23,
+        "sampleBytes": 2257920,
+        "scheduledNotes": 5,
+        "theme": "rain-garden",
+        "title": "雨停以后",
+        "voices": 0
+      },
+      "peakRms": 0.08593003559826329,
+      "state": "suspended"
+    }
+  },
+  {
+    "case": "resumed",
+    "audio": {
+      "currentRms": 0,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "bar": 1,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": true,
+        "loopSeconds": 96,
+        "maxVoices": 5,
+        "playing": true,
+        "position": 0.44,
+        "sampleBytes": 2257920,
+        "scheduledNotes": 5,
+        "theme": "rain-garden",
+        "title": "雨停以后",
+        "voices": 0
+      },
+      "peakRms": 0.08593003559826329,
+      "state": "running"
+    }
+  },
+  {
+    "case": "master-muted",
+    "audio": {
+      "currentRms": 0,
+      "enabled": false,
+      "events": {},
+      "music": {
+        "active": false,
+        "bar": 1,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": true,
+        "loopSeconds": 96,
+        "maxVoices": 5,
+        "playing": false,
+        "position": 0.47,
+        "sampleBytes": 2257920,
+        "scheduledNotes": 5,
+        "theme": "rain-garden",
+        "title": "雨停以后",
+        "voices": 0
+      },
+      "peakRms": 0.08593003559826329,
+      "state": "running"
+    }
+  },
+  {
+    "case": "switched-to-street-shop",
+    "audio": {
+      "currentRms": 0.07403947425888475,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "bar": 1,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": true,
+        "loopSeconds": 106.66666666666669,
+        "maxVoices": 5,
+        "playing": true,
+        "position": 0.27,
+        "sampleBytes": 2769480,
+        "scheduledNotes": 10,
+        "theme": "street-shop",
+        "title": "窗边慢慢亮",
+        "voices": 5
+      },
+      "peakRms": 0.08593003559826329,
+      "state": "running"
+    }
+  },
+  {
+    "case": "built-version",
+    "audio": {
+      "currentRms": 0.08397345336491313,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "bar": 1,
+        "bars": 32,
+        "droppedNotes": 0,
+        "ducked": false,
+        "enabled": true,
+        "loopSeconds": 96,
+        "maxVoices": 5,
+        "playing": true,
+        "position": 0.18,
+        "sampleBytes": 2257920,
+        "scheduledNotes": 5,
+        "theme": "rain-garden",
+        "title": "雨停以后",
+        "voices": 5
+      },
+      "peakRms": 0.08397345336491313,
+      "state": "running"
+    },
+    "version": "0.4.1"
+  }
+]

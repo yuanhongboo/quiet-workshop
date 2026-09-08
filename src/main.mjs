@@ -1,3 +1,4 @@
+import { readAudioPreferences, saveAudioPreferences } from './audio-preferences.mjs';
 import { seasonArtwork } from './season-art.mjs';
 import { ActionController } from './action-controller.mjs';
 import { SEASON as SEASON_ONE, SEASON_TWO, SEASONS, seasonLevelIds, seasonForLevel, seasonLabel, getSeason } from './season.mjs';
@@ -50,6 +51,9 @@ const storage = (() => {
     };
   }
 })();
+const audioPreferences = readAudioPreferences(storage);
+audio.setEnabled(audioPreferences.enabled);
+audio.setMusicEnabled(audioPreferences.musicEnabled);
 let state,
   level,
   stage,
@@ -519,6 +523,7 @@ function updateHud() {
           peakRms: audio.peak,
           currentRms: audio.rms || 0,
           events: audio.events,
+          music: audio.backgroundMusic?.diagnostics || { playing: false, enabled: audio.musicEnabled },
         },
         view: {
           width: innerWidth,
@@ -775,7 +780,11 @@ $('pause-dialog').addEventListener('cancel', (event) => {
   resume();
 });
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden) pause();
+  if (document.hidden) {
+    if (started) pause();
+    else audio.suspend().catch(() => {});
+  }
+  else if (shopPreview && !paused) audio.unlock().catch(() => {});
   else if (started && paused && !$('pause-dialog').open && !$('level-dialog').open)
     $('pause-dialog').showModal();
 });
@@ -791,12 +800,32 @@ window.addEventListener('pagehide', () => {
 window.addEventListener('keydown', (event) => {
   if (event.code === 'Escape' && !$('level-dialog').open) pause();
 });
+function updateAudioControls() {
+  document.querySelector('#intro .quiet-note').textContent = audio.enabled && audio.musicEnabled
+    ? '没有倒计时。点击开始，让音乐轻轻陪着你。'
+    : '没有倒计时。随时停下，下次继续。';
+  $('sound').setAttribute('aria-label', audio.enabled ? '关闭声音' : '开启声音');
+  $('sound').setAttribute('aria-pressed', String(audio.enabled));
+  $('sound').style.opacity = audio.enabled ? '1' : '.5';
+  $('music').setAttribute('aria-label', audio.musicEnabled ? '关闭背景音乐' : '开启背景音乐');
+  $('music').setAttribute('aria-pressed', String(audio.musicEnabled));
+  $('music').title = audio.musicEnabled ? (audio.enabled ? '背景音乐已开启' : '音乐已开启，总声音已关闭') : '背景音乐已关闭，保留操作音效';
+  $('music').style.opacity = audio.musicEnabled && audio.enabled ? '1' : '.5';
+}
 $('sound').addEventListener('click', async () => {
   await audio.unlock().catch(() => {});
   audio.setEnabled(!audio.enabled);
-  $('sound').setAttribute('aria-label', audio.enabled ? '关闭声音' : '开启声音');
-  $('sound').style.opacity = audio.enabled ? '1' : '.5';
+  saveAudioPreferences(storage, audio);
+  updateAudioControls();
 });
+$('music').addEventListener('click', async () => {
+  await audio.unlock().catch(() => {});
+  audio.setMusicEnabled(!audio.musicEnabled);
+  saveAudioPreferences(storage, audio);
+  updateAudioControls();
+  if (started) notify(audio.musicEnabled ? (audio.enabled ? '让音乐，轻轻陪着你。' : '音乐已开启，点扬声器可以打开声音。') : '音乐已关闭，留下擦洗和流水的声音。');
+});
+updateAudioControls();
 $('view').addEventListener('click', () => {
   if (loading) return;
   stopInteractions();
@@ -1045,7 +1074,7 @@ function frame(now) {
               'opening-coffee': Number(seasonState.restoredIds.has('coffee')),
             }
           : state.taskValues,
-        { garden: level.sceneFamily === 'garden', actionSound: tasksFor(level).find(task => task.id === actions.actionId)?.sound, waterTask: level.ambientWaterTask },
+        { musicTheme: activeSeason.id, garden: level.sceneFamily === 'garden', actionSound: tasksFor(level).find(task => task.id === actions.actionId)?.sound, waterTask: level.ambientWaterTask },
       );
       view.positionTool(
         view.hit,
