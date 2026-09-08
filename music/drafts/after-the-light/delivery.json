@@ -1,0 +1,42 @@
+{
+  "stage": "listening-draft",
+  "gameChanged": false,
+  "constantMasterGainDb": -0.7800000000000011,
+  "durationSeconds": 122.200816,
+  "integratedLufs": -20.0,
+  "truePeakDb": -3.35,
+  "loudnessRangeLu": 5.4,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ],
+    "format": {
+      "duration": "122.200816",
+      "size": "2048939"
+    }
+  },
+  "files": {
+    "after-the-light.mp3": {
+      "bytes": 2048939,
+      "sha256": "c12e2e8c7b6c73ea0a1bf9ebdbd0ed400e0ac768d67f011468b50eb6bd087a59"
+    },
+    "after-the-light.wav": {
+      "bytes": 21551304,
+      "sha256": "292ebe03b5790acce50843b27b11c507f7ffa5fdb8a3a92285773c18ec48f667"
+    },
+    "after-the-light.mid": {
+      "bytes": 2878,
+      "sha256": "c8b2381e4a70f576aae0035d27623fe42748880b7634cf5262a2e7bc4c6f3787"
+    },
+    "score.json": {
+      "bytes": 31933,
+      "sha256": "be6538d497fc736ceb9742f425751e81f92ffa91127c7c39b2038277fad78d0c"
+    }
+  }
+}

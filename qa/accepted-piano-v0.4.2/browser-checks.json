@@ -1,0 +1,264 @@
+[
+  {
+    "case": "first-start",
+    "audio": {
+      "currentRms": 0.021607948851925268,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 1,
+        "playing": true,
+        "position": 0.36,
+        "readyState": 4,
+        "status": "playing",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.029150933175776488,
+      "state": "running"
+    }
+  },
+  {
+    "case": "before-pause",
+    "audio": {
+      "currentRms": 0.010985721736670066,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 1,
+        "playing": true,
+        "position": 76.1,
+        "readyState": 4,
+        "status": "playing",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.08348957789238233,
+      "state": "running"
+    }
+  },
+  {
+    "case": "paused",
+    "audio": {
+      "currentRms": 0.010304510421058196,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": false,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 1,
+        "playing": false,
+        "position": 76.21,
+        "readyState": 4,
+        "status": "paused",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.08348957789238233,
+      "state": "suspended"
+    }
+  },
+  {
+    "case": "resumed",
+    "audio": {
+      "currentRms": 0.02240060020879806,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 2,
+        "playing": true,
+        "position": 76.55,
+        "readyState": 4,
+        "status": "playing",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.08348957789238233,
+      "state": "running"
+    }
+  },
+  {
+    "case": "music-muted",
+    "audio": {
+      "currentRms": 0,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": false,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 2,
+        "playing": false,
+        "position": 76.62,
+        "readyState": 4,
+        "status": "paused",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.08348957789238233,
+      "state": "running"
+    }
+  },
+  {
+    "case": "before-season-change",
+    "audio": {
+      "currentRms": 0.01951672976414468,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 3,
+        "playing": true,
+        "position": 76.72,
+        "readyState": 4,
+        "status": "playing",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.08348957789238233,
+      "state": "running"
+    }
+  },
+  {
+    "case": "other-season",
+    "audio": {
+      "currentRms": 0.01123248594674435,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 4,
+        "playing": true,
+        "position": 77.31,
+        "readyState": 4,
+        "status": "playing",
+        "streaming": true,
+        "theme": "street-shop",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.08348957789238233,
+      "state": "running"
+    }
+  },
+  {
+    "case": "built-mobile-start",
+    "audio": {
+      "currentRms": 0.023769008523166348,
+      "enabled": true,
+      "events": {},
+      "music": {
+        "active": true,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 1,
+        "playing": true,
+        "position": 0.2,
+        "readyState": 4,
+        "status": "playing",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.023769008523166348,
+      "state": "running"
+    },
+    "version": "0.4.2"
+  },
+  {
+    "case": "master-muted",
+    "audio": {
+      "currentRms": 0,
+      "enabled": false,
+      "events": {},
+      "music": {
+        "active": false,
+        "awaitingContext": false,
+        "ducked": false,
+        "enabled": true,
+        "error": null,
+        "loop": true,
+        "loopSeconds": 122.171361,
+        "networkState": 1,
+        "playRequests": 1,
+        "playing": false,
+        "position": 0.36,
+        "readyState": 4,
+        "status": "paused",
+        "streaming": true,
+        "theme": "rain-garden",
+        "title": "光落在窗台",
+        "unlocked": true
+      },
+      "peakRms": 0.028759365844946937,
+      "state": "running"
+    }
+  }
+]

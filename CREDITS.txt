@@ -1,4 +1,4 @@
-A LITTLE RESET / 好好收拾 — 0.4.1
+A LITTLE RESET / 好好收拾 — 0.4.2
 
 Original Season One workbenches and corner-shop diorama geometry, interface,
 procedural wood, enamel, grime and dial textures, animations and synthesized
@@ -18,7 +18,13 @@ Loose accessories use rigid-body physics; their final placement is assisted
 with a short snap animation. Water, lighting and record playback are stylized
 procedural effects rather than a general real-world simulation.
 
-Seasonal background music: Window Light / 窗边慢慢亮 (Season One) and
-After the Rain / 雨停以后 (Season Two), original compositions and synthesized instruments
-created for this game. Scores and synthesis are distributed with the game;
-no external songs, recordings or sample libraries are used.
+Default background music: 光落在窗台 / After the Light, an original piano
+composition created for Quiet Workshop and rendered from its original score.
+
+Piano samples: Salamander Grand Piano V3 by Alexander Holm (Yamaha C5).
+Licensed under Creative Commons Attribution 3.0 Unported.
+https://github.com/sfzinstruments/SalamanderGrandPiano
+https://creativecommons.org/licenses/by/3.0/
+Samples were resampled, transposed, velocity-layer mixed and processed with
+pedal envelopes, room ambience and mastering. No endorsement is implied.
+Full sample license: licenses/SALAMANDER-CC-BY-3.0.txt.

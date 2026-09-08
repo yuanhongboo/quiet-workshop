@@ -1,3 +1,4 @@
+import { SOUNDTRACK } from './soundtrack.mjs';
 import { readAudioPreferences, saveAudioPreferences } from './audio-preferences.mjs';
 import { seasonArtwork } from './season-art.mjs';
 import { ActionController } from './action-controller.mjs';
@@ -37,7 +38,7 @@ import { WorkshopAudio } from './audio.mjs';
 import { Vector3 } from 'three';
 import { version } from '../package.json';
 const $ = (id) => document.getElementById(id),
-  audio = new WorkshopAudio(),
+  audio = new WorkshopAudio(SOUNDTRACK),
   params = new URLSearchParams(location.search);
 const storage = (() => {
   try {
@@ -79,6 +80,7 @@ let point = { x: 0, y: 0 },
   galleryWasPaused = false,
   completedCount = 0,
   seasonState = null,
+  reportedMusicError = null,
   shopPreview = false,
   activeSeason = SEASON_ONE,
   gallerySeason = SEASON_ONE;
@@ -114,7 +116,7 @@ function nextSuggestion() {
   );
 }
 async function showShop(season = activeSeason) {
-  await audio.unlock().catch(() => {});
+  await audio.unlock({ musicActive: true }).catch(() => {});
   return loadLevel(getLevel(season.openingId), { preview: true });
 }
 function refreshShop() {
@@ -295,7 +297,7 @@ async function loadLevel(next, { reset = false, play = false, preview = false } 
     $('start').disabled = false;
     lastTime = performance.now();
     updateHud();
-    if (shopPreview && audio.context) await audio.unlock().catch(() => {});
+    if (shopPreview && audio.context) await audio.unlock({ musicActive: true }).catch(() => {});
     if (play && !shopPreview) await start();
   } catch (cause) {
     loading = false;
@@ -329,6 +331,13 @@ function switchStage() {
 }
 function updateHud() {
   if (loading || !view || !physics) return;
+  const musicError = audio.backgroundMusic?.diagnostics.error?.kind || null;
+  if (musicError !== reportedMusicError) {
+    reportedMusicError = musicError;
+    updateAudioControls();
+    if (musicError && started && !paused && audio.musicEnabled && audio.enabled)
+      notify('音乐暂时没加载好，点右上角音符可以重试。');
+  }
   const progress =
     stage === 'clean'
       ? cleanProgress(state)
@@ -743,9 +752,9 @@ for (const name of ['pointercancel', 'lostpointercapture'])
 $('world').addEventListener('contextmenu', (event) => event.preventDefault());
 async function start() {
   if (loading || shopPreview) return;
-  await audio.unlock().catch(() => {});
   started = true;
   paused = false;
+  await audio.unlock({ musicActive: true }).catch(() => {});
   $('intro').hidden = true;
   $('pause').hidden = false;
   $('hud').hidden = stage === 'done';
@@ -766,9 +775,9 @@ function pause() {
   updateHud();
 }
 async function resume() {
-  await audio.unlock().catch(() => {});
   $('pause-dialog').close();
   paused = false;
+  await audio.unlock({ musicActive: true }).catch(() => {});
   lastTime = performance.now();
   accumulator = 0;
   updateHud();
@@ -784,7 +793,7 @@ document.addEventListener('visibilitychange', () => {
     if (started) pause();
     else audio.suspend().catch(() => {});
   }
-  else if (shopPreview && !paused) audio.unlock().catch(() => {});
+  else if (shopPreview && !paused) audio.unlock({ musicActive: true }).catch(() => {});
   else if (started && paused && !$('pause-dialog').open && !$('level-dialog').open)
     $('pause-dialog').showModal();
 });
@@ -801,29 +810,33 @@ window.addEventListener('keydown', (event) => {
   if (event.code === 'Escape' && !$('level-dialog').open) pause();
 });
 function updateAudioControls() {
+  const failed = !!audio.backgroundMusic?.diagnostics.error && audio.musicEnabled && audio.enabled;
   document.querySelector('#intro .quiet-note').textContent = audio.enabled && audio.musicEnabled
     ? '没有倒计时。点击开始，让音乐轻轻陪着你。'
     : '没有倒计时。随时停下，下次继续。';
   $('sound').setAttribute('aria-label', audio.enabled ? '关闭声音' : '开启声音');
   $('sound').setAttribute('aria-pressed', String(audio.enabled));
   $('sound').style.opacity = audio.enabled ? '1' : '.5';
-  $('music').setAttribute('aria-label', audio.musicEnabled ? '关闭背景音乐' : '开启背景音乐');
+  $('music').setAttribute('aria-label', failed ? '重试背景音乐' : audio.musicEnabled ? '关闭背景音乐' : '开启背景音乐');
   $('music').setAttribute('aria-pressed', String(audio.musicEnabled));
-  $('music').title = audio.musicEnabled ? (audio.enabled ? '背景音乐已开启' : '音乐已开启，总声音已关闭') : '背景音乐已关闭，保留操作音效';
+  $('music').title = failed ? '音乐暂时无法加载，点击重试' : audio.musicEnabled ? (audio.enabled ? `背景音乐 · ${SOUNDTRACK.title}` : '音乐已开启，总声音已关闭') : '背景音乐已关闭，保留操作音效';
   $('music').style.opacity = audio.musicEnabled && audio.enabled ? '1' : '.5';
 }
+const currentMusicActivity = () => (started || shopPreview) && !paused && !document.hidden;
 $('sound').addEventListener('click', async () => {
-  await audio.unlock().catch(() => {});
   audio.setEnabled(!audio.enabled);
   saveAudioPreferences(storage, audio);
   updateAudioControls();
+  if (audio.enabled) await audio.unlock({ musicActive: currentMusicActivity() }).catch(() => {});
 });
 $('music').addEventListener('click', async () => {
-  await audio.unlock().catch(() => {});
-  audio.setMusicEnabled(!audio.musicEnabled);
+  const failed = !!audio.backgroundMusic?.diagnostics.error;
+  if (!failed || !audio.musicEnabled) audio.setMusicEnabled(!audio.musicEnabled);
   saveAudioPreferences(storage, audio);
   updateAudioControls();
-  if (started) notify(audio.musicEnabled ? (audio.enabled ? '让音乐，轻轻陪着你。' : '音乐已开启，点扬声器可以打开声音。') : '音乐已关闭，留下擦洗和流水的声音。');
+  if (audio.musicEnabled && audio.enabled)
+    await audio.unlock({ musicActive: currentMusicActivity() }).catch(() => {});
+  if (started) notify(audio.musicEnabled ? (audio.enabled ? `音乐已开启 · ${SOUNDTRACK.title}` : '音乐已开启，点扬声器可以打开声音。') : '音乐已关闭，留下擦洗和流水的声音。');
 });
 updateAudioControls();
 $('view').addEventListener('click', () => {
@@ -1000,8 +1013,8 @@ async function closeGallery() {
   paused = galleryWasPaused;
   if (started) {
     if (paused) $('pause-dialog').showModal();
-    else await audio.unlock().catch(() => {});
-  } else if (shopPreview && !paused) await audio.unlock().catch(() => {});
+    else await audio.unlock({ musicActive: true }).catch(() => {});
+  } else if (shopPreview && !paused) await audio.unlock({ musicActive: true }).catch(() => {});
   lastTime = performance.now();
   updateHud();
 }

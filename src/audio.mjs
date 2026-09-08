@@ -1,6 +1,7 @@
-import { BackgroundMusic } from './background-music.mjs';
+import { RecordedMusic } from './recorded-music.mjs';
 export class WorkshopAudio {
-  constructor() {
+  constructor(musicTrack = null) {
+    this.musicTrack = musicTrack;
     this.enabled = true;
     this.musicEnabled = true;
     this.backgroundMusic = null;
@@ -13,10 +14,18 @@ export class WorkshopAudio {
     this.sceneLevel = null;
     this.coffeeUntil = 0;
   }
-  async unlock() {
+  async unlock({ musicActive = false } = {}) {
     if (!this.context || this.context.state === 'closed') this.init();
-    if (this.context.state !== 'running') await this.context.resume();
+    const resumed = this.context.state !== 'running' ? this.context.resume() : Promise.resolve();
     this.setEnabled(this.enabled);
+    if (this.backgroundMusic) {
+      this.backgroundMusic.setEnabled(this.musicEnabled);
+      this.backgroundMusic.setActive(musicActive && this.enabled);
+      if (musicActive && this.enabled && this.musicEnabled)
+        this.backgroundMusic.unlock().catch(() => {});
+    }
+    // Audio loading must never delay the player's game start.
+    await resumed;
   }
   init() {
     this.backgroundMusic?.dispose();
@@ -31,6 +40,7 @@ export class WorkshopAudio {
     this.analyser.fftSize = 512;
     this.samples = new Float32Array(512);
     this.master.connect(limit).connect(this.analyser).connect(c.destination);
+    if (this.musicTrack) this.backgroundMusic = new RecordedMusic(c, this.master, this.musicTrack);
     this.noise = c.createBuffer(1, c.sampleRate * 4, c.sampleRate);
     const data = this.noise.getChannelData(0);
     let previous = 0;
@@ -194,7 +204,7 @@ export class WorkshopAudio {
       active &&
       ((level === 'record' && ['brew', 'done'].includes(stage) && progress >= 2.1) ||
         (level === 'opening' && (taskValues['opening-music'] || 0) >= 1));
-    if (music && now >= this.nextNote) {
+    if (music && !this.musicTrack && now >= this.nextNote) {
       // Original, unhurried major-seventh arpeggios; nothing is fetched or autoplayed.
       const sequence = [261.63, 329.63, 392, 493.88, 293.66, 349.23, 440, 523.25];
       this.tone(
@@ -206,12 +216,11 @@ export class WorkshopAudio {
         this.tone(sequence[(this.noteIndex - 1) % sequence.length] / 2, 2.8, 0.018);
       this.nextNote = now + 0.7;
     }
-    if (profile.musicTheme) {
-      this.backgroundMusic ||= new BackgroundMusic(this.context, this.master);
+    if (this.backgroundMusic && profile.musicTheme) {
       this.backgroundMusic.setTheme(profile.musicTheme);
       this.backgroundMusic.setEnabled(this.musicEnabled);
-      this.backgroundMusic.setActive(active);
-      this.backgroundMusic.setDucked(this.scrubActive || pouring || coffee || music || !!(active && actionId && profile.actionSound));
+      this.backgroundMusic.setActive(this.enabled && stage !== 'idle');
+      this.backgroundMusic.setDucked(this.scrubActive || pouring || coffee || (music && !this.musicTrack) || !!(active && actionId && profile.actionSound));
     }
     const clock = active && level === 'clock' && ['brew', 'done'].includes(stage);
     if (clock && now >= this.nextTick) {

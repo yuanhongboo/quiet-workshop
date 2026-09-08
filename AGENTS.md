@@ -30,7 +30,7 @@ Use small, descriptive `.mjs` modules and kebab-case filenames. Keep level conte
 
 3D upgrades must improve actions players can feel: inspect another side, fit a part, reveal a material, see a repaired object work. Keep single-finger cleaning easy; camera movement and cleaning must not compete for the same gesture. Provide visible focus/remaining-dirt guidance. Tasks and scene effects derive from saved game state. Returning after refresh must not skip or block completion.
 
-Dispose Three.js geometries, materials, textures, DOM overlays and event listeners on scene changes. Do not add external image/audio assets without provenance and distribution rights. Keep dependency versions locked. Avoid publishing debug fixtures, source saves or local runtime files.
+Dispose Three.js geometries, materials, textures, DOM overlays and event listeners on scene changes. Do not add external image/audio assets without provenance and distribution rights. The user-approved default piano recording is 光落在窗台; keep its Salamander/Alexander Holm attribution and CC BY 3.0 license with builds. Preserve the reviewed recording rather than silently replacing it with newly generated music. Keep dependency versions locked. Avoid publishing debug fixtures, source saves or local runtime files.
 
 ## Verification and delivery
 

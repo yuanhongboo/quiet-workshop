@@ -25,6 +25,7 @@ for (const [target, [name, license]] of Object.entries(packages)) {
   }
 }
 await copyFile(path.join(root, 'CREDITS.txt'), path.join(root, 'dist/CREDITS.txt'));
+await copyFile(path.join(root, 'music/drafts/after-the-light/SAMPLES-LICENSE.txt'), path.join(root, 'dist/licenses/SALAMANDER-CC-BY-3.0.txt'));
 const files = {};
 async function visit(directory, relative = '') {
   for (const entry of (await readdir(directory, { withFileTypes: true })).sort((a, b) =>

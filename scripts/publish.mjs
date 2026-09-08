@@ -1,50 +1,44 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateHosting } from './landing-publication.mjs';
+import { validateGameManifest, readGameFiles, assertGameReleaseAvailable, createGameTree } from './game-publication.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const args = process.argv.slice(2),
-  option = (name) => args[args.indexOf(name) + 1];
-if (!args.includes('--hosting-receipt') || !args.includes('--prefix'))
-  throw new Error(
-    'Use --hosting-receipt <existing receipt> --prefix <new immutable path> [--dry-run]',
-  );
+const args = process.argv.slice(2), option = (name) => args[args.indexOf(name) + 1];
+const allowed = new Set(['--hosting-receipt', '--prefix', '--dry-run']);
+for (let index = 0; index < args.length; index++) {
+  const arg = args[index];
+  if (!allowed.delete(arg) || (arg !== '--dry-run' && (!args[index + 1] || args[index + 1].startsWith('--')))) {
+    throw new Error('Use --hosting-receipt <existing receipt> --prefix <new immutable path> [--dry-run]');
+  }
+  if (arg !== '--dry-run') index++;
+}
+if (allowed.has('--hosting-receipt') || allowed.has('--prefix')) {
+  throw new Error('Use --hosting-receipt <existing receipt> --prefix <new immutable path> [--dry-run]');
+}
 const hostingPath = path.resolve(option('--hosting-receipt')),
   hosting = JSON.parse(await readFile(hostingPath));
+const hostingURL = validateHosting(hosting);
 const manifest = JSON.parse(await readFile(path.join(root, 'qa/build-manifest.json')));
 const packageInfo = JSON.parse(await readFile(path.join(root, 'package.json')));
-if (manifest.version !== packageInfo.version) throw new Error('Build version does not match package; rebuild before publishing');
 const prefix = option('--prefix').replace(/\/$/, '');
 const catalogPath = path.join(root, 'config/catalog.json');
 const catalog = JSON.parse(await readFile(catalogPath));
-if (prefix !== `${catalog.landingPrefix}/v${manifest.version}`) throw new Error('Game publication must match the fixed entry catalog');
-if (!/^[a-z0-9][a-z0-9./-]+$/.test(prefix) || prefix.split('/').includes('..'))
-  throw new Error('Invalid publication prefix');
-const tree = [];
-for (const [file, expected] of Object.entries(manifest.files)) {
-  const bytes = await readFile(path.join(root, 'dist', file));
-  if (createHash('sha256').update(bytes).digest('hex') !== expected.sha256)
-    throw new Error(`Build changed: ${file}`);
-  tree.push({
-    path: `${prefix}/${file}`,
-    mode: '100644',
-    type: 'blob',
-    content: bytes.toString('utf8'),
-  });
-}
+validateGameManifest(manifest, catalog, packageInfo, prefix);
+const files = await readGameFiles(path.join(root, 'dist'), manifest);
 const plan = {
   repository: hosting.repository,
   previousCommit: hosting.commit,
   prefix,
-  files: tree.map((file) => file.path),
+  files: files.map((file) => `${prefix}/${file.path}`),
   bytes: manifest.bytes,
-  url: new URL(`${prefix}/`, hosting.url).href,
-  fixedEntry: new URL(`${catalog.landingPrefix}/`, hosting.url).href,
+  url: new URL(`${prefix}/`, hostingURL).href,
+  fixedEntry: new URL(`${catalog.landingPrefix}/`, hostingURL).href,
 };
 if (args.includes('--dry-run')) {
-  console.log(JSON.stringify(plan, null, 2));
+  console.log(JSON.stringify({ ...plan, status: 'local-plan-validated', remoteReleaseChecked: false }, null, 2));
   process.exit(0);
 }
 const api = (endpoint, method = 'GET', input) =>
@@ -63,8 +57,8 @@ const ref = api(`repos/${hosting.repository}/git/ref/heads/${repository.default_
 if (ref.object.sha !== hosting.commit) throw new Error('Remote changed; inspect before publishing');
 const head = api(`repos/${hosting.repository}/git/commits/${hosting.commit}`);
 const existing = api(`repos/${hosting.repository}/git/trees/${head.tree.sha}?recursive=1`);
-if (existing.tree.some((file) => file.path.startsWith(prefix + '/')))
-  throw new Error('Immutable prototype path already exists');
+assertGameReleaseAvailable(prefix, existing);
+const tree = createGameTree(files, prefix, hosting.repository, api);
 const nextTree = api(`repos/${hosting.repository}/git/trees`, 'POST', {
   base_tree: head.tree.sha,
   tree,

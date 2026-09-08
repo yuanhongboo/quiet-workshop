@@ -2,7 +2,7 @@
   "repository": "yuanhongboo/orbit-breaker",
   "repositoryId": 1359212174,
   "url": "https://yuanhongboo.github.io/orbit-breaker/",
-  "commit": "fa862a9978eaf42d4d8714f51624845937360ca8",
+  "commit": "fbea92f72d03a3d7e04ce941cd92b3c56f585716",
   "additionalPrototypes": [
     {
       "name": "quiet-workshop",
@@ -15,6 +15,12 @@
       "version": "0.4.1",
       "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.4.1/",
       "commit": "57e27adc71793e56765cdf5a0ce613991a84c35e"
+    },
+    {
+      "name": "quiet-workshop",
+      "version": "0.4.2",
+      "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.4.2/",
+      "commit": "4793cdc1ece490e601f03927e1af3098df2e6d06"
     }
   ]
 }

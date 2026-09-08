@@ -1,0 +1,1473 @@
+{
+  "title": "光落在窗台",
+  "seconds": 122.1713392471027,
+  "scoreSeconds": 117.1713392471027,
+  "notes": 219,
+  "sampleRate": 44100,
+  "channels": 2,
+  "peakBeforeMaster": 0.2368749976158142,
+  "peakNormalized": 0.7498942017555237,
+  "rmsBeforeLoudnessMaster": 0.07923000496232384,
+  "normalizationGain": 3.1657803351145724,
+  "sampleRootCount": 35,
+  "pitchVariants": 64,
+  "sampleSourceCommit": "3382bf9496bba2486f5ab0de55a264d1dfc38404",
+  "events": [
+    {
+      "midi": 40,
+      "onset": 0,
+      "keyRelease": 1.18182,
+      "pedalRelease": 3.52727
+    },
+    {
+      "midi": 47,
+      "onset": 0.68467,
+      "keyRelease": 1.59091,
+      "pedalRelease": 3.52727
+    },
+    {
+      "midi": 68,
+      "onset": 1.36243,
+      "keyRelease": 2.36364,
+      "pedalRelease": 3.52727
+    },
+    {
+      "midi": 54,
+      "onset": 1.81477,
+      "keyRelease": 3.09091,
+      "pedalRelease": 3.52727
+    },
+    {
+      "midi": 66,
+      "onset": 2.72649,
+      "keyRelease": 3.38182,
+      "pedalRelease": 3.52727
+    },
+    {
+      "midi": 49,
+      "onset": 3.64311,
+      "keyRelease": 4.81818,
+      "pedalRelease": 7.16364
+    },
+    {
+      "midi": 64,
+      "onset": 4.08633,
+      "keyRelease": 5.18182,
+      "pedalRelease": 7.16364
+    },
+    {
+      "midi": 56,
+      "onset": 4.99812,
+      "keyRelease": 6.09091,
+      "pedalRelease": 7.16364
+    },
+    {
+      "midi": 68,
+      "onset": 5.45924,
+      "keyRelease": 6.68182,
+      "pedalRelease": 7.16364
+    },
+    {
+      "midi": 59,
+      "onset": 6.13626,
+      "keyRelease": 6.90909,
+      "pedalRelease": 7.16364
+    },
+    {
+      "midi": 45,
+      "onset": 7.28473,
+      "keyRelease": 8.77273,
+      "pedalRelease": 10.91023
+    },
+    {
+      "midi": 52,
+      "onset": 8.2055,
+      "keyRelease": 9.42898,
+      "pedalRelease": 10.91023
+    },
+    {
+      "midi": 73,
+      "onset": 8.67588,
+      "keyRelease": 9.80398,
+      "pedalRelease": 10.91023
+    },
+    {
+      "midi": 59,
+      "onset": 9.61481,
+      "keyRelease": 10.64773,
+      "pedalRelease": 10.91023
+    },
+    {
+      "midi": 71,
+      "onset": 10.07549,
+      "keyRelease": 10.78835,
+      "pedalRelease": 10.91023
+    },
+    {
+      "midi": 47,
+      "onset": 11.02378,
+      "keyRelease": 12.29545,
+      "pedalRelease": 12.75909
+    },
+    {
+      "midi": 69,
+      "onset": 11.03473,
+      "keyRelease": 12.38636,
+      "pedalRelease": 12.75909
+    },
+    {
+      "midi": 54,
+      "onset": 11.93081,
+      "keyRelease": 12.56818,
+      "pedalRelease": 12.75909
+    },
+    {
+      "midi": 51,
+      "onset": 12.84979,
+      "keyRelease": 13.93182,
+      "pedalRelease": 14.55
+    },
+    {
+      "midi": 66,
+      "onset": 12.84012,
+      "keyRelease": 13.65909,
+      "pedalRelease": 14.55
+    },
+    {
+      "midi": 40,
+      "onset": 14.66583,
+      "keyRelease": 15.80615,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 71,
+      "onset": 14.65417,
+      "keyRelease": 15.54144,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 47,
+      "onset": 15.76431,
+      "keyRelease": 16.46791,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 68,
+      "onset": 15.98841,
+      "keyRelease": 16.4238,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 56,
+      "onset": 16.64265,
+      "keyRelease": 17.74733,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 63,
+      "onset": 16.64574,
+      "keyRelease": 17.74733,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 69,
+      "onset": 16.64282,
+      "keyRelease": 17.08556,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 73,
+      "onset": 17.30661,
+      "keyRelease": 17.99439,
+      "pedalRelease": 18.08262
+    },
+    {
+      "midi": 44,
+      "onset": 18.18067,
+      "keyRelease": 19.33556,
+      "pedalRelease": 21.61203
+    },
+    {
+      "midi": 71,
+      "onset": 18.18808,
+      "keyRelease": 19.4238,
+      "pedalRelease": 21.61203
+    },
+    {
+      "midi": 51,
+      "onset": 19.3007,
+      "keyRelease": 20.1738,
+      "pedalRelease": 21.61203
+    },
+    {
+      "midi": 76,
+      "onset": 19.94663,
+      "keyRelease": 20.61497,
+      "pedalRelease": 21.61203
+    },
+    {
+      "midi": 54,
+      "onset": 20.6141,
+      "keyRelease": 21.45321,
+      "pedalRelease": 21.61203
+    },
+    {
+      "midi": 59,
+      "onset": 20.6168,
+      "keyRelease": 21.45321,
+      "pedalRelease": 21.61203
+    },
+    {
+      "midi": 75,
+      "onset": 20.83962,
+      "keyRelease": 21.54144,
+      "pedalRelease": 21.61203
+    },
+    {
+      "midi": 45,
+      "onset": 21.70939,
+      "keyRelease": 23.04144,
+      "pedalRelease": 25.14144
+    },
+    {
+      "midi": 73,
+      "onset": 22.1564,
+      "keyRelease": 22.99733,
+      "pedalRelease": 25.14144
+    },
+    {
+      "midi": 52,
+      "onset": 23.0515,
+      "keyRelease": 24.27674,
+      "pedalRelease": 25.14144
+    },
+    {
+      "midi": 56,
+      "onset": 23.03996,
+      "keyRelease": 24.27674,
+      "pedalRelease": 25.14144
+    },
+    {
+      "midi": 71,
+      "onset": 23.26468,
+      "keyRelease": 23.87968,
+      "pedalRelease": 25.14144
+    },
+    {
+      "midi": 68,
+      "onset": 24.35855,
+      "keyRelease": 25.00027,
+      "pedalRelease": 25.14144
+    },
+    {
+      "midi": 59,
+      "onset": 24.58384,
+      "keyRelease": 25.02674,
+      "pedalRelease": 25.14144
+    },
+    {
+      "midi": 47,
+      "onset": 25.24704,
+      "keyRelease": 26.39439,
+      "pedalRelease": 27.3738
+    },
+    {
+      "midi": 66,
+      "onset": 25.24806,
+      "keyRelease": 26.30615,
+      "pedalRelease": 27.3738
+    },
+    {
+      "midi": 54,
+      "onset": 26.13016,
+      "keyRelease": 26.83556,
+      "pedalRelease": 27.3738
+    },
+    {
+      "midi": 69,
+      "onset": 26.79071,
+      "keyRelease": 27.36497,
+      "pedalRelease": 27.3738
+    },
+    {
+      "midi": 57,
+      "onset": 27.44154,
+      "keyRelease": 28.46791,
+      "pedalRelease": 28.67086
+    },
+    {
+      "midi": 63,
+      "onset": 27.44686,
+      "keyRelease": 28.46791,
+      "pedalRelease": 28.67086
+    },
+    {
+      "midi": 68,
+      "onset": 27.67625,
+      "keyRelease": 28.11497,
+      "pedalRelease": 28.67086
+    },
+    {
+      "midi": 66,
+      "onset": 28.32829,
+      "keyRelease": 28.67086,
+      "pedalRelease": 28.67086
+    },
+    {
+      "midi": 37,
+      "onset": 28.7752,
+      "keyRelease": 29.83556,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 76,
+      "onset": 28.7822,
+      "keyRelease": 29.65909,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 44,
+      "onset": 29.43975,
+      "keyRelease": 30.14439,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 75,
+      "onset": 30.08899,
+      "keyRelease": 30.54144,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 59,
+      "onset": 30.53309,
+      "keyRelease": 31.86497,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 63,
+      "onset": 30.54561,
+      "keyRelease": 31.86497,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 73,
+      "onset": 30.76246,
+      "keyRelease": 31.20321,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 68,
+      "onset": 31.41922,
+      "keyRelease": 32.08556,
+      "pedalRelease": 32.20027
+    },
+    {
+      "midi": 42,
+      "onset": 32.30472,
+      "keyRelease": 33.54144,
+      "pedalRelease": 35.72968
+    },
+    {
+      "midi": 69,
+      "onset": 32.53434,
+      "keyRelease": 33.45321,
+      "pedalRelease": 35.72968
+    },
+    {
+      "midi": 49,
+      "onset": 33.41038,
+      "keyRelease": 34.20321,
+      "pedalRelease": 35.72968
+    },
+    {
+      "midi": 73,
+      "onset": 33.84759,
+      "keyRelease": 34.46791,
+      "pedalRelease": 35.72968
+    },
+    {
+      "midi": 57,
+      "onset": 34.50863,
+      "keyRelease": 35.48262,
+      "pedalRelease": 35.72968
+    },
+    {
+      "midi": 64,
+      "onset": 34.51216,
+      "keyRelease": 35.48262,
+      "pedalRelease": 35.72968
+    },
+    {
+      "midi": 76,
+      "onset": 34.94121,
+      "keyRelease": 35.61497,
+      "pedalRelease": 35.72968
+    },
+    {
+      "midi": 47,
+      "onset": 35.83481,
+      "keyRelease": 36.9385,
+      "pedalRelease": 37.52086
+    },
+    {
+      "midi": 76,
+      "onset": 35.83287,
+      "keyRelease": 37.07086,
+      "pedalRelease": 37.52086
+    },
+    {
+      "midi": 54,
+      "onset": 36.49724,
+      "keyRelease": 37.37968,
+      "pedalRelease": 37.52086
+    },
+    {
+      "midi": 57,
+      "onset": 37.61227,
+      "keyRelease": 38.9238,
+      "pedalRelease": 39.25909
+    },
+    {
+      "midi": 63,
+      "onset": 37.60274,
+      "keyRelease": 38.9238,
+      "pedalRelease": 39.25909
+    },
+    {
+      "midi": 75,
+      "onset": 37.60506,
+      "keyRelease": 38.21791,
+      "pedalRelease": 39.25909
+    },
+    {
+      "midi": 78,
+      "onset": 38.47973,
+      "keyRelease": 39.05615,
+      "pedalRelease": 39.25909
+    },
+    {
+      "midi": 40,
+      "onset": 39.3702,
+      "keyRelease": 40.48997,
+      "pedalRelease": 43.05933
+    },
+    {
+      "midi": 76,
+      "onset": 39.36225,
+      "keyRelease": 41.43352,
+      "pedalRelease": 43.05933
+    },
+    {
+      "midi": 47,
+      "onset": 40.54185,
+      "keyRelease": 41.28836,
+      "pedalRelease": 43.05933
+    },
+    {
+      "midi": 56,
+      "onset": 41.71717,
+      "keyRelease": 42.69159,
+      "pedalRelease": 43.05933
+    },
+    {
+      "midi": 66,
+      "onset": 41.73197,
+      "keyRelease": 42.69159,
+      "pedalRelease": 43.05933
+    },
+    {
+      "midi": 71,
+      "onset": 41.97778,
+      "keyRelease": 42.69159,
+      "pedalRelease": 43.05933
+    },
+    {
+      "midi": 45,
+      "onset": 43.17532,
+      "keyRelease": 44.30589,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 73,
+      "onset": 43.16482,
+      "keyRelease": 44.04502,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 52,
+      "onset": 43.82598,
+      "keyRelease": 44.52328,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 76,
+      "onset": 44.4791,
+      "keyRelease": 45.04502,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 56,
+      "onset": 44.91056,
+      "keyRelease": 46.21894,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 59,
+      "onset": 44.92129,
+      "keyRelease": 46.21894,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 76,
+      "onset": 45.34955,
+      "keyRelease": 46.30589,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 80,
+      "onset": 45.35061,
+      "keyRelease": 46.34937,
+      "pedalRelease": 46.54937
+    },
+    {
+      "midi": 44,
+      "onset": 46.65201,
+      "keyRelease": 47.95807,
+      "pedalRelease": 50.02763
+    },
+    {
+      "midi": 78,
+      "onset": 46.65139,
+      "keyRelease": 47.30589,
+      "pedalRelease": 50.02763
+    },
+    {
+      "midi": 76,
+      "onset": 47.52674,
+      "keyRelease": 48.26241,
+      "pedalRelease": 50.02763
+    },
+    {
+      "midi": 59,
+      "onset": 47.95652,
+      "keyRelease": 49.0885,
+      "pedalRelease": 50.02763
+    },
+    {
+      "midi": 64,
+      "onset": 47.96106,
+      "keyRelease": 49.0885,
+      "pedalRelease": 50.02763
+    },
+    {
+      "midi": 71,
+      "onset": 48.81599,
+      "keyRelease": 49.61024,
+      "pedalRelease": 50.02763
+    },
+    {
+      "midi": 54,
+      "onset": 49.47775,
+      "keyRelease": 49.91459,
+      "pedalRelease": 50.02763
+    },
+    {
+      "midi": 42,
+      "onset": 50.12636,
+      "keyRelease": 51.17546,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 73,
+      "onset": 50.14182,
+      "keyRelease": 50.6972,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 49,
+      "onset": 51.00216,
+      "keyRelease": 51.61024,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 76,
+      "onset": 51.00122,
+      "keyRelease": 51.56676,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 57,
+      "onset": 51.8735,
+      "keyRelease": 53.0885,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 64,
+      "onset": 51.87068,
+      "keyRelease": 53.0885,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 69,
+      "onset": 51.86727,
+      "keyRelease": 52.56676,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 78,
+      "onset": 51.86962,
+      "keyRelease": 52.56676,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 76,
+      "onset": 52.74039,
+      "keyRelease": 53.43633,
+      "pedalRelease": 53.50589
+    },
+    {
+      "midi": 49,
+      "onset": 53.60431,
+      "keyRelease": 54.82763,
+      "pedalRelease": 56.98415
+    },
+    {
+      "midi": 75,
+      "onset": 53.60565,
+      "keyRelease": 54.34937,
+      "pedalRelease": 56.98415
+    },
+    {
+      "midi": 56,
+      "onset": 54.4738,
+      "keyRelease": 55.17546,
+      "pedalRelease": 56.98415
+    },
+    {
+      "midi": 73,
+      "onset": 54.6935,
+      "keyRelease": 55.39285,
+      "pedalRelease": 56.98415
+    },
+    {
+      "midi": 59,
+      "onset": 55.56185,
+      "keyRelease": 56.6972,
+      "pedalRelease": 56.98415
+    },
+    {
+      "midi": 64,
+      "onset": 55.57513,
+      "keyRelease": 56.6972,
+      "pedalRelease": 56.98415
+    },
+    {
+      "midi": 68,
+      "onset": 55.77895,
+      "keyRelease": 56.6972,
+      "pedalRelease": 56.98415
+    },
+    {
+      "midi": 45,
+      "onset": 57.0826,
+      "keyRelease": 58.20279,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 76,
+      "onset": 57.09119,
+      "keyRelease": 57.73136,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 52,
+      "onset": 57.73193,
+      "keyRelease": 58.50279,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 78,
+      "onset": 57.947,
+      "keyRelease": 58.5885,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 56,
+      "onset": 58.80231,
+      "keyRelease": 60.13136,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 59,
+      "onset": 58.79551,
+      "keyRelease": 60.13136,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 61,
+      "onset": 58.81173,
+      "keyRelease": 60.13136,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 73,
+      "onset": 58.79684,
+      "keyRelease": 60.04564,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 80,
+      "onset": 58.80284,
+      "keyRelease": 60.0885,
+      "pedalRelease": 60.41421
+    },
+    {
+      "midi": 48,
+      "onset": 60.50507,
+      "keyRelease": 61.71707,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 76,
+      "onset": 60.51346,
+      "keyRelease": 61.5885,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 55,
+      "onset": 61.3749,
+      "keyRelease": 61.97421,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 72,
+      "onset": 62.01531,
+      "keyRelease": 62.65993,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 79,
+      "onset": 62.02626,
+      "keyRelease": 62.65993,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 59,
+      "onset": 62.44859,
+      "keyRelease": 63.64564,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 64,
+      "onset": 62.44908,
+      "keyRelease": 63.64564,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 76,
+      "onset": 63.08994,
+      "keyRelease": 63.73136,
+      "pedalRelease": 63.84279
+    },
+    {
+      "midi": 47,
+      "onset": 63.94611,
+      "keyRelease": 65.12746,
+      "pedalRelease": 66.13655
+    },
+    {
+      "midi": 78,
+      "onset": 63.94508,
+      "keyRelease": 64.58201,
+      "pedalRelease": 66.13655
+    },
+    {
+      "midi": 54,
+      "onset": 64.62012,
+      "keyRelease": 65.53655,
+      "pedalRelease": 66.13655
+    },
+    {
+      "midi": 57,
+      "onset": 64.62752,
+      "keyRelease": 65.53655,
+      "pedalRelease": 66.13655
+    },
+    {
+      "midi": 76,
+      "onset": 64.86339,
+      "keyRelease": 65.62746,
+      "pedalRelease": 66.13655
+    },
+    {
+      "midi": 51,
+      "onset": 66.21179,
+      "keyRelease": 67.26383,
+      "pedalRelease": 67.47292
+    },
+    {
+      "midi": 54,
+      "onset": 66.22759,
+      "keyRelease": 67.26383,
+      "pedalRelease": 67.47292
+    },
+    {
+      "midi": 75,
+      "onset": 66.22861,
+      "keyRelease": 67.26383,
+      "pedalRelease": 67.47292
+    },
+    {
+      "midi": 40,
+      "onset": 67.59269,
+      "keyRelease": 68.30928,
+      "pedalRelease": 71.21954
+    },
+    {
+      "midi": 71,
+      "onset": 67.58395,
+      "keyRelease": 68.30928,
+      "pedalRelease": 71.21954
+    },
+    {
+      "midi": 68,
+      "onset": 68.72849,
+      "keyRelease": 69.83567,
+      "pedalRelease": 71.21954
+    },
+    {
+      "midi": 59,
+      "onset": 68.94652,
+      "keyRelease": 70.17438,
+      "pedalRelease": 71.21954
+    },
+    {
+      "midi": 66,
+      "onset": 68.93774,
+      "keyRelease": 70.17438,
+      "pedalRelease": 71.21954
+    },
+    {
+      "midi": 40,
+      "onset": 71.32849,
+      "keyRelease": 72.51749,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 71,
+      "onset": 71.34054,
+      "keyRelease": 72.24476,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 47,
+      "onset": 72.47797,
+      "keyRelease": 73.19931,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 68,
+      "onset": 72.69932,
+      "keyRelease": 73.15385,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 56,
+      "onset": 73.38164,
+      "keyRelease": 74.51749,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 63,
+      "onset": 73.38282,
+      "keyRelease": 74.51749,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 69,
+      "onset": 73.38584,
+      "keyRelease": 73.83567,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 73,
+      "onset": 74.06225,
+      "keyRelease": 74.77204,
+      "pedalRelease": 74.86295
+    },
+    {
+      "midi": 44,
+      "onset": 74.97773,
+      "keyRelease": 76.15385,
+      "pedalRelease": 78.49931
+    },
+    {
+      "midi": 71,
+      "onset": 74.97054,
+      "keyRelease": 76.1084,
+      "pedalRelease": 78.49931
+    },
+    {
+      "midi": 51,
+      "onset": 76.33344,
+      "keyRelease": 77.24476,
+      "pedalRelease": 78.49931
+    },
+    {
+      "midi": 54,
+      "onset": 76.33515,
+      "keyRelease": 77.24476,
+      "pedalRelease": 78.49931
+    },
+    {
+      "midi": 75,
+      "onset": 76.55657,
+      "keyRelease": 77.24476,
+      "pedalRelease": 78.49931
+    },
+    {
+      "midi": 59,
+      "onset": 77.69335,
+      "keyRelease": 78.33567,
+      "pedalRelease": 78.49931
+    },
+    {
+      "midi": 76,
+      "onset": 77.6989,
+      "keyRelease": 78.42658,
+      "pedalRelease": 78.49931
+    },
+    {
+      "midi": 45,
+      "onset": 78.61452,
+      "keyRelease": 79.97204,
+      "pedalRelease": 82.13567
+    },
+    {
+      "midi": 73,
+      "onset": 78.59976,
+      "keyRelease": 79.74476,
+      "pedalRelease": 82.13567
+    },
+    {
+      "midi": 52,
+      "onset": 79.98072,
+      "keyRelease": 81.24476,
+      "pedalRelease": 82.13567
+    },
+    {
+      "midi": 56,
+      "onset": 79.97093,
+      "keyRelease": 81.24476,
+      "pedalRelease": 82.13567
+    },
+    {
+      "midi": 71,
+      "onset": 80.20036,
+      "keyRelease": 80.83567,
+      "pedalRelease": 82.13567
+    },
+    {
+      "midi": 69,
+      "onset": 81.33951,
+      "keyRelease": 81.95385,
+      "pedalRelease": 82.13567
+    },
+    {
+      "midi": 47,
+      "onset": 82.24161,
+      "keyRelease": 83.38113,
+      "pedalRelease": 84.43567
+    },
+    {
+      "midi": 66,
+      "onset": 82.25009,
+      "keyRelease": 83.38113,
+      "pedalRelease": 84.43567
+    },
+    {
+      "midi": 54,
+      "onset": 83.14973,
+      "keyRelease": 83.79022,
+      "pedalRelease": 84.43567
+    },
+    {
+      "midi": 64,
+      "onset": 83.83886,
+      "keyRelease": 84.51749,
+      "pedalRelease": 84.51749
+    },
+    {
+      "midi": 57,
+      "onset": 84.51521,
+      "keyRelease": 85.56295,
+      "pedalRelease": 85.77204
+    },
+    {
+      "midi": 63,
+      "onset": 84.51408,
+      "keyRelease": 85.56295,
+      "pedalRelease": 85.77204
+    },
+    {
+      "midi": 66,
+      "onset": 84.97483,
+      "keyRelease": 85.65385,
+      "pedalRelease": 85.77204
+    },
+    {
+      "midi": 49,
+      "onset": 85.89072,
+      "keyRelease": 87.01749,
+      "pedalRelease": 89.4084
+    },
+    {
+      "midi": 68,
+      "onset": 85.88492,
+      "keyRelease": 86.79022,
+      "pedalRelease": 89.4084
+    },
+    {
+      "midi": 56,
+      "onset": 87.25472,
+      "keyRelease": 88.06295,
+      "pedalRelease": 89.4084
+    },
+    {
+      "midi": 71,
+      "onset": 87.24076,
+      "keyRelease": 87.83567,
+      "pedalRelease": 89.4084
+    },
+    {
+      "midi": 76,
+      "onset": 88.16107,
+      "keyRelease": 89.15385,
+      "pedalRelease": 89.4084
+    },
+    {
+      "midi": 59,
+      "onset": 88.38083,
+      "keyRelease": 89.24476,
+      "pedalRelease": 89.4084
+    },
+    {
+      "midi": 63,
+      "onset": 88.38704,
+      "keyRelease": 89.24476,
+      "pedalRelease": 89.4084
+    },
+    {
+      "midi": 42,
+      "onset": 89.52169,
+      "keyRelease": 90.79022,
+      "pedalRelease": 93.04476
+    },
+    {
+      "midi": 73,
+      "onset": 89.75451,
+      "keyRelease": 90.65385,
+      "pedalRelease": 93.04476
+    },
+    {
+      "midi": 57,
+      "onset": 90.8831,
+      "keyRelease": 92.24476,
+      "pedalRelease": 93.04476
+    },
+    {
+      "midi": 64,
+      "onset": 90.88418,
+      "keyRelease": 92.24476,
+      "pedalRelease": 93.04476
+    },
+    {
+      "midi": 69,
+      "onset": 91.10724,
+      "keyRelease": 91.79022,
+      "pedalRelease": 93.04476
+    },
+    {
+      "midi": 68,
+      "onset": 92.25151,
+      "keyRelease": 92.88113,
+      "pedalRelease": 93.04476
+    },
+    {
+      "midi": 47,
+      "onset": 93.14864,
+      "keyRelease": 94.33567,
+      "pedalRelease": 96.02658
+    },
+    {
+      "midi": 69,
+      "onset": 93.15513,
+      "keyRelease": 94.29022,
+      "pedalRelease": 96.02658
+    },
+    {
+      "midi": 54,
+      "onset": 94.05095,
+      "keyRelease": 94.69931,
+      "pedalRelease": 96.02658
+    },
+    {
+      "midi": 66,
+      "onset": 94.74341,
+      "keyRelease": 95.42658,
+      "pedalRelease": 96.02658
+    },
+    {
+      "midi": 57,
+      "onset": 95.42566,
+      "keyRelease": 95.69931,
+      "pedalRelease": 96.02658
+    },
+    {
+      "midi": 61,
+      "onset": 95.42426,
+      "keyRelease": 95.69931,
+      "pedalRelease": 96.02658
+    },
+    {
+      "midi": 63,
+      "onset": 95.88938,
+      "keyRelease": 96.56295,
+      "pedalRelease": 96.68113
+    },
+    {
+      "midi": 51,
+      "onset": 96.11476,
+      "keyRelease": 96.56295,
+      "pedalRelease": 96.68113
+    },
+    {
+      "midi": 40,
+      "onset": 96.78615,
+      "keyRelease": 98.19647,
+      "pedalRelease": 100.42772
+    },
+    {
+      "midi": 64,
+      "onset": 96.7848,
+      "keyRelease": 99.04022,
+      "pedalRelease": 100.42772
+    },
+    {
+      "midi": 47,
+      "onset": 98.19292,
+      "keyRelease": 99.32147,
+      "pedalRelease": 100.42772
+    },
+    {
+      "midi": 49,
+      "onset": 98.19538,
+      "keyRelease": 99.32147,
+      "pedalRelease": 100.42772
+    },
+    {
+      "midi": 56,
+      "onset": 99.6,
+      "keyRelease": 100.25897,
+      "pedalRelease": 100.42772
+    },
+    {
+      "midi": 66,
+      "onset": 99.6042,
+      "keyRelease": 100.21209,
+      "pedalRelease": 100.42772
+    },
+    {
+      "midi": 45,
+      "onset": 100.5314,
+      "keyRelease": 101.89506,
+      "pedalRelease": 104.29506
+    },
+    {
+      "midi": 68,
+      "onset": 101.01686,
+      "keyRelease": 101.99183,
+      "pedalRelease": 104.29506
+    },
+    {
+      "midi": 52,
+      "onset": 101.9919,
+      "keyRelease": 103.44344,
+      "pedalRelease": 104.29506
+    },
+    {
+      "midi": 56,
+      "onset": 101.9901,
+      "keyRelease": 103.44344,
+      "pedalRelease": 104.29506
+    },
+    {
+      "midi": 71,
+      "onset": 102.4729,
+      "keyRelease": 103.15312,
+      "pedalRelease": 104.29506
+    },
+    {
+      "midi": 73,
+      "onset": 103.43697,
+      "keyRelease": 104.12086,
+      "pedalRelease": 104.29506
+    },
+    {
+      "midi": 45,
+      "onset": 104.40798,
+      "keyRelease": 105.81119,
+      "pedalRelease": 108.29119
+    },
+    {
+      "midi": 72,
+      "onset": 104.41123,
+      "keyRelease": 106.11119,
+      "pedalRelease": 108.29119
+    },
+    {
+      "midi": 60,
+      "onset": 105.92046,
+      "keyRelease": 107.41119,
+      "pedalRelease": 108.29119
+    },
+    {
+      "midi": 66,
+      "onset": 105.90717,
+      "keyRelease": 107.41119,
+      "pedalRelease": 108.29119
+    },
+    {
+      "midi": 71,
+      "onset": 106.91762,
+      "keyRelease": 107.66119,
+      "pedalRelease": 108.29119
+    },
+    {
+      "midi": 69,
+      "onset": 107.90683,
+      "keyRelease": 108.29119,
+      "pedalRelease": 108.29119
+    },
+    {
+      "midi": 47,
+      "onset": 108.40496,
+      "keyRelease": 109.75601,
+      "pedalRelease": 112.42498
+    },
+    {
+      "midi": 68,
+      "onset": 108.41054,
+      "keyRelease": 109.70429,
+      "pedalRelease": 112.42498
+    },
+    {
+      "midi": 52,
+      "onset": 109.96961,
+      "keyRelease": 111.10084,
+      "pedalRelease": 112.42498
+    },
+    {
+      "midi": 59,
+      "onset": 109.96281,
+      "keyRelease": 111.10084,
+      "pedalRelease": 112.42498
+    },
+    {
+      "midi": 66,
+      "onset": 110.48991,
+      "keyRelease": 111.35946,
+      "pedalRelease": 112.42498
+    },
+    {
+      "midi": 54,
+      "onset": 111.51118,
+      "keyRelease": 112.23877,
+      "pedalRelease": 112.42498
+    },
+    {
+      "midi": 64,
+      "onset": 111.51749,
+      "keyRelease": 112.34222,
+      "pedalRelease": 112.42498
+    },
+    {
+      "midi": 40,
+      "onset": 112.55208,
+      "keyRelease": 112.88245,
+      "pedalRelease": 117.02734
+    },
+    {
+      "midi": 64,
+      "onset": 112.55495,
+      "keyRelease": 116.81134,
+      "pedalRelease": 117.02734
+    },
+    {
+      "midi": 68,
+      "onset": 112.59772,
+      "keyRelease": 116.71534,
+      "pedalRelease": 117.02734
+    },
+    {
+      "midi": 71,
+      "onset": 112.63551,
+      "keyRelease": 116.66734,
+      "pedalRelease": 117.02734
+    },
+    {
+      "midi": 47,
+      "onset": 112.76951,
+      "keyRelease": 116.69134,
+      "pedalRelease": 117.02734
+    },
+    {
+      "midi": 54,
+      "onset": 113.05906,
+      "keyRelease": 116.51134,
+      "pedalRelease": 117.02734
+    }
+  ],
+  "samples": {
+    "Samples/D#2v4.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.29065078496932983
+    },
+    "Samples/D#2v7.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.3461960554122925
+    },
+    "Samples/C3v4.flac": {
+      "trimSeconds": 0.00243,
+      "peak": 0.23973660171031952
+    },
+    "Samples/C3v7.flac": {
+      "trimSeconds": 0.00093,
+      "peak": 0.29957112669944763
+    },
+    "Samples/A4v4.flac": {
+      "trimSeconds": 0.00129,
+      "peak": 0.17385844886302948
+    },
+    "Samples/A4v7.flac": {
+      "trimSeconds": 0.00102,
+      "peak": 0.2826315760612488
+    },
+    "Samples/F#3v4.flac": {
+      "trimSeconds": 0.00127,
+      "peak": 0.1881643533706665
+    },
+    "Samples/F#3v7.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.30063652992248535
+    },
+    "Samples/F#4v4.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.16806131601333618
+    },
+    "Samples/F#4v7.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.25594261288642883
+    },
+    "Samples/D#4v4.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.21872170269489288
+    },
+    "Samples/D#4v7.flac": {
+      "trimSeconds": 0.00222,
+      "peak": 0.3254021108150482
+    },
+    "Samples/A3v4.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.14461113512516022
+    },
+    "Samples/A3v7.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.23348432779312134
+    },
+    "Samples/C4v4.flac": {
+      "trimSeconds": 0.00256,
+      "peak": 0.26014944911003113
+    },
+    "Samples/C4v7.flac": {
+      "trimSeconds": 0.00236,
+      "peak": 0.37154480814933777
+    },
+    "Samples/A2v4.flac": {
+      "trimSeconds": 0.00014,
+      "peak": 0.22933678328990936
+    },
+    "Samples/A2v7.flac": {
+      "trimSeconds": 0.00141,
+      "peak": 0.3102833032608032
+    },
+    "Samples/D#3v4.flac": {
+      "trimSeconds": 0.00367,
+      "peak": 0.2861118018627167
+    },
+    "Samples/D#3v7.flac": {
+      "trimSeconds": 0.00363,
+      "peak": 0.3445935845375061
+    },
+    "Samples/C5v4.flac": {
+      "trimSeconds": 0.00193,
+      "peak": 0.19453482329845428
+    },
+    "Samples/C5v7.flac": {
+      "trimSeconds": 0.00095,
+      "peak": 0.26853615045547485
+    },
+    "Samples/C5v10.flac": {
+      "trimSeconds": 0.0002,
+      "peak": 0.3488743305206299
+    },
+    "Samples/D#5v7.flac": {
+      "trimSeconds": 0.00435,
+      "peak": 0.22649981081485748
+    },
+    "Samples/D#5v10.flac": {
+      "trimSeconds": 0.00102,
+      "peak": 0.30225735902786255
+    },
+    "Samples/D#5v4.flac": {
+      "trimSeconds": 0.00351,
+      "peak": 0.1801941841840744
+    },
+    "Samples/A4v10.flac": {
+      "trimSeconds": 0.00222,
+      "peak": 0.3637750446796417
+    },
+    "Samples/C2v4.flac": {
+      "trimSeconds": 0.00066,
+      "peak": 0.2745327949523926
+    },
+    "Samples/C2v7.flac": {
+      "trimSeconds": 0.00161,
+      "peak": 0.3613589406013489
+    },
+    "Samples/F#2v4.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.2530592978000641
+    },
+    "Samples/F#2v7.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.3408587872982025
+    },
+    "Samples/F#5v7.flac": {
+      "trimSeconds": 0.00374,
+      "peak": 0.2512006461620331
+    },
+    "Samples/F#5v10.flac": {
+      "trimSeconds": 0.00045,
+      "peak": 0.341174453496933
+    },
+    "Samples/A5v7.flac": {
+      "trimSeconds": 0.0,
+      "peak": 0.24722720682621002
+    },
+    "Samples/A5v10.flac": {
+      "trimSeconds": 0.00107,
+      "peak": 0.33808040618896484
+    }
+  }
+}

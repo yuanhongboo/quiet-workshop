@@ -1,6 +1,6 @@
 {
   "name": "quiet-workshop",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "private": true,
   "type": "module",
   "description": "A calming 3D restoration game: seasonal places to clean, repair and bring back to life.",
