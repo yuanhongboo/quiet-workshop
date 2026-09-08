@@ -11,3 +11,5 @@
 No cloud accounts or progress synchronization are required. Browser origin owns the local saves; changing a URL path on the same origin preserves them, changing domain or port does not share them.
 
 Build assets are generated into ignored `dist/`. `scripts/artifacts.mjs` writes the exact file/hash manifest and bundles dependency licenses. Publishing adds only a new immutable path to the configured existing Pages host; it does not publish this source repository or QA fixtures. Remote HEAD is checked before any write.
+
+The stable landing is built separately from `landing/`, without Three.js or Rapier. It reads the same validated saves and permanent season ledgers, and chooses an unlocked resume route without writing player state. `config/catalog.json` owns the fixed prefix and release target. Landing publication can replace only the fixed index and its own hashed assets; the referenced game must already exist remotely. Game publication advances the immutable game first, then serially publishes the refreshed landing. Separate manifests and receipts preserve each evidence surface.

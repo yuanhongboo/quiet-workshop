@@ -11,7 +11,7 @@
 
 两季可切换，每关自动保存；各季拥有独立收藏。重玩关卡不会丢失已获得的成果。第二季支持四面环看和近距离观察，点击清洁清单可定位部位和剩余污渍。
 
-[开始第二季](https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.4.0/?season=rain-garden) · [验证记录](qa/season-two-v0.4.0/REPORT.md)
+[固定游戏首页](https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/) · [验证记录](qa/season-two-v0.4.0/REPORT.md)
 
 ## 开发
 
@@ -26,6 +26,12 @@ npm run preview
 ```
 
 默认本地端口为 4188；独立验证可用 `npm run dev -- --port 4190`。不要在玩家的端口运行 QA 存档准备页。依赖和构建目录由命令生成，不入库。
+
+## 固定入口
+
+收藏游戏首页即可选择季节或继续上次的关卡。入口只读取当前浏览器存档，不上传进度。
+
+`npm run build:landing` 构建独立索引页到 `landing-dist/`，不加载 3D 引擎。单独更新入口时运行 `npm run publish:landing`，Pages 完成后运行 `npm run verify:landing`。索引页的构建清单与回执均使用独立的 `landing-` 文件，不覆盖游戏发布证据。
 
 ## 项目导航
 
@@ -45,8 +51,9 @@ npm run build
 node scripts/publish.mjs --hosting-receipt config/hosting.json --prefix quiet-workshop/v<version> --dry-run
 node scripts/publish.mjs --hosting-receipt config/hosting.json --prefix quiet-workshop/v<version>
 node scripts/verify-public.mjs
+npm run verify:landing
 ```
 
-`--prefix` 必须使用尚未发布的新版本路径。测试通过、本地画面、Pages 构建和公网文件验证分别记录，不互相替代。
+`--prefix` 必须使用尚未发布的新版本路径。游戏发布成功后，脚本会自动更新并发布固定入口。如果仅入口步骤失败，使用 `build:landing` / `publish:landing` 恢复，不重发已存在的游戏版本。测试通过、本地画面、Pages 构建和公网文件验证分别记录，不互相替代。
 
 模型、纹理、插画和音效由代码生成；Third-party licenses 随构建发布，详见 [CREDITS.txt](CREDITS.txt)。物件使用 Rapier 刚体，水流、生长和修复效果是面向玩法制作的状态动画。

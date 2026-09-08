@@ -1,0 +1,46 @@
+{
+  "repository": "yuanhongboo/orbit-breaker",
+  "previousCommit": "bed9a8790edc76b0d03550434fa73e659a1b5b51",
+  "prefix": "quiet-workshop",
+  "release": "quiet-workshop/v0.4.0",
+  "files": [
+    "quiet-workshop/assets/favicon-DkzWbQVf.svg",
+    "quiet-workshop/assets/index-BSc_EHFX.css",
+    "quiet-workshop/assets/index-Cr5gowgG.js",
+    "quiet-workshop/index.html"
+  ],
+  "bytes": 91458,
+  "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/",
+  "manifestSha256": "b03986ef5b6125c9f53a700b73f3d8b3575168cb583ad4c99753101291da1061",
+  "version": "0.4.0",
+  "commit": "973483617fabc969d47377ffe4631ff281627bd1",
+  "status": "public-files-verified",
+  "publishedAt": "2026-09-08T07:50:28.150Z",
+  "verifiedFiles": [
+    {
+      "file": "assets/favicon-DkzWbQVf.svg",
+      "bytes": 342,
+      "sha256": "fe77e892a43be62cfd14bc3b7a7c4deffa3dc4c9a86b9206af421e02713df37e",
+      "matched": true
+    },
+    {
+      "file": "assets/index-BSc_EHFX.css",
+      "bytes": 9114,
+      "sha256": "3ac4464f96a29ac7a5437557c4f03492a3f59f6425f6565d3ab5f26a310ae185",
+      "matched": true
+    },
+    {
+      "file": "assets/index-Cr5gowgG.js",
+      "bytes": 76625,
+      "sha256": "4b8eefff76b79e5935c622d8c58cc8ec33c6a2057eed66103ac8d8027e27688f",
+      "matched": true
+    },
+    {
+      "file": "index.html",
+      "bytes": 5377,
+      "sha256": "25467d01db4501b179e48774667b241655f3c4e9143ab2ad4c59d18b8963bc70",
+      "matched": true
+    }
+  ],
+  "verifiedAt": "2026-09-08T07:51:29.072Z"
+}

@@ -17,6 +17,9 @@ const manifest = JSON.parse(await readFile(path.join(root, 'qa/build-manifest.js
 const packageInfo = JSON.parse(await readFile(path.join(root, 'package.json')));
 if (manifest.version !== packageInfo.version) throw new Error('Build version does not match package; rebuild before publishing');
 const prefix = option('--prefix').replace(/\/$/, '');
+const catalogPath = path.join(root, 'config/catalog.json');
+const catalog = JSON.parse(await readFile(catalogPath));
+if (prefix !== `${catalog.landingPrefix}/v${manifest.version}`) throw new Error('Game publication must match the fixed entry catalog');
 if (!/^[a-z0-9][a-z0-9./-]+$/.test(prefix) || prefix.split('/').includes('..'))
   throw new Error('Invalid publication prefix');
 const tree = [];
@@ -38,6 +41,7 @@ const plan = {
   files: tree.map((file) => file.path),
   bytes: manifest.bytes,
   url: new URL(`${prefix}/`, hosting.url).href,
+  fixedEntry: new URL(`${catalog.landingPrefix}/`, hosting.url).href,
 };
 if (args.includes('--dry-run')) {
   console.log(JSON.stringify(plan, null, 2));
@@ -90,3 +94,9 @@ hosting.additionalPrototypes = [
 ];
 await writeFile(hostingPath, JSON.stringify(hosting, null, 2) + '\n');
 console.log(JSON.stringify(receipt, null, 2));
+
+// Move the fixed entry only after the new immutable game release exists.
+catalog.release = prefix;
+await writeFile(catalogPath, JSON.stringify(catalog, null, 2) + '\n');
+execFileSync(process.execPath, [path.join(root, 'scripts/build-landing.mjs'), '--hosting-receipt', hostingPath], { cwd: root, stdio: 'inherit' });
+execFileSync(process.execPath, [path.join(root, 'scripts/publish-landing.mjs'), '--hosting-receipt', hostingPath], { cwd: root, stdio: 'inherit' });

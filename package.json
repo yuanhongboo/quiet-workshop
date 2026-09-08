@@ -8,7 +8,10 @@
     "dev": "vite --host 127.0.0.1 --port 4188",
     "build": "vite build && node scripts/artifacts.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 4188",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "build:landing": "node scripts/build-landing.mjs",
+    "publish:landing": "node scripts/publish-landing.mjs --hosting-receipt config/hosting.json",
+    "verify:landing": "node scripts/verify-landing.mjs"
   },
   "dependencies": {
     "three": "0.185.1",
