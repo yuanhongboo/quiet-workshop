@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>滤柄回归测试 · 66% 进度</title>
+<style>body{font:16px system-ui;padding:40px;line-height:1.8}button{padding:14px 20px;font:inherit}</style>
+<h1>滤柄回归测试</h1>
+<p>仅在 localhost 测试域载入：清洁完成，杯子与豆罐已归位，滤柄未归位。</p>
+<p>不会写入 127.0.0.1 上的用户存档。</p>
+<button id="seed" disabled>载入 66% 测试进度</button><p id="status"></p>
+<script type="module">
+import {CONFIG,makeState,packState} from '../../src/core.mjs';
+const button=document.querySelector('#seed');
+button.disabled=location.hostname!=='localhost';
+button.addEventListener('click',()=>{
+  if(location.hostname!=='localhost')return;
+  const state=makeState();state.surfaces.forEach(field=>field.finish());state.placed.add('cup');state.placed.add('jar');
+  localStorage.setItem(CONFIG.saveKey,packState(state));location.href='../../?diagnostics';
+});
+</script></html>

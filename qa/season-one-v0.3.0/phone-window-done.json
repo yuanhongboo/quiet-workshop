@@ -1,0 +1,226 @@
+{
+  "version": "0.3.0",
+  "season": {
+    "id": "street-shop",
+    "restored": [
+      "coffee",
+      "desk",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window",
+      "sign"
+    ],
+    "completed": [
+      "coffee",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window",
+      "sign",
+      "desk",
+      "opening"
+    ],
+    "canOpen": true,
+    "finished": true,
+    "preview": false
+  },
+  "tasks": [
+    {
+      "id": "sew-button",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 129.0844299477194,
+        "y": 428.33657433685204
+      }
+    },
+    {
+      "id": "open-curtain",
+      "mode": "hold",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 341.4336660415139,
+        "y": 346.22379173152524
+      }
+    }
+  ],
+  "taskSurfacesScreen": [],
+  "action": null,
+  "activeTask": null,
+  "level": "window",
+  "stage": "done",
+  "started": true,
+  "paused": false,
+  "before": false,
+  "progress": 1,
+  "operation": 0,
+  "brewTime": 3.6,
+  "pouring": false,
+  "surfaces": [
+    {
+      "id": "window-glass",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "window-seat",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "window-table",
+      "progress": 1,
+      "done": true
+    }
+  ],
+  "placed": [
+    "seat-pad",
+    "window-cushion",
+    "curtain-tie"
+  ],
+  "held": null,
+  "audio": {
+    "state": "running",
+    "enabled": true,
+    "peakRms": 0.010476482356112182,
+    "currentRms": 0,
+    "events": {
+      "task": 1,
+      "switch": 1,
+      "done": 1
+    }
+  },
+  "view": {
+    "width": 390,
+    "height": 844,
+    "dpr": 1,
+    "calls": 350,
+    "triangles": 182518,
+    "memory": {
+      "geometries": 196,
+      "textures": 20
+    },
+    "p95FrameMs": 8.400000000023283,
+    "samples": 600
+  },
+  "surfacesScreen": [
+    {
+      "id": "window-glass",
+      "corners": [
+        {
+          "x": 98.42625058399561,
+          "y": 391.6401099796977
+        },
+        {
+          "x": 326.37033318988847,
+          "y": 408.5678987438876
+        },
+        {
+          "x": 329.4090535417539,
+          "y": 288.2937917105965
+        },
+        {
+          "x": 96.28803617323496,
+          "y": 276.1399916975925
+        }
+      ]
+    },
+    {
+      "id": "window-seat",
+      "corners": [
+        {
+          "x": 32.004116315787634,
+          "y": 492.8120342516539
+        },
+        {
+          "x": 301.97726366139,
+          "y": 518.4251423584332
+        },
+        {
+          "x": 326.0043033518948,
+          "y": 481.4076239458575
+        },
+        {
+          "x": 73.45550973893116,
+          "y": 459.2712048540742
+        }
+      ]
+    },
+    {
+      "id": "window-table",
+      "corners": [
+        {
+          "x": 362.11102877191445,
+          "y": 506.8187762066928
+        },
+        {
+          "x": 453.12434209811727,
+          "y": 515.1658642246322
+        },
+        {
+          "x": 463.0768518867246,
+          "y": 487.31112505757926
+        },
+        {
+          "x": 376.7961565616582,
+          "y": 479.84295126813583
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "seat-pad",
+      "position": {
+        "x": -0.3799999952316284,
+        "y": 0.5210000276565552,
+        "z": 0.09000000357627869
+      },
+      "screen": {
+        "x": 177.8265737943472,
+        "y": 477.50785107940686
+      },
+      "slot": {
+        "x": 177.85071057553145,
+        "y": 484.7191188264709
+      }
+    },
+    {
+      "id": "window-cushion",
+      "position": {
+        "x": -0.9399999976158142,
+        "y": 0.8489999771118164,
+        "z": -0.2199999988079071
+      },
+      "screen": {
+        "x": 129.0844299477194,
+        "y": 428.33657433685204
+      },
+      "slot": {
+        "x": 123.47182909578221,
+        "y": 431.8595150278143
+      }
+    },
+    {
+      "id": "curtain-tie",
+      "position": {
+        "x": 0.9800000190734863,
+        "y": 1.2999999523162842,
+        "z": -0.6499999761581421
+      },
+      "screen": {
+        "x": 345.26189958618755,
+        "y": 384.0055076781791
+      },
+      "slot": {
+        "x": 342.20227922471605,
+        "y": 388.00562689117595
+      }
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "version": "0.3.0",
+  "season": {
+    "id": "street-shop",
+    "restored": [
+      "coffee",
+      "desk",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window",
+      "sign"
+    ],
+    "completed": [
+      "coffee",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window",
+      "sign",
+      "desk",
+      "opening"
+    ],
+    "canOpen": true,
+    "finished": true,
+    "preview": false
+  },
+  "tasks": [
+    {
+      "id": "prune-left",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 82.6611017708242,
+        "y": 421.264874029441
+      }
+    },
+    {
+      "id": "prune-right",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 330.55509385324416,
+        "y": 434.95363598584504
+      }
+    },
+    {
+      "id": "prune-low",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 183.32991218085033,
+        "y": 481.42524506994766
+      }
+    },
+    {
+      "id": "water",
+      "mode": "hold",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 215.11332997039852,
+        "y": 449.6618848665277
+      }
+    }
+  ],
+  "taskSurfacesScreen": [],
+  "action": null,
+  "activeTask": null,
+  "level": "plant",
+  "stage": "done",
+  "started": true,
+  "paused": false,
+  "before": false,
+  "progress": 1,
+  "operation": 0,
+  "brewTime": 3.5,
+  "pouring": false,
+  "surfaces": [
+    {
+      "id": "plant-pot",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "plant-mat",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "plant-tray",
+      "progress": 1,
+      "done": true
+    }
+  ],
+  "placed": [
+    "watering-can",
+    "garden-trowel",
+    "pruning-shears"
+  ],
+  "held": null,
+  "audio": {
+    "state": "running",
+    "enabled": true,
+    "peakRms": 0.03666081271789835,
+    "currentRms": 0,
+    "events": {
+      "task": 1,
+      "switch": 1,
+      "done": 1
+    }
+  },
+  "view": {
+    "width": 390,
+    "height": 844,
+    "dpr": 1,
+    "calls": 340,
+    "triangles": 183114,
+    "memory": {
+      "geometries": 210,
+      "textures": 14
+    },
+    "p95FrameMs": 9,
+    "samples": 600
+  },
+  "surfacesScreen": [
+    {
+      "id": "plant-pot",
+      "corners": [
+        {
+          "x": 109.58210291147215,
+          "y": 557.2061423318307
+        },
+        {
+          "x": 283.76998609516687,
+          "y": 577.9586503780948
+        },
+        {
+          "x": 285.5579998645308,
+          "y": 492.7707633792173
+        },
+        {
+          "x": 107.91762062639823,
+          "y": 474.38728737213177
+        }
+      ]
+    },
+    {
+      "id": "plant-mat",
+      "corners": [
+        {
+          "x": -121.28956633242888,
+          "y": 635.7146625628526
+        },
+        {
+          "x": 579.8090001443738,
+          "y": 733.9621054429108
+        },
+        {
+          "x": 583.6296784865049,
+          "y": 686.0737435145957
+        },
+        {
+          "x": -81.05950026327794,
+          "y": 598.5218574315414
+        }
+      ]
+    },
+    {
+      "id": "plant-tray",
+      "corners": [
+        {
+          "x": 408.169057890536,
+          "y": 627.7667756481799
+        },
+        {
+          "x": 607.7347963547551,
+          "y": 652.794301728452
+        },
+        {
+          "x": 612.1448437273189,
+          "y": 564.916829437756
+        },
+        {
+          "x": 435.9070889212469,
+          "y": 545.5098194356025
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "watering-can",
+      "position": {
+        "x": 1.5700000524520874,
+        "y": 0.28999999165534973,
+        "z": -0.36000001430511475
+      },
+      "screen": {
+        "x": 527.3393131507045,
+        "y": 544.1131056582828
+      },
+      "slot": {
+        "x": 524.7445916497671,
+        "y": 577.397628567121
+      }
+    },
+    {
+      "id": "garden-trowel",
+      "position": {
+        "x": 1.7699999809265137,
+        "y": 0.09600000083446503,
+        "z": 0.2199999988079071
+      },
+      "screen": {
+        "x": 552.7606631251927,
+        "y": 616.5029003243081
+      },
+      "slot": {
+        "x": 552.0437050104232,
+        "y": 623.683629486354
+      }
+    },
+    {
+      "id": "pruning-shears",
+      "position": {
+        "x": 1.2699999809265137,
+        "y": 0.0949999988079071,
+        "z": 0.2199999988079071
+      },
+      "screen": {
+        "x": 466.18379644369725,
+        "y": 606.2446224359495
+      },
+      "slot": {
+        "x": 465.316922429702,
+        "y": 613.1425441117435
+      }
+    }
+  ]
+}

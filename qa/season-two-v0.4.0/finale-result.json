@@ -1,0 +1,113 @@
+{
+  "action": null,
+  "activeTask": null,
+  "audio": {
+    "currentRms": 0.026549228007336344,
+    "enabled": true,
+    "events": {
+      "done": 1,
+      "switch": 1,
+      "task": 4
+    },
+    "peakRms": 0.04119231627183551,
+    "state": "running"
+  },
+  "before": false,
+  "brewTime": 6,
+  "held": null,
+  "items": [],
+  "level": "garden-awakening",
+  "operation": 0,
+  "paused": false,
+  "placed": [],
+  "pouring": false,
+  "progress": 1,
+  "season": {
+    "canOpen": true,
+    "completed": [
+      "garden-pot",
+      "garden-seeds",
+      "garden-shelf",
+      "garden-glass",
+      "garden-fountain",
+      "garden-lantern",
+      "garden-bench",
+      "garden-tools",
+      "garden-awakening"
+    ],
+    "finished": true,
+    "id": "rain-garden",
+    "preview": false,
+    "restored": [
+      "garden-pot",
+      "garden-tools",
+      "garden-seeds",
+      "garden-shelf",
+      "garden-glass",
+      "garden-fountain",
+      "garden-lantern",
+      "garden-bench"
+    ]
+  },
+  "stage": "done",
+  "started": true,
+  "surfaces": [],
+  "surfacesScreen": [],
+  "taskSurfacesScreen": [],
+  "tasks": [
+    {
+      "done": true,
+      "id": "garden-open-roof",
+      "mode": "hold",
+      "screen": {
+        "x": 203.35410798922285,
+        "y": 307.86253094240084
+      },
+      "value": 1
+    },
+    {
+      "done": true,
+      "id": "garden-start-water",
+      "mode": "tap",
+      "screen": {
+        "x": 190.6058432343888,
+        "y": 484.6466291565354
+      },
+      "value": 1
+    },
+    {
+      "done": true,
+      "id": "garden-light-lantern",
+      "mode": "tap",
+      "screen": {
+        "x": 156.13896596510477,
+        "y": 360.1961253043518
+      },
+      "value": 1
+    },
+    {
+      "done": true,
+      "id": "garden-open-shade",
+      "mode": "hold",
+      "screen": {
+        "x": 284.0707850683206,
+        "y": 343.5969669600348
+      },
+      "value": 1
+    }
+  ],
+  "version": "0.4.0",
+  "view": {
+    "calls": 735,
+    "dpr": 1,
+    "height": 844,
+    "memory": {
+      "geometries": 372,
+      "textures": 7
+    },
+    "p95FrameMs": 9.89999999999418,
+    "samples": 600,
+    "triangles": 337202,
+    "width": 390
+  }
+}

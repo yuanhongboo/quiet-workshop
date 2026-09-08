@@ -1,0 +1,11 @@
+{
+  "cleanProgress": "100",
+  "placed": [
+    "cup",
+    "jar"
+  ],
+  "placementProgress": "66",
+  "recoverButtonVisible": true,
+  "stage": "tidy",
+  "version": "0.1.1"
+}

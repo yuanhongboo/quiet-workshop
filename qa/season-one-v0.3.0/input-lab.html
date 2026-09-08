@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>第一季 · 持续输入验证</title>
+<style>body{margin:0}iframe{position:fixed;inset:0;width:100%;height:100%;border:0}.qa{position:fixed;top:5px;left:calc(50% - 160px);max-width:320px;background:#fffbe9;border:1px solid #b7bd9c;border-radius:8px;padding:6px;z-index:100;font:11px system-ui}.qa button{min-height:28px}output{display:block;margin-top:4px}</style>
+<iframe id="game" title="关卡试玩"></iframe><div class="qa"><b>开发验证：模拟持续键盘输入，不发布</b><div><button id="hold-short">按住 1 秒</button><button id="hold-long">按住至完成</button><button id="hold-blur">中途失焦</button></div><output id="result">先在游戏内进入长按步骤。</output></div>
+<script>
+const frame=document.querySelector('iframe'),result=document.querySelector('output'),id=new URLSearchParams(location.search).get('level');
+frame.src=`/dist/?diagnostics&level=${['plant','window','sign'].includes(id)?id:'plant'}`;
+let timer;
+function hold(ms,blur=false){clearTimeout(timer);const doc=frame.contentDocument,button=doc.getElementById('action-button');if(doc.body.dataset.state!=='operate'||button.hidden){result.textContent='请先进入长按步骤。';return;}
+button.focus();button.dispatchEvent(new KeyboardEvent('keydown',{code:'Space',bubbles:true}));result.textContent='事件运行中';timer=setTimeout(()=>{if(blur)frame.contentWindow.dispatchEvent(new Event('blur'));else button.dispatchEvent(new KeyboardEvent('keyup',{code:'Space',bubbles:true}));result.textContent=`执行完成 · ${doc.getElementById('action-value').textContent} · ${doc.body.dataset.state}`;},ms);}
+document.getElementById('hold-short').onclick=()=>hold(1000);document.getElementById('hold-long').onclick=()=>hold(7000);document.getElementById('hold-blur').onclick=()=>hold(700,true);
+</script></html>

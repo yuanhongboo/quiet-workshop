@@ -1,0 +1,220 @@
+{
+  "version": "0.3.0",
+  "season": {
+    "id": "street-shop",
+    "restored": [
+      "coffee",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window"
+    ],
+    "completed": [
+      "coffee",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window"
+    ],
+    "canOpen": false,
+    "finished": false,
+    "preview": false
+  },
+  "tasks": [
+    {
+      "id": "sew-button",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 554.6525280812402,
+        "y": 377.80859966495404
+      }
+    },
+    {
+      "id": "open-curtain",
+      "mode": "hold",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 840.7561872341578,
+        "y": 269.7067405531579
+      }
+    }
+  ],
+  "taskSurfacesScreen": [],
+  "action": null,
+  "activeTask": null,
+  "level": "window",
+  "stage": "done",
+  "started": true,
+  "paused": false,
+  "before": false,
+  "progress": 1,
+  "operation": 0,
+  "brewTime": 3.6,
+  "pouring": false,
+  "surfaces": [
+    {
+      "id": "window-glass",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "window-seat",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "window-table",
+      "progress": 1,
+      "done": true
+    }
+  ],
+  "placed": [
+    "seat-pad",
+    "window-cushion",
+    "curtain-tie"
+  ],
+  "held": null,
+  "audio": {
+    "state": "running",
+    "enabled": true,
+    "peakRms": 0.010476482233577734,
+    "events": {
+      "task": 1,
+      "switch": 1,
+      "done": 1
+    }
+  },
+  "view": {
+    "width": 1280,
+    "height": 720,
+    "dpr": 2,
+    "calls": 385,
+    "triangles": 203098,
+    "memory": {
+      "geometries": 196,
+      "textures": 20
+    },
+    "p95FrameMs": 8.5,
+    "samples": 600
+  },
+  "surfacesScreen": [
+    {
+      "id": "window-glass",
+      "corners": [
+        {
+          "x": 520.3636126797528,
+          "y": 328.2895230956885
+        },
+        {
+          "x": 818.0581809140124,
+          "y": 353.5028853619154
+        },
+        {
+          "x": 824.7639886190113,
+          "y": 191.4151016260559
+        },
+        {
+          "x": 516.1843395741208,
+          "y": 177.06042038112187
+        }
+      ]
+    },
+    {
+      "id": "window-seat",
+      "corners": [
+        {
+          "x": 418.7833497778934,
+          "y": 465.35954548921666
+        },
+        {
+          "x": 786.9491342850455,
+          "y": 510.455232023708
+        },
+        {
+          "x": 817.6583879821496,
+          "y": 452.2248360253963
+        },
+        {
+          "x": 485.3024628999059,
+          "y": 416.35929336375375
+        }
+      ]
+    },
+    {
+      "id": "window-table",
+      "corners": [
+        {
+          "x": 872.3894873621589,
+          "y": 495.13509045233627
+        },
+        {
+          "x": 1004.880082551249,
+          "y": 510.5705422013773
+        },
+        {
+          "x": 1009.6765121461714,
+          "y": 465.3272556663451
+        },
+        {
+          "x": 888.3252284729842,
+          "y": 452.4398439607188
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "seat-pad",
+      "position": {
+        "x": -0.3799999952316284,
+        "y": 0.5210000276565552,
+        "z": 0.09000000357627869
+      },
+      "screen": {
+        "x": 617.1720110022513,
+        "y": 445.80868088177266
+      },
+      "slot": {
+        "x": 617.2242105574396,
+        "y": 455.4391799450775
+      }
+    },
+    {
+      "id": "window-cushion",
+      "position": {
+        "x": -0.9399999976158142,
+        "y": 0.8489999771118164,
+        "z": -0.2199999988079071
+      },
+      "screen": {
+        "x": 554.6525280812402,
+        "y": 377.80859966495404
+      },
+      "slot": {
+        "x": 545.9591592871765,
+        "y": 382.85639939580534
+      }
+    },
+    {
+      "id": "curtain-tie",
+      "position": {
+        "x": 0.9800000190734863,
+        "y": 1.2999999523162842,
+        "z": -0.6499999761581421
+      },
+      "screen": {
+        "x": 845.2400146373318,
+        "y": 321.0222325098004
+      },
+      "slot": {
+        "x": 841.6722918358897,
+        "y": 326.4748296366171
+      }
+    }
+  ]
+}

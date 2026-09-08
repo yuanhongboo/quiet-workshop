@@ -1,0 +1,39 @@
+
+> quiet-workshop@0.2.0 test
+> node --test tests/*.test.mjs
+
+✔ 咖啡角: every counted patch can be cleaned and survives an independent save (47.282208ms)
+✔ 书桌: every counted patch can be cleaned and survives an independent save (52.930833ms)
+✔ 茶席: every counted patch can be cleaned and survives an independent save (26.002ms)
+✔ 唱片角: every counted patch can be cleaned and survives an independent save (41.105209ms)
+✔ switching workbenches keeps four independent partial saves and selection (140.543792ms)
+✔ legacy completed coffee imports once; replay cannot resurrect it or erase another level (71.296833ms)
+✔ tea holds retain water across interruptions and automatically become ready at the target (28.887083ms)
+✔ turntable calibration gates needle placement and malformed final saves are rejected (11.862083ms)
+✔ wrong book position and premature record assembly return a usable item without false progress (90.840666ms)
+✔ 书桌: accessories remain finite through a long hold, assemble and restore (41.056459ms)
+✔ 茶席: accessories remain finite through a long hold, assemble and restore (34.441125ms)
+✔ 唱片角: accessories remain finite through a long hold, assemble and restore (30.427416ms)
+✔ holding the filter past six seconds stays finite and can still be placed (80.211708ms)
+✔ invalid coordinates are recovered without losing completed progress (38.529208ms)
+✔ excessive spin and an off-table fall restore a usable upright accessory (10.058916ms)
+✔ finding loose accessories leaves the cup, jar and cleaning progress intact (12.989375ms)
+✔ a local wipe exposes the touched patch while leaving remote dirt intact (9.519416ms)
+✔ invalid and off-surface strokes cannot produce progress (7.080625ms)
+✔ all counted dirt is reachable with a normal sweep and the last residue resolves cleanly (31.995125ms)
+✔ a partly cleaned workbench survives a save and load without changing progress (39.796917ms)
+✔ corrupt, oversized and impossible completed saves are rejected (20.805208ms)
+✔ the full clean, organize, brew and reload sequence retains the finished cup of coffee (38.536208ms)
+✔ loose accessories settle onto the physical tabletop and remain finite (59.735208ms)
+✔ a misplaced item falls back naturally; a valid drop smoothly snaps once and survives reload (46.513167ms)
+✔ canceling a drag always restores gravity and clears the held item (18.679334ms)
+✔ a restored finished scene retains distinct settled original poses for the before comparison (20.12025ms)
+✔ assisted placement carries the jar around the machine instead of through its housing (23.208583ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 680.79375

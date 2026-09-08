@@ -1,0 +1,17 @@
+{
+  "version": "0.3.0",
+  "levels": 9,
+  "chapters": 3,
+  "nodeTests": 70,
+  "nodeStatus": "passed",
+  "pagesStatus": "built",
+  "publicStatus": "public-files-verified",
+  "publicUrl": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.3.0/",
+  "commit": "a63a5e0b9f562e6c6b640e915b2c50b0dcb5aef1",
+  "files": 9,
+  "bytes": 2820495,
+  "verifiedAt": "2026-09-07T18:15:01.147Z",
+  "localVersion": "0.3.0",
+  "playerServicePort": 4188,
+  "testServiceStopped": true
+}

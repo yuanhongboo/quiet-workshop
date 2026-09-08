@@ -1,0 +1,42 @@
+{
+  "version": "0.3.1",
+  "files": {
+    "assets/favicon-DkzWbQVf.svg": {
+      "bytes": 342,
+      "sha256": "fe77e892a43be62cfd14bc3b7a7c4deffa3dc4c9a86b9206af421e02713df37e"
+    },
+    "assets/graphics-D8bD5U1F.js": {
+      "bytes": 565748,
+      "sha256": "226156079bbd61f7b49db56ebcc01c68762c3307c5ad00d4e2a9a5f56cb54998"
+    },
+    "assets/index-OoSzna4R.js": {
+      "bytes": 163078,
+      "sha256": "5aa71f477762aa2a59e3631ae36cfc742accbcb3dc7713e9bb6ee0daeaa8e1a0"
+    },
+    "assets/index-TLdjsHKV.css": {
+      "bytes": 27519,
+      "sha256": "f06531f737ac5a9822cb99508c2b7a30dc31a7d7fc294953eeabb3436b7a5343"
+    },
+    "assets/physics-ByaTtX8I.js": {
+      "bytes": 2047521,
+      "sha256": "a69122387d5bde3ab81fe56cfd2b221956c1bbb311ed479e0969922eb7cb9cd3"
+    },
+    "CREDITS.txt": {
+      "bytes": 937,
+      "sha256": "8df0729fa9372d56cf63eba238ceec6e82d778054d532fd51b285f422fbd4756"
+    },
+    "index.html": {
+      "bytes": 9349,
+      "sha256": "ca260cc63dae528d94342b7798d43bd0278f46b871359adde22d5047fd4a907e"
+    },
+    "licenses/RAPIER-APACHE-2.0.txt": {
+      "bytes": 11343,
+      "sha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519"
+    },
+    "licenses/THREE-MIT.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    }
+  },
+  "bytes": 2826918
+}

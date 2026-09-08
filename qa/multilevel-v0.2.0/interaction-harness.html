@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>开发验证 · 注水输入事件</title>
+<style>body{margin:0;background:#eee}iframe{position:fixed;inset:0;width:100%;height:100%;border:0}.qa-tools{position:fixed;top:6px;left:calc(50% - 205px);z-index:30;background:#fffdeb;border:1px solid #aaa;border-radius:8px;padding:6px;font:11px system-ui;max-width:420px}button{min-height:28px}output{display:block;margin-top:4px}</style>
+<iframe id="game" src="/dist/?diagnostics&level=tea" title="茶席试玩"></iframe>
+<div class="qa-tools"><b>开发验证：模拟持续键盘输入（不发布）</b><div><button data-duration="1000">注水 1 秒后松开</button><button data-duration="4000">注水至自动停止</button><button id="interrupt">注水中失焦</button></div><output id="result">就绪，请先在游戏内开始。</output></div>
+<script>
+const frame=document.querySelector('iframe'),output=document.querySelector('output');let timer;
+function run(duration,interrupt=false){
+  clearTimeout(timer);const doc=frame.contentDocument,button=doc.getElementById('pour-button');if(button.closest('[hidden]')||doc.body.dataset.state!=='operate'){output.textContent='请先进入茶席的注水阶段。';return;}
+  button.focus();button.dispatchEvent(new KeyboardEvent('keydown',{code:'Space',bubbles:true}));output.textContent='注水事件运行中';
+  timer=setTimeout(()=>{if(interrupt)frame.contentWindow.dispatchEvent(new Event('blur'));else button.dispatchEvent(new KeyboardEvent('keyup',{code:'Space',bubbles:true}));output.textContent=`执行完成 · ${doc.getElementById('pour-value').textContent} · ${doc.body.dataset.state}`;},duration);
+}
+document.querySelectorAll('[data-duration]').forEach(button=>button.onclick=()=>run(Number(button.dataset.duration)));
+document.getElementById('interrupt').onclick=()=>run(600,true);
+</script></html>

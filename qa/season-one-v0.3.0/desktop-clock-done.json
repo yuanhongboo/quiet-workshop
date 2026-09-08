@@ -1,0 +1,229 @@
+{
+  "version": "0.3.0",
+  "season": {
+    "id": "street-shop",
+    "restored": [
+      "coffee",
+      "tea",
+      "record",
+      "plant",
+      "clock"
+    ],
+    "completed": [
+      "coffee",
+      "tea",
+      "record",
+      "plant",
+      "clock"
+    ],
+    "canOpen": false,
+    "finished": false,
+    "preview": false
+  },
+  "tasks": [
+    {
+      "id": "set-time",
+      "mode": "dial",
+      "value": 610,
+      "done": true,
+      "screen": {
+        "x": 637.9884250971785,
+        "y": 258.8330113161056
+      }
+    }
+  ],
+  "taskSurfacesScreen": [],
+  "action": null,
+  "activeTask": null,
+  "level": "clock",
+  "stage": "done",
+  "started": true,
+  "paused": false,
+  "before": false,
+  "progress": 1,
+  "operation": 0,
+  "brewTime": 4,
+  "pouring": false,
+  "surfaces": [
+    {
+      "id": "clock-glass",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "clock-case",
+      "progress": 1,
+      "done": true
+    },
+    {
+      "id": "clock-base",
+      "progress": 1,
+      "done": true
+    }
+  ],
+  "placed": [
+    "clock-large-gear",
+    "clock-medium-gear",
+    "clock-small-gear",
+    "clock-pendulum"
+  ],
+  "held": null,
+  "audio": {
+    "state": "running",
+    "enabled": true,
+    "peakRms": 0.024525957701769484,
+    "events": {
+      "clean": 3,
+      "pick": 5,
+      "clink": 2,
+      "place": 4,
+      "task": 1,
+      "switch": 1,
+      "done": 1
+    }
+  },
+  "view": {
+    "width": 1280,
+    "height": 720,
+    "dpr": 2,
+    "calls": 355,
+    "triangles": 208510,
+    "memory": {
+      "geometries": 195,
+      "textures": 18
+    },
+    "p95FrameMs": 8.800000000017462,
+    "samples": 600
+  },
+  "surfacesScreen": [
+    {
+      "id": "clock-glass",
+      "corners": [
+        {
+          "x": 545.39021065957,
+          "y": 354.70962280840666
+        },
+        {
+          "x": 747.1108197928763,
+          "y": 368.4390282227157
+        },
+        {
+          "x": 751.2191470860059,
+          "y": 149.0286284353295
+        },
+        {
+          "x": 541.9434639928164,
+          "y": 145.80892055076373
+        }
+      ]
+    },
+    {
+      "id": "clock-case",
+      "corners": [
+        {
+          "x": 498.74395528432495,
+          "y": 477.3388885947722
+        },
+        {
+          "x": 530.0361107852685,
+          "y": 480.4734275849627
+        },
+        {
+          "x": 524.4315033179391,
+          "y": 194.6284748680164
+        },
+        {
+          "x": 491.6043855458466,
+          "y": 193.71482246561152
+        }
+      ]
+    },
+    {
+      "id": "clock-base",
+      "corners": [
+        {
+          "x": 465.2445890660343,
+          "y": 544.4897184806441
+        },
+        {
+          "x": 804.9032543516862,
+          "y": 584.6782936918586
+        },
+        {
+          "x": 805.5241649207072,
+          "y": 563.9535094252982
+        },
+        {
+          "x": 464.6396737345415,
+          "y": 525.2980101045653
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "clock-large-gear",
+      "position": {
+        "x": -0.49000000953674316,
+        "y": 1.0399999618530273,
+        "z": 0.07000000029802322
+      },
+      "screen": {
+        "x": 593.5621141074553,
+        "y": 391.3113110315557
+      },
+      "slot": {
+        "x": 590.2913365501557,
+        "y": 393.52208935861694
+      }
+    },
+    {
+      "id": "clock-medium-gear",
+      "position": {
+        "x": -0.019999999552965164,
+        "y": 1.0399999618530273,
+        "z": 0.07500000298023224
+      },
+      "screen": {
+        "x": 665.9070541686651,
+        "y": 397.04335302318924
+      },
+      "slot": {
+        "x": 663.341354861531,
+        "y": 399.14541707287304
+      }
+    },
+    {
+      "id": "clock-small-gear",
+      "position": {
+        "x": 0.1899999976158142,
+        "y": 0.7699999809265137,
+        "z": 0.07999999821186066
+      },
+      "screen": {
+        "x": 698.5497175050267,
+        "y": 442.7698178180585
+      },
+      "slot": {
+        "x": 696.415926985726,
+        "y": 444.96188565956055
+      }
+    },
+    {
+      "id": "clock-pendulum",
+      "position": {
+        "x": -0.20000000298023224,
+        "y": 0.5400000214576721,
+        "z": 0.17499999701976776
+      },
+      "screen": {
+        "x": 632.8865187491888,
+        "y": 477.5277089835592
+      },
+      "slot": {
+        "x": 629.6163503529053,
+        "y": 480.6289457260953
+      }
+    }
+  ]
+}

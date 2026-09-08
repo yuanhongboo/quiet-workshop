@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>清洁定位 · 测试场景</title>
+<style>body{font:16px system-ui;background:#f1eedf;padding:32px;color:#355843}button{padding:16px;font:inherit}p{max-width:650px;line-height:1.7}</style>
+<h1>清洁定位测试</h1><p>仅在独立测试端口使用。准备一个与反馈相同的书桌场景：其余两处已清洁，书架背板约 90%，污渍留在边角。</p><button id="prepare">准备书架残留场景</button>
+<script type="module">
+import {makeState} from '/src/core.mjs';import {DESK} from '/src/levels.mjs';import {saveLevel} from '/src/progress.mjs';
+document.getElementById('prepare').onclick=()=>{
+ const state=makeState(null,DESK);state.surfaces.forEach(field=>field.finish());const field=state.surfaces.find(field=>field.spec.id==='desk-shelf');
+ let amount=0;const target=field.initialAmount*.1;field.mask.fill(0);
+ for(let x=field.size-1;x>=0&&amount<target;x--)for(let y=field.size-1;y>=0&&amount<target;y--){const i=y*field.size+x;field.mask[i]=field.initial[i];amount+=field.mask[i];}
+ field.remaining=amount;field.done=false;field.revision++;
+ saveLevel(localStorage,state);location.href='/?diagnostics&level=desk';
+};
+</script></html>

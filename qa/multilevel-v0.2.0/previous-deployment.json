@@ -1,0 +1,79 @@
+{
+  "repository": "yuanhongboo/orbit-breaker",
+  "previousCommit": "0d325fd6bae3273486971a2ea20838f88865a840",
+  "prefix": "quiet-workshop/v0.1.1",
+  "files": [
+    "quiet-workshop/v0.1.1/assets/favicon-DkzWbQVf.svg",
+    "quiet-workshop/v0.1.1/assets/graphics-Ls-KkJWM.js",
+    "quiet-workshop/v0.1.1/assets/index-Ccwm23kL.js",
+    "quiet-workshop/v0.1.1/assets/index-CZq24FiX.css",
+    "quiet-workshop/v0.1.1/assets/physics-ByaTtX8I.js",
+    "quiet-workshop/v0.1.1/CREDITS.txt",
+    "quiet-workshop/v0.1.1/index.html",
+    "quiet-workshop/v0.1.1/licenses/RAPIER-APACHE-2.0.txt",
+    "quiet-workshop/v0.1.1/licenses/THREE-MIT.txt"
+  ],
+  "bytes": 2674820,
+  "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.1.1/",
+  "version": "0.1.1",
+  "commit": "a98d8c307c56194a2f0279e8f55a928d919f85f7",
+  "status": "public-files-verified",
+  "publishedAt": "2026-09-07T11:52:29.026Z",
+  "verifiedFiles": [
+    {
+      "file": "assets/favicon-DkzWbQVf.svg",
+      "bytes": 342,
+      "sha256": "fe77e892a43be62cfd14bc3b7a7c4deffa3dc4c9a86b9206af421e02713df37e",
+      "matched": true
+    },
+    {
+      "file": "assets/graphics-Ls-KkJWM.js",
+      "bytes": 550255,
+      "sha256": "4d6d95aff97700574e35e79c8a7f404051e3f204c0a099e6fcb1c69cab1104bc",
+      "matched": true
+    },
+    {
+      "file": "assets/index-Ccwm23kL.js",
+      "bytes": 45610,
+      "sha256": "dc286edcd13398fea1e3d2461ef8e3dbb13c82611397e9e8655441faa4578fa1",
+      "matched": true
+    },
+    {
+      "file": "assets/index-CZq24FiX.css",
+      "bytes": 12831,
+      "sha256": "2fb85d0281acf17b5f9bb160cc5202ee0e39f98117d7465c08ab6ffc5d5bb098",
+      "matched": true
+    },
+    {
+      "file": "assets/physics-ByaTtX8I.js",
+      "bytes": 2047521,
+      "sha256": "a69122387d5bde3ab81fe56cfd2b221956c1bbb311ed479e0969922eb7cb9cd3",
+      "matched": true
+    },
+    {
+      "file": "CREDITS.txt",
+      "bytes": 784,
+      "sha256": "5752e56e1d1c46c4ac235bbf07b65798cf886ec07073c790398ef9e1f007e9c7",
+      "matched": true
+    },
+    {
+      "file": "index.html",
+      "bytes": 5053,
+      "sha256": "b8ae0778497a1c4af3646a4327a5aa51f9721a0afd1946911c87fc384f17d0b7",
+      "matched": true
+    },
+    {
+      "file": "licenses/RAPIER-APACHE-2.0.txt",
+      "bytes": 11343,
+      "sha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519",
+      "matched": true
+    },
+    {
+      "file": "licenses/THREE-MIT.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "matched": true
+    }
+  ],
+  "verifiedAt": "2026-09-07T11:56:52.897Z"
+}

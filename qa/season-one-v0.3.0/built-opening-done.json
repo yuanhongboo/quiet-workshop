@@ -1,0 +1,103 @@
+{
+  "version": "0.3.0",
+  "season": {
+    "id": "street-shop",
+    "restored": [
+      "coffee",
+      "desk",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window",
+      "sign"
+    ],
+    "completed": [
+      "coffee",
+      "tea",
+      "record",
+      "plant",
+      "clock",
+      "window",
+      "sign",
+      "desk",
+      "opening"
+    ],
+    "canOpen": true,
+    "finished": true,
+    "preview": false
+  },
+  "tasks": [
+    {
+      "id": "opening-lamp",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 517.9399358599837,
+        "y": 358.4644866664982
+      }
+    },
+    {
+      "id": "opening-music",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 707.9807763219942,
+        "y": 317.88076125214974
+      }
+    },
+    {
+      "id": "opening-coffee",
+      "mode": "tap",
+      "value": 1,
+      "done": true,
+      "screen": {
+        "x": 547.6682620288697,
+        "y": 286.45455363119817
+      }
+    }
+  ],
+  "taskSurfacesScreen": [],
+  "action": null,
+  "activeTask": null,
+  "level": "opening",
+  "stage": "done",
+  "started": true,
+  "paused": false,
+  "before": false,
+  "progress": 1,
+  "operation": 0,
+  "brewTime": 6,
+  "pouring": false,
+  "surfaces": [],
+  "placed": [],
+  "held": null,
+  "audio": {
+    "state": "running",
+    "enabled": true,
+    "peakRms": 0.0422527379287027,
+    "currentRms": 0.005317801356538084,
+    "events": {
+      "task": 3,
+      "switch": 1,
+      "done": 1
+    }
+  },
+  "view": {
+    "width": 1280,
+    "height": 720,
+    "dpr": 2,
+    "calls": 359,
+    "triangles": 82038,
+    "memory": {
+      "geometries": 163,
+      "textures": 17
+    },
+    "p95FrameMs": 8.400000000023283,
+    "samples": 600
+  },
+  "surfacesScreen": [],
+  "items": []
+}

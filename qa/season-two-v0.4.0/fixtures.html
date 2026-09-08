@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>第二季 · 独立测试准备</title>
+<style>body{font:16px system-ui;padding:28px;background:#eef1e3;color:#355842;line-height:1.7}button,select{font:inherit;padding:12px;margin:6px}button{background:#d8e5c9;border:1px solid #9cb78e;border-radius:9px}.row{margin-bottom:12px}</style>
+<h1>第二季独立测试</h1><p>仅用于独立 QA 浏览器地址。本页会写入当前地址的测试存档，请勿在玩家使用的服务地址运行。</p>
+<label>关卡 <select id="level"></select></label><div id="actions"></div><p id="result"></p>
+<script type="module">
+import {GARDEN_LEVELS,getLevel} from '/src/levels.mjs';
+import {makeState} from '/src/core.mjs';
+import {saveLevel,rememberLevel} from '/src/progress.mjs';
+import {SEASON_TWO} from '/src/season.mjs';
+const select=document.querySelector('#level');
+for(const level of GARDEN_LEVELS){const o=document.createElement('option');o.value=level.id;o.textContent=level.number+' '+level.name;select.append(o);}
+const query=new URLSearchParams(location.search);if(query.has('level'))select.value=query.get('level');
+const finished=level=>{const s=makeState(null,level);s.surfaces.forEach(f=>f.finish());level.items.forEach(i=>s.placed.add(i.id));s.taskFields.forEach(f=>f.finish());for(const t of level.operation.tasks||[])s.taskValues[t.id]=t.target??1;s.brewTime=level.operation.duration;s.completed=true;return s;};
+for(const [id,label] of [['fresh','全新关卡'],['last-dirt','准备背面清洁'],['tidy','准备归位步骤'],['operate','准备修复步骤'],['last-task','准备最后一步'],['done','查看完成场景'],['unlock','准备八关完成的花房']]){
+ const button=document.createElement('button');button.textContent=label;button.onclick=()=>{
+ if(!['127.0.0.1','localhost'].includes(location.hostname))throw Error('QA fixture only supports loopback');
+ const level=getLevel(select.value),s=makeState(null,level);
+ if(id==='unlock')for(const levelId of SEASON_TWO.restorationIds)saveLevel(localStorage,finished(getLevel(levelId)));
+ if(['tidy','operate','last-task','done'].includes(id))s.surfaces.forEach(f=>f.finish());
+ if(['operate','last-task','done'].includes(id))level.items.forEach(i=>s.placed.add(i.id));
+ if(id==='last-task'){const tasks=level.operation.tasks||[];for(const task of tasks.slice(0,-1)){s.taskValues[task.id]=task.target??1;s.taskFields.find(f=>f.spec.id===task.id)?.finish();}const last=tasks.at(-1);if(last?.mode==='hold')s.taskValues[last.id]=(last.target??1)*.91;}
+ if(id==='last-dirt'){const target=s.surfaces.find(f=>Math.abs((f.spec.camera?.angle??0)-Math.PI)<.1)||s.surfaces[0];s.surfaces.forEach(f=>f.finish());if(target){target.mask.set(target.initial);target.remaining=target.initialAmount;target.done=false;target.revision++;}}
+ saveLevel(localStorage,id==='done'?finished(level):s);rememberLevel(localStorage,level);location.href='/?season=rain-garden&level='+level.id+'&diagnostics';
+ };document.querySelector('#actions').append(button);
+}
+</script></html>

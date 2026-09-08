@@ -1,0 +1,17 @@
+const leaf = '<path d="M121 77V35m0 22q-27-2-24-23 26 0 24 23m1 9q4-29 29-29 1 27-29 29" fill="#789e79" stroke="#678768" stroke-width="3"/>';
+const pot = `<path d="M93 78h57l-7 43q-22 9-43 0z" fill="#91aea5"/><ellipse cx="121" cy="78" rx="29" ry="8" fill="#b6cab6"/>${leaf}`;
+const art = {
+  'garden-pot': pot+'<ellipse cx="121" cy="124" rx="40" ry="6" fill="#c4b28c"/><path d="M101 98q20 8 40 0" fill="none" stroke="#e5dfbe" stroke-width="3"/>',
+  'garden-tools':'<rect x="57" y="28" width="139" height="95" rx="7" fill="#c2b08a"/><path d="M76 40v66m39-66v66m54-66v66" stroke="#e1d1ad" stroke-width="6"/><path d="M76 70q-15 24 0 39 15-15 0-39Z" fill="#9aaca0"/><path d="M114 71l-13 33m13-33 14 33" stroke="#4f7463" stroke-width="6"/><path d="M161 69h22l5 35h-32z" fill="#a9bfac"/><path d="M180 79l19-8" stroke="#a9bfac" stroke-width="6"/>',
+  'garden-seeds':'<path d="M43 68h165v53H43z" fill="#b39871"/><path d="M48 75h155v37H48z" fill="#665e45"/><path d="M98 73v44m52-44v44M45 94h160" stroke="#c9b48a" stroke-width="5"/>'+[70,122,177].map((x,i)=>`<g transform="translate(${x-121} ${i%2?8:0}) scale(1 .68)">${leaf}</g>`).join(''),
+  'garden-shelf':'<path d="M60 27v105m132-105v105M54 73h145M52 123h149" stroke="#a58763" stroke-width="8" stroke-linecap="round"/><g transform="translate(-31 -5) scale(.66)">'+pot+'</g><g transform="translate(83 32) scale(.64)">'+pot+'</g>',
+  'garden-glass':'<path d="M57 59l65-35 71 35v67H57z" fill="#bad6c9" opacity=".65"/><path d="M57 59l65-35 71 35v67H57V59h136M122 24v102" fill="none" stroke="#ac986c" stroke-width="4"/><g transform="translate(39 39) scale(.64)">'+pot+'</g><path d="M63 116h124" stroke="#657c59" stroke-width="8"/>',
+  'garden-fountain':'<ellipse cx="123" cy="93" rx="64" ry="27" fill="#9dada5"/><path d="M60 92q5 43 64 40 59 0 63-40" fill="#b1b8a4"/><ellipse cx="124" cy="91" rx="53" ry="19" fill="#90b9b0"/><path d="M68 87V40h74" fill="none" stroke="#b29c66" stroke-width="10"/><path d="M142 43v48" stroke="#d4f0e8" stroke-width="5"/><ellipse cx="142" cy="94" rx="15" ry="5" fill="none" stroke="#d4f0e8" stroke-width="2"/>',
+  'garden-lantern':'<path d="M93 40V26q30-26 58 0v14" fill="none" stroke="#9c835b" stroke-width="5"/><path d="M81 48l19-15h45l19 15v72H81z" fill="#d1dbbf" opacity=".65"/><path d="M81 48h83v72H81zM89 119V49m68 70V49" fill="none" stroke="#9c835b" stroke-width="5"/><path d="M112 120V76h23v44" fill="#efe1b5"/><path d="M123 76q-12-14 0-26 12 16 0 26" fill="#e4bc69"/><ellipse cx="123" cy="122" rx="49" ry="7" fill="#ac9871"/>',
+  'garden-bench':'<path d="M48 54h155v39H48z" fill="#ba9e77"/><path d="M49 65h153M49 79h153M50 99h153" stroke="#e1cba3" stroke-width="5"/><path d="M49 47v83m153-83v83" stroke="#8a775b" stroke-width="7"/><rect x="55" y="96" width="139" height="16" rx="6" fill="#a0b39c"/><rect x="146" y="76" width="32" height="24" rx="8" fill="#d6be91"/>',
+  'garden-awakening':'<path d="M37 65l87-48 89 48v66H37z" fill="#cfdfc7"/><path d="M37 65l87-48 89 48v66H37V65h176M80 42v89m89-89v89M124 17v114" fill="none" stroke="#849b83" stroke-width="4"/><circle cx="177" cy="34" r="14" fill="#efe2ad"/><g transform="translate(-4 49) scale(.6)">'+pot+'</g><g transform="translate(97 49) scale(.55)">'+pot+'</g>',
+};
+export function gardenArtwork(id) {
+  if (!art[id]) return null;
+  return `<svg viewBox="0 0 250 150" aria-hidden="true"><ellipse cx="125" cy="132" rx="93" ry="8" fill="#527951" opacity=".1"/>${art[id]}</svg>`;
+}

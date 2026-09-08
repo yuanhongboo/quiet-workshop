@@ -1,0 +1,23 @@
+
+> quiet-workshop@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ a local wipe exposes the touched patch while leaving remote dirt intact (7.651208ms)
+✔ invalid and off-surface strokes cannot produce progress (5.030292ms)
+✔ all counted dirt is reachable with a normal sweep and the last residue resolves cleanly (25.715125ms)
+✔ a partly cleaned workbench survives a save and load without changing progress (24.607ms)
+✔ corrupt, oversized and impossible completed saves are rejected (11.896542ms)
+✔ the full clean, organize, brew and reload sequence retains the finished cup of coffee (33.450625ms)
+✔ loose accessories settle onto the physical tabletop and remain finite (55.437917ms)
+✔ a misplaced item falls back naturally; a valid drop smoothly snaps once and survives reload (46.056792ms)
+✔ canceling a drag always restores gravity and clears the held item (15.723416ms)
+✔ a restored finished scene retains distinct settled original poses for the before comparison (18.399708ms)
+✔ assisted placement carries the jar around the machine instead of through its housing (20.208833ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 322.077167
