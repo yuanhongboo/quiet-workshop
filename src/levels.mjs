@@ -1,3 +1,6 @@
+import { BOOK_EARLY_LEVELS } from './book-early-levels.mjs';
+import { BOOK_MIDDLE_LEVELS } from './book-middle-levels.mjs';
+import { BOOK_FINALE_LEVELS } from './book-finale-levels.mjs';
 import { STATION_EARLY_LEVELS } from './station-early-levels.mjs';
 import { STATION_MIDDLE_LEVELS } from './station-middle-levels.mjs';
 import { STATION_FINALE_LEVELS } from './station-finale-levels.mjs';
@@ -414,7 +417,8 @@ export const LEVELS = Object.freeze([
 export const GARDEN_LEVELS = Object.freeze([...GARDEN_EARLY_LEVELS, ...GARDEN_MIDDLE_LEVELS, ...GARDEN_FINALE_LEVELS]);
 export const POST_LEVELS = Object.freeze([...POST_EARLY_LEVELS, ...POST_MIDDLE_LEVELS, ...POST_FINALE_LEVELS]);
 export const STATION_LEVELS = Object.freeze([...STATION_EARLY_LEVELS, ...STATION_MIDDLE_LEVELS, ...STATION_FINALE_LEVELS]);
-export const ALL_LEVELS = Object.freeze([...LEVELS, ...GARDEN_LEVELS, ...POST_LEVELS, ...STATION_LEVELS]);
+export const BOOK_LEVELS = Object.freeze([...BOOK_EARLY_LEVELS, ...BOOK_MIDDLE_LEVELS, ...BOOK_FINALE_LEVELS]);
+export const ALL_LEVELS = Object.freeze([...LEVELS, ...GARDEN_LEVELS, ...POST_LEVELS, ...STATION_LEVELS, ...BOOK_LEVELS]);
 export function getLevel(id) {
   return ALL_LEVELS.find((level) => level.id === id) || COFFEE;
 }

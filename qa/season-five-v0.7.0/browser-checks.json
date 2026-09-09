@@ -1,0 +1,3793 @@
+[
+  {
+    "case": "book-cover-full-play",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02624052037849289,
+        "enabled": true,
+        "events": {
+          "clean": 2,
+          "done": 1,
+          "pick": 2,
+          "place": 2,
+          "switch": 1,
+          "task": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 21.07,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08348957789238233,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "book-cover-brass",
+          "position": {
+            "x": 1.0149999856948853,
+            "y": 0.37599998712539673,
+            "z": 0.800000011920929
+          },
+          "screen": {
+            "x": 889.1161301745419,
+            "y": 464.0303507262442
+          },
+          "slot": {
+            "x": 890.2574029858295,
+            "y": 457.51974530574967
+          }
+        },
+        {
+          "id": "book-cover-label",
+          "position": {
+            "x": 0.2300000041723251,
+            "y": 0.3779999911785126,
+            "z": -0.2199999988079071
+          },
+          "screen": {
+            "x": 812.0242106413164,
+            "y": 365.3984069867108
+          },
+          "slot": {
+            "x": 812.7438920711304,
+            "y": 359.0403089885413
+          }
+        }
+      ],
+      "level": "book-cover",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "book-cover-brass",
+        "book-cover-label"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "book-cover-cloth",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-edge",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 663.7600772995684,
+              "y": 433.98791539304415
+            },
+            {
+              "x": 462.7741253281578,
+              "y": 363.3465368889919
+            },
+            {
+              "x": 538.5610167927932,
+              "y": 241.48858854483217
+            },
+            {
+              "x": 716.5718206180576,
+              "y": 302.2129856577593
+            }
+          ],
+          "id": "book-cover-cloth"
+        },
+        {
+          "corners": [
+            {
+              "x": 679.1843718213186,
+              "y": 454.3570002403905
+            },
+            {
+              "x": 891.9016472495273,
+              "y": 496.4890827871615
+            },
+            {
+              "x": 894.702872705322,
+              "y": 481.046597188954
+            },
+            {
+              "x": 679.6042543594843,
+              "y": 439.0251153084302
+            }
+          ],
+          "id": "book-cover-edge"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "book-cover-corner",
+          "mode": "tap",
+          "screen": {
+            "x": 475.19967207095385,
+            "y": 361.2838569937966
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-smooth",
+          "mode": "hold",
+          "screen": {
+            "x": 699.138880325624,
+            "y": 363.9555867427314
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-open",
+          "mode": "tap",
+          "screen": {
+            "x": 597.3464529632674,
+            "y": 328.756602931813
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 114,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 78,
+          "textures": 17
+        },
+        "p95FrameMs": 10,
+        "samples": 600,
+        "triangles": 46628,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "first-chapter-return",
+    "data": {
+      "action": null,
+      "activeTask": "library-curtain",
+      "audio": {
+        "currentRms": 0.007714717937997384,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 67.36,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08393673498420698,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "book-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "pages",
+        "chapterHighlights": [
+          "book-cover",
+          "book-binding",
+          "book-press"
+        ],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "library-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 496.586170214317,
+            "y": 319.2295001708905
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "library-load",
+          "mode": "tap",
+          "screen": {
+            "x": 601.3944150689559,
+            "y": 393.4992822149255
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "library-focus",
+          "mode": "hold",
+          "screen": {
+            "x": 701.0954294497253,
+            "y": 411.4723227246208
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "library-stories",
+          "mode": "hold",
+          "screen": {
+            "x": 754.3385591437885,
+            "y": 413.245983554228
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 206,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 108,
+          "textures": 9
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 17190,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "second-chapter-return-phone",
+    "data": {
+      "action": null,
+      "activeTask": "library-curtain",
+      "audio": {
+        "currentRms": 0.024480042092525477,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 62.3,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08431708185212168,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "book-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "shelves",
+        "chapterHighlights": [
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "library-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 68.69985678610036,
+            "y": 396.9530910732627
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "library-load",
+          "mode": "tap",
+          "screen": {
+            "x": 132.82018354590411,
+            "y": 441.671464221088
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "library-focus",
+          "mode": "hold",
+          "screen": {
+            "x": 192.52572852311187,
+            "y": 451.66697624123543
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "library-stories",
+          "mode": "hold",
+          "screen": {
+            "x": 223.69025482581904,
+            "y": 452.0928944530062
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 317,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 162,
+          "textures": 9
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 34926,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-cover-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.024690354429429767,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.4,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "book-cover-brass",
+          "position": {
+            "x": 1.0149999856948853,
+            "y": 0.37599998712539673,
+            "z": 0.800000011920929
+          },
+          "screen": {
+            "x": 295.84818013786673,
+            "y": 473.7217184388555
+          },
+          "slot": {
+            "x": 296.034852145814,
+            "y": 469.0250007746833
+          }
+        },
+        {
+          "id": "book-cover-label",
+          "position": {
+            "x": 0.2300000041723251,
+            "y": 0.3779999911785126,
+            "z": -0.2199999988079071
+          },
+          "screen": {
+            "x": 255.3516342775768,
+            "y": 426.8131920366984
+          },
+          "slot": {
+            "x": 255.4574570752015,
+            "y": 422.28178402259624
+          }
+        }
+      ],
+      "level": "book-cover",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "book-cover-brass",
+        "book-cover-label"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "book-cover-cloth",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-edge",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 159.4600888359379,
+              "y": 461.2001744575964
+            },
+            {
+              "x": 35.25192861535975,
+              "y": 419.96407813291455
+            },
+            {
+              "x": 82.85004241370955,
+              "y": 358.5275025097527
+            },
+            {
+              "x": 198.35606404031492,
+              "y": 395.9863090109868
+            }
+          ],
+          "id": "book-cover-cloth"
+        },
+        {
+          "corners": [
+            {
+              "x": 169.29281637148628,
+              "y": 475.0520971398365
+            },
+            {
+              "x": 298.5021071155296,
+              "y": 494.6626165570454
+            },
+            {
+              "x": 298.96803701242897,
+              "y": 483.33447574597113
+            },
+            {
+              "x": 169.17959879189226,
+              "y": 463.88300345579773
+            }
+          ],
+          "id": "book-cover-edge"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "book-cover-corner",
+          "mode": "tap",
+          "screen": {
+            "x": 42.82916403156684,
+            "y": 419.6697071865971
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-smooth",
+          "mode": "hold",
+          "screen": {
+            "x": 184.2158753774185,
+            "y": 427.05754083725793
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-open",
+          "mode": "tap",
+          "screen": {
+            "x": 119.78340496864344,
+            "y": 405.93552136672866
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 109,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 59,
+          "textures": 17
+        },
+        "p95FrameMs": 8.800000000000068,
+        "samples": 52,
+        "triangles": 45876,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-binding-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.027528082733019738,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.32,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "book-binding-pages",
+          "position": {
+            "x": 0,
+            "y": 0.2750000059604645,
+            "z": 0.05999999865889549
+          },
+          "screen": {
+            "x": 193.7731146286303,
+            "y": 433.41003043449143
+          },
+          "slot": {
+            "x": 193.77091978897627,
+            "y": 428.95928444298465
+          }
+        },
+        {
+          "id": "book-binding-spool",
+          "position": {
+            "x": -0.9100000262260436,
+            "y": 0.36000001430511475,
+            "z": -0.4300000071525574
+          },
+          "screen": {
+            "x": 140.6649786679632,
+            "y": 401.4670855227711
+          },
+          "slot": {
+            "x": 140.57053479118787,
+            "y": 397.0870121833683
+          }
+        },
+        {
+          "id": "book-binding-clamp",
+          "position": {
+            "x": 0.8999999761581421,
+            "y": 0.27000001072883606,
+            "z": 0.23999999463558197
+          },
+          "screen": {
+            "x": 255.18366777277123,
+            "y": 450.0705888960728
+          },
+          "slot": {
+            "x": 255.2933268231793,
+            "y": 445.56780962901206
+          }
+        }
+      ],
+      "level": "book-binding",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "book-binding-pages",
+        "book-binding-spool",
+        "book-binding-clamp"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "book-binding-linen",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "book-binding-front",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 135.54091631501575,
+              "y": 409.1123732472447
+            },
+            {
+              "x": 277.045301778068,
+              "y": 429.6572209785885
+            },
+            {
+              "x": 281.5267798880848,
+              "y": 420.0795393585202
+            },
+            {
+              "x": 141.4324214403273,
+              "y": 399.9772105665071
+            }
+          ],
+          "id": "book-binding-linen"
+        },
+        {
+          "corners": [
+            {
+              "x": 96.5551958389442,
+              "y": 466.1607886199191
+            },
+            {
+              "x": 261.6133777161797,
+              "y": 491.897486131661
+            },
+            {
+              "x": 261.86166905325325,
+              "y": 482.842077095406
+            },
+            {
+              "x": 96.19837863471604,
+              "y": 457.261864480557
+            }
+          ],
+          "id": "book-binding-front"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "book-binding-stitch",
+          "mode": "hold",
+          "screen": {
+            "x": 193.7731146286303,
+            "y": 433.41003043449143
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-binding-trim",
+          "mode": "tap",
+          "screen": {
+            "x": 194.99999999999991,
+            "y": 448.5266788770376
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-binding-knot",
+          "mode": "hold",
+          "screen": {
+            "x": 148.24697950464858,
+            "y": 436.01424159932054
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 162,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 83,
+          "textures": 14
+        },
+        "p95FrameMs": 9.199999999999989,
+        "samples": 39,
+        "triangles": 58860,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-press-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02275439898737071,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.43,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4,
+      "held": null,
+      "items": [
+        {
+          "id": "book-press-platen",
+          "position": {
+            "x": 0,
+            "y": 1.1200000047683716,
+            "z": -0.05000000074505806
+          },
+          "screen": {
+            "x": 196.07182316723348,
+            "y": 415.5691149124587
+          },
+          "slot": {
+            "x": 196.07330702724371,
+            "y": 410.51908017597833
+          }
+        },
+        {
+          "id": "book-press-pages",
+          "position": {
+            "x": 0,
+            "y": 0.33000001311302185,
+            "z": 0.09000000357627869
+          },
+          "screen": {
+            "x": 193.08797977447625,
+            "y": 475.808279949798
+          },
+          "slot": {
+            "x": 193.0853564881872,
+            "y": 470.8861413337526
+          }
+        },
+        {
+          "id": "book-press-handle",
+          "position": {
+            "x": 0,
+            "y": 2.059999942779541,
+            "z": -0.20000000298023224
+          },
+          "screen": {
+            "x": 199.33726147228825,
+            "y": 342.865650274425
+          },
+          "slot": {
+            "x": 197.1807344857261,
+            "y": 342.33931405675696
+          }
+        }
+      ],
+      "level": "book-press",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "book-press-platen",
+        "book-press-pages",
+        "book-press-handle"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "book-press-beam",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "book-press-base",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 115.08503730731525,
+              "y": 371.4035957211405
+            },
+            {
+              "x": 276.13351332928937,
+              "y": 387.5140472561823
+            },
+            {
+              "x": 276.51459302295314,
+              "y": 370.2491945881007
+            },
+            {
+              "x": 114.7205225530379,
+              "y": 354.5639222012497
+            }
+          ],
+          "id": "book-press-beam"
+        },
+        {
+          "corners": [
+            {
+              "x": 93.83055881855934,
+              "y": 507.6190257713764
+            },
+            {
+              "x": 266.09883465727137,
+              "y": 529.2496906735272
+            },
+            {
+              "x": 266.3753683679875,
+              "y": 515.5043550119926
+            },
+            {
+              "x": 93.44923695395134,
+              "y": 494.2172549740543
+            }
+          ],
+          "id": "book-press-base"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "book-press-turn",
+          "mode": "dial",
+          "screen": {
+            "x": 199.337261477247,
+            "y": 342.86564602088777
+          },
+          "value": 180
+        },
+        {
+          "done": true,
+          "id": "book-press-flatten",
+          "mode": "hold",
+          "screen": {
+            "x": 196.07182316713255,
+            "y": 415.5691152559895
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-press-release",
+          "mode": "tap",
+          "screen": {
+            "x": 199.29435951689936,
+            "y": 379.6659757382991
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 126,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 65,
+          "textures": 12
+        },
+        "p95FrameMs": 8.800000000000011,
+        "samples": 53,
+        "triangles": 53864,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-catalog-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.023596561613438535,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.44,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "catalog-nature",
+          "position": {
+            "x": -0.8600000143051147,
+            "y": 0.800000011920929,
+            "z": -0.119999997317791
+          },
+          "screen": {
+            "x": 125.97965044357709,
+            "y": 419.029392001603
+          },
+          "slot": {
+            "x": 118.92392454134296,
+            "y": 411.49539840092376
+          }
+        },
+        {
+          "id": "catalog-travel",
+          "position": {
+            "x": 0,
+            "y": 0.800000011920929,
+            "z": -0.119999997317791
+          },
+          "screen": {
+            "x": 195.72934089608816,
+            "y": 425.2793392855983
+          },
+          "slot": {
+            "x": 189.7372007773064,
+            "y": 417.74854219033386
+          }
+        },
+        {
+          "id": "catalog-story",
+          "position": {
+            "x": 0.8600000143051147,
+            "y": 0.800000011920929,
+            "z": -0.119999997317791
+          },
+          "screen": {
+            "x": 267.33466384050064,
+            "y": 431.6955612179484
+          },
+          "slot": {
+            "x": 262.4660988477522,
+            "y": 424.170844355318
+          }
+        }
+      ],
+      "level": "book-catalog",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "catalog-nature",
+        "catalog-travel",
+        "catalog-story"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "catalog-top",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "catalog-side",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "catalog-base",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 82.21197098383928,
+              "y": 380.4829408668364
+            },
+            {
+              "x": 296.0254201922998,
+              "y": 398.23685763857975
+            },
+            {
+              "x": 312.468537605296,
+              "y": 376.4748161955878
+            },
+            {
+              "x": 107.88283044877,
+              "y": 360.3474385765578
+            }
+          ],
+          "id": "catalog-top"
+        },
+        {
+          "corners": [
+            {
+              "x": 101.7400761211798,
+              "y": 447.28707817273624
+            },
+            {
+              "x": 75.7573966256327,
+              "y": 471.63094678509634
+            },
+            {
+              "x": 73.53414037535181,
+              "y": 388.26299129278704
+            },
+            {
+              "x": 100.08274840916876,
+              "y": 367.3933908928033
+            }
+          ],
+          "id": "catalog-side"
+        },
+        {
+          "corners": [
+            {
+              "x": 70.9909254381817,
+              "y": 486.04667147634086
+            },
+            {
+              "x": 298.02081429014277,
+              "y": 509.4960285045189
+            },
+            {
+              "x": 298.3105614993456,
+              "y": 497.0267320128167
+            },
+            {
+              "x": 70.65662285820335,
+              "y": 474.03164003654143
+            }
+          ],
+          "id": "catalog-base"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "catalog-pull",
+          "mode": "hold",
+          "screen": {
+            "x": 182.40982884614277,
+            "y": 472.87711295394985
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "catalog-index",
+          "mode": "dial",
+          "screen": {
+            "x": 195.72934089608816,
+            "y": 425.2793392855983
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "catalog-close",
+          "mode": "hold",
+          "screen": {
+            "x": 208.349855332029,
+            "y": 469.42226202871205
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 201,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 103,
+          "textures": 19
+        },
+        "p95FrameMs": 8.699999999999989,
+        "samples": 54,
+        "triangles": 95914,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-globe-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02275439898737071,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.43,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4,
+      "held": null,
+      "items": [
+        {
+          "id": "globe-hemisphere",
+          "position": {
+            "x": 0,
+            "y": 1.7999999523162842,
+            "z": -0.25
+          },
+          "screen": {
+            "x": 198.84860234620496,
+            "y": 363.60829714726134
+          },
+          "slot": {
+            "x": 198.82878447655145,
+            "y": 388.5337980943739
+          }
+        },
+        {
+          "id": "globe-meridian",
+          "position": {
+            "x": 0,
+            "y": 1.4199999570846558,
+            "z": -0.25
+          },
+          "screen": {
+            "x": 198.8235341304508,
+            "y": 395.137308410734
+          },
+          "slot": {
+            "x": 198.88547305531776,
+            "y": 317.2349527374469
+          }
+        },
+        {
+          "id": "globe-crank",
+          "position": {
+            "x": 1.0750000476837158,
+            "y": 1.1200000047683716,
+            "z": -0.25
+          },
+          "screen": {
+            "x": 288.4956479501638,
+            "y": 427.2828857477993
+          },
+          "slot": {
+            "x": 286.82938390273836,
+            "y": 430.0643914835002
+          }
+        }
+      ],
+      "level": "book-globe",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "globe-hemisphere",
+        "globe-meridian",
+        "globe-crank"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "globe-plate",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "globe-side",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 106.2051468706768,
+              "y": 515.6059268026429
+            },
+            {
+              "x": 249.70150401066175,
+              "y": 530.498196026271
+            },
+            {
+              "x": 249.9762745648717,
+              "y": 507.0222482315179
+            },
+            {
+              "x": 105.77101172363554,
+              "y": 492.6829492469122
+            }
+          ],
+          "id": "globe-plate"
+        },
+        {
+          "corners": [
+            {
+              "x": 277.0176823850884,
+              "y": 498.9692479128734
+            },
+            {
+              "x": 142.9770118404476,
+              "y": 485.9055150418874
+            },
+            {
+              "x": 142.79997683815623,
+              "y": 469.8494105390887
+            },
+            {
+              "x": 277.30386948022135,
+              "y": 482.551455801251
+            }
+          ],
+          "id": "globe-side"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "globe-spin",
+          "mode": "hold",
+          "screen": {
+            "x": 288.4956479501638,
+            "y": 427.2828857477993
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "globe-island",
+          "mode": "dial",
+          "screen": {
+            "x": 181.33987207962028,
+            "y": 388.8735912954974
+          },
+          "value": 35
+        },
+        {
+          "done": true,
+          "id": "globe-lock",
+          "mode": "tap",
+          "screen": {
+            "x": 184.44719292143,
+            "y": 493.86033441351685
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 148,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 76,
+          "textures": 13
+        },
+        "p95FrameMs": 9.300000000000068,
+        "samples": 53,
+        "triangles": 71796,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-music-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.027528082733019738,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.32,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4.3,
+      "held": null,
+      "items": [
+        {
+          "id": "music-cylinder",
+          "position": {
+            "x": -0.4000000059604645,
+            "y": 0.6200000047683716,
+            "z": -0.119999997317791
+          },
+          "screen": {
+            "x": 163.768099950684,
+            "y": 434.02564588240136
+          },
+          "slot": {
+            "x": 163.25587825547112,
+            "y": 432.15544300494867
+          }
+        },
+        {
+          "id": "music-key",
+          "position": {
+            "x": 1.225000023841858,
+            "y": 0.4600000083446502,
+            "z": -0.12999999523162842
+          },
+          "screen": {
+            "x": 296.7911904810769,
+            "y": 458.9461434278774
+          },
+          "slot": {
+            "x": 297.72205467667084,
+            "y": 462.26606510726833
+          }
+        },
+        {
+          "id": "music-paper-bird",
+          "position": {
+            "x": 0.6200000047683716,
+            "y": 0.8399999737739563,
+            "z": -0.20000000298023224
+          },
+          "screen": {
+            "x": 248.43304885119932,
+            "y": 421.85660516109834
+          },
+          "slot": {
+            "x": 248.26114457926624,
+            "y": 436.3423390100741
+          }
+        }
+      ],
+      "level": "book-music",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "music-cylinder",
+        "music-key",
+        "music-paper-bird"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "music-lid-face",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "music-front",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "music-side",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 129.73919811849368,
+              "y": 319.6523127845113
+            },
+            {
+              "x": 300.802811845813,
+              "y": 331.8310260963484
+            },
+            {
+              "x": 294.98624938497335,
+              "y": 423.1589868719189
+            },
+            {
+              "x": 125.3778605144098,
+              "y": 408.2466974589767
+            }
+          ],
+          "id": "music-lid-face"
+        },
+        {
+          "corners": [
+            {
+              "x": 92.53988217993302,
+              "y": 481.73230699688
+            },
+            {
+              "x": 268.6911111329113,
+              "y": 499.7668603864406
+            },
+            {
+              "x": 269.03548630455214,
+              "y": 479.0892121321033
+            },
+            {
+              "x": 92.0765859252006,
+              "y": 461.643465740439
+            }
+          ],
+          "id": "music-front"
+        },
+        {
+          "corners": [
+            {
+              "x": 114.44908890115984,
+              "y": 454.38037708426185
+            },
+            {
+              "x": 88.02340310964543,
+              "y": 480.1851248502044
+            },
+            {
+              "x": 87.23667102823772,
+              "y": 447.5007451531335
+            },
+            {
+              "x": 113.8852452554552,
+              "y": 423.0904365088914
+            }
+          ],
+          "id": "music-side"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "music-wind",
+          "mode": "hold",
+          "screen": {
+            "x": 296.7911904810769,
+            "y": 458.9461434278774
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "music-lid",
+          "mode": "hold",
+          "screen": {
+            "x": 207.70286193387983,
+            "y": 418.4128851979749
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "music-bird",
+          "mode": "tap",
+          "screen": {
+            "x": 248.43787515274704,
+            "y": 421.44990960300754
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 233,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 96,
+          "textures": 15
+        },
+        "p95FrameMs": 9.300000000000011,
+        "samples": 39,
+        "triangles": 66766,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "projector-visible-glass-clean-phone",
+    "data": {
+      "action": null,
+      "activeTask": "projector-fan",
+      "audio": {
+        "currentRms": 0.008150247587974838,
+        "enabled": true,
+        "events": {
+          "clean": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 81.31,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.0844769203919263,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "projector-lens",
+          "position": {
+            "x": -1.3499956130981443,
+            "y": 0.10849101841449738,
+            "z": 0.980049967765808
+          },
+          "screen": {
+            "x": 33.695122468822966,
+            "y": 517.8921503281812
+          },
+          "slot": {
+            "x": 246.5314418682741,
+            "y": 357.52720715854133
+          }
+        },
+        {
+          "id": "projector-knob",
+          "position": {
+            "x": 0.15000316500663757,
+            "y": 0.05853819102048874,
+            "z": 1.0800358057022097
+          },
+          "screen": {
+            "x": 272.2754197575476,
+            "y": 553.6349750378415
+          },
+          "slot": {
+            "x": 124.69700276862558,
+            "y": 413.51974374577713
+          }
+        },
+        {
+          "id": "projector-tray",
+          "position": {
+            "x": 1.2800006866455078,
+            "y": 0.06344757229089737,
+            "z": 1.040045142173767
+          },
+          "screen": {
+            "x": 473.43668623315256,
+            "y": 569.1297108723057
+          },
+          "slot": {
+            "x": 228.41060237850635,
+            "y": 323.4382369460264
+          }
+        }
+      ],
+      "level": "book-projector",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 0.337249700474645,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "clean",
+      "started": true,
+      "surfaces": [
+        {
+          "done": false,
+          "id": "projector-case",
+          "progress": 0
+        },
+        {
+          "done": true,
+          "id": "projector-glass",
+          "progress": 1
+        },
+        {
+          "done": false,
+          "id": "projector-base",
+          "progress": 0.14899880189858006
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 91.82242690183278,
+              "y": 446.74869457492355
+            },
+            {
+              "x": 321.7739358233004,
+              "y": 464.2201477087852
+            },
+            {
+              "x": 323.52169494857463,
+              "y": 383.718712785622
+            },
+            {
+              "x": 90.46132071618264,
+              "y": 369.48842282832
+            }
+          ],
+          "id": "projector-case"
+        },
+        {
+          "corners": [
+            {
+              "x": -12.192754357002949,
+              "y": 529.8341209342577
+            },
+            {
+              "x": 55.37747003527867,
+              "y": 536.181019740397
+            },
+            {
+              "x": 80.89199154101382,
+              "y": 514.8057489347269
+            },
+            {
+              "x": 15.9569408693579,
+              "y": 509.00543067764664
+            }
+          ],
+          "id": "projector-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 24.944933643735627,
+              "y": 507.3078512297202
+            },
+            {
+              "x": 377.7931792085376,
+              "y": 538.6531909618536
+            },
+            {
+              "x": 378.5076755652805,
+              "y": 516.1201172770336
+            },
+            {
+              "x": 24.3233522927577,
+              "y": 486.12210097204127
+            }
+          ],
+          "id": "projector-base"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "projector-fan",
+          "mode": "hold",
+          "screen": {
+            "x": 272.2754197575476,
+            "y": 553.6349750378415
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "projector-focus",
+          "mode": "dial",
+          "screen": {
+            "x": 316.6476446886064,
+            "y": 382.033798538839
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "projector-light",
+          "mode": "tap",
+          "screen": {
+            "x": 269.3076821212198,
+            "y": 463.0288617682328
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 156,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 96,
+          "textures": 15
+        },
+        "p95FrameMs": 9.30000000000291,
+        "samples": 600,
+        "triangles": 34452,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "slides-real-clean-to-tidy-phone",
+    "data": {
+      "action": null,
+      "activeTask": "slides-seal",
+      "audio": {
+        "currentRms": 0.016586479810644875,
+        "enabled": true,
+        "events": {
+          "clean": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 73.11,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08322161869803191,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "slides-greenhouse",
+          "position": {
+            "x": -1.299999117851257,
+            "y": 0.04837543889880181,
+            "z": 0.9600164890289308
+          },
+          "screen": {
+            "x": 90.23040633480755,
+            "y": 482.0279885924865
+          },
+          "slot": {
+            "x": 123.8527849420183,
+            "y": 435.49525421310767
+          }
+        },
+        {
+          "id": "slides-lighthouse",
+          "position": {
+            "x": 0.0000010717309351093718,
+            "y": 0.0483754426240921,
+            "z": 0.9600166082382202
+          },
+          "screen": {
+            "x": 176.77264035710468,
+            "y": 492.64742499289935
+          },
+          "slot": {
+            "x": 196.23985290387876,
+            "y": 443.7066308554783
+          }
+        },
+        {
+          "id": "slides-train",
+          "position": {
+            "x": 1.3000009059906006,
+            "y": 0.04837543889880181,
+            "z": 0.9600166082382202
+          },
+          "screen": {
+            "x": 266.1178291320592,
+            "y": 503.6108034384985
+          },
+          "slot": {
+            "x": 270.5705782881931,
+            "y": 452.1384902941396
+          }
+        }
+      ],
+      "level": "book-slides",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music"
+        ]
+      },
+      "stage": "tidy",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "slides-left-glass",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "slides-right-glass",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "slides-holder",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 63.7838477152028,
+              "y": 484.95305229825186
+            },
+            {
+              "x": 103.537924574567,
+              "y": 489.87658969263407
+            },
+            {
+              "x": 116.12093904383391,
+              "y": 474.4281336357297
+            },
+            {
+              "x": 77.18145144343639,
+              "y": 469.72685132796977
+            }
+          ],
+          "id": "slides-left-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 240.38186339668664,
+              "y": 506.82469421959286
+            },
+            {
+              "x": 282.78679649210073,
+              "y": 512.0765398237593
+            },
+            {
+              "x": 291.53515417112203,
+              "y": 495.6064232570622
+            },
+            {
+              "x": 250.0612742627904,
+              "y": 490.5991560878556
+            }
+          ],
+          "id": "slides-right-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 80.27602010702263,
+              "y": 459.23030650305583
+            },
+            {
+              "x": 300.2864202411317,
+              "y": 485.35163165808774
+            },
+            {
+              "x": 300.63296963370317,
+              "y": 473.802902776422
+            },
+            {
+              "x": 79.91318235813628,
+              "y": 448.05084388239345
+            }
+          ],
+          "id": "slides-holder"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "slides-seal",
+          "mode": "hold",
+          "screen": {
+            "x": 88.08343688289882,
+            "y": 416.8865794812096
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "slides-color",
+          "mode": "hold",
+          "screen": {
+            "x": 319.3321149329654,
+            "y": 496.7039947681308
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "slides-sort",
+          "mode": "hold",
+          "screen": {
+            "x": 183.9443644993181,
+            "y": 475.3445288989507
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 167,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 90,
+          "textures": 16
+        },
+        "p95FrameMs": 10.19999999999709,
+        "samples": 600,
+        "triangles": 46778,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-slides-full-play-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.013474969231232953,
+        "enabled": true,
+        "events": {
+          "clean": 3,
+          "done": 1,
+          "pick": 3,
+          "place": 3,
+          "switch": 1,
+          "task": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 34.3,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08322161869803191,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 5,
+      "held": null,
+      "items": [
+        {
+          "id": "slides-greenhouse",
+          "position": {
+            "x": -1.1200000047683716,
+            "y": 0.38999998569488525,
+            "z": -0.03999999910593033
+          },
+          "screen": {
+            "x": 120.99602343789827,
+            "y": 445.499269121167
+          },
+          "slot": {
+            "x": 120.9960237528226,
+            "y": 445.4992682216047
+          }
+        },
+        {
+          "id": "slides-lighthouse",
+          "position": {
+            "x": 0,
+            "y": 0.38999998569488525,
+            "z": -0.03999999910593033
+          },
+          "screen": {
+            "x": 195.77840071138476,
+            "y": 454.1511995582025
+          },
+          "slot": {
+            "x": 195.77840072895745,
+            "y": 454.1511986114288
+          }
+        },
+        {
+          "id": "slides-train",
+          "position": {
+            "x": 1.1200000047683716,
+            "y": 0.38999998569488525,
+            "z": -0.03999999910593033
+          },
+          "screen": {
+            "x": 272.6360095740329,
+            "y": 463.0432234504715
+          },
+          "slot": {
+            "x": 272.63600927751503,
+            "y": 463.0432224541944
+          }
+        }
+      ],
+      "level": "book-slides",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "slides-greenhouse",
+        "slides-lighthouse",
+        "slides-train"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "slides-left-glass",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "slides-right-glass",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "slides-holder",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 58.72685992232768,
+              "y": 497.1967220327256
+            },
+            {
+              "x": 99.82841737239396,
+              "y": 502.4001007224225
+            },
+            {
+              "x": 112.92633408585334,
+              "y": 486.082319348841
+            },
+            {
+              "x": 72.69428989213209,
+              "y": 481.1215631730612
+            }
+          ],
+          "id": "slides-left-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 241.46812673916995,
+              "y": 520.3314174670328
+            },
+            {
+              "x": 285.4087358621569,
+              "y": 525.8942146773483
+            },
+            {
+              "x": 294.4016684790699,
+              "y": 508.4588827048571
+            },
+            {
+              "x": 251.45947268237353,
+              "y": 503.1639550602596
+            }
+          ],
+          "id": "slides-right-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 75.94773576181782,
+              "y": 470.10555811757575
+            },
+            {
+              "x": 303.42450578442816,
+              "y": 497.6750343413446
+            },
+            {
+              "x": 303.795062525225,
+              "y": 485.77321747702314
+            },
+            {
+              "x": 75.55730139332908,
+              "y": 458.5943473710187
+            }
+          ],
+          "id": "slides-holder"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "slides-seal",
+          "mode": "hold",
+          "screen": {
+            "x": 84.27952763242017,
+            "y": 433.20709406479693
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "slides-color",
+          "mode": "hold",
+          "screen": {
+            "x": 323.1792922010303,
+            "y": 509.60936210825463
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "slides-sort",
+          "mode": "hold",
+          "screen": {
+            "x": 186.09503338334355,
+            "y": 482.8017992082416
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 145,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 90,
+          "textures": 16
+        },
+        "p95FrameMs": 10.299999999988358,
+        "samples": 600,
+        "triangles": 41082,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "story-projection-midpoint-phone",
+    "data": {
+      "action": "library-stories",
+      "activeTask": "library-stories",
+      "audio": {
+        "currentRms": 0.012064233968842332,
+        "enabled": true,
+        "events": {
+          "task": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 45.9,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06944262749374379,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "book-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides",
+          "book-projector"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-projector",
+          "book-slides"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "library-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 68.69985678610036,
+            "y": 396.9530910732627
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-load",
+          "mode": "tap",
+          "screen": {
+            "x": 132.89901901004112,
+            "y": 445.5176839183593
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-focus",
+          "mode": "hold",
+          "screen": {
+            "x": 192.52572852311187,
+            "y": 451.66697624123543
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "library-stories",
+          "mode": "hold",
+          "screen": {
+            "x": 223.69025482581904,
+            "y": 452.0928944530062
+          },
+          "value": 0.37246399999999275
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 435,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 218,
+          "textures": 13
+        },
+        "p95FrameMs": 10.099999999998545,
+        "samples": 600,
+        "triangles": 41062,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "story-projection-reload-phone",
+    "data": {
+      "action": null,
+      "activeTask": "library-stories",
+      "audio": {
+        "currentRms": 0.02637251075148295,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "book-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides",
+          "book-projector"
+        ],
+        "finished": false,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-projector",
+          "book-slides"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "library-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 68.69985678610036,
+            "y": 396.9530910732627
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-load",
+          "mode": "tap",
+          "screen": {
+            "x": 132.89901901004112,
+            "y": 445.5176839183593
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-focus",
+          "mode": "hold",
+          "screen": {
+            "x": 192.52572852311187,
+            "y": 451.66697624123543
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "library-stories",
+          "mode": "hold",
+          "screen": {
+            "x": 223.69025482581904,
+            "y": 452.0928944530062
+          },
+          "value": 0.37246399999999275
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 435,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 218,
+          "textures": 13
+        },
+        "p95FrameMs": 9.899999999999975,
+        "samples": 42,
+        "triangles": 41062,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "library-finale-full-interaction-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.011100160456082222,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 45.97,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06605102855670039,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 8,
+      "held": null,
+      "items": [],
+      "level": "book-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides",
+          "book-projector",
+          "book-opening"
+        ],
+        "finished": true,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-projector",
+          "book-slides"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "library-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 68.69985678610036,
+            "y": 396.9530910732627
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-load",
+          "mode": "tap",
+          "screen": {
+            "x": 132.89901901004112,
+            "y": 445.5176839183593
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-focus",
+          "mode": "hold",
+          "screen": {
+            "x": 192.52572852311187,
+            "y": 451.66697624123543
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-stories",
+          "mode": "hold",
+          "screen": {
+            "x": 223.69025482581904,
+            "y": 452.0928944530062
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 435,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 218,
+          "textures": 13
+        },
+        "p95FrameMs": 8.89999999999418,
+        "samples": 600,
+        "triangles": 41062,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "library-before-comparison-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": false,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": false,
+          "position": 46.06,
+          "readyState": 4,
+          "status": "paused",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06605102855670039,
+        "state": "running"
+      },
+      "before": true,
+      "brewTime": 8,
+      "held": null,
+      "items": [],
+      "level": "book-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides",
+          "book-projector",
+          "book-opening"
+        ],
+        "finished": true,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-projector",
+          "book-slides"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "library-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 68.69985678610036,
+            "y": 396.9530910732627
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-load",
+          "mode": "tap",
+          "screen": {
+            "x": 132.82018354590411,
+            "y": 441.671464221088
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-focus",
+          "mode": "hold",
+          "screen": {
+            "x": 192.52572852311187,
+            "y": 451.66697624123543
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-stories",
+          "mode": "hold",
+          "screen": {
+            "x": 223.69025482581904,
+            "y": 452.0928944530062
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 112,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 226,
+          "textures": 13
+        },
+        "p95FrameMs": 8.900000000001455,
+        "samples": 600,
+        "triangles": 8838,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-cover-final-phone-check",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.022721358884555756,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.45,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.02915092775324404,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "book-cover-brass",
+          "position": {
+            "x": 1.0149999856948853,
+            "y": 0.37599998712539673,
+            "z": 0.800000011920929
+          },
+          "screen": {
+            "x": 295.81548594238643,
+            "y": 473.69083449216015
+          },
+          "slot": {
+            "x": 296.00197821739215,
+            "y": 468.99507257672946
+          }
+        },
+        {
+          "id": "book-cover-label",
+          "position": {
+            "x": 0.2300000041723251,
+            "y": 0.3779999911785126,
+            "z": -0.2199999988079071
+          },
+          "screen": {
+            "x": 255.33277519556373,
+            "y": 426.8121124148159
+          },
+          "slot": {
+            "x": 255.4384985880424,
+            "y": 422.28166112248704
+          }
+        }
+      ],
+      "level": "book-cover",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "book-cover-brass",
+        "book-cover-label"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides",
+          "book-projector",
+          "book-opening"
+        ],
+        "finished": true,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-projector",
+          "book-slides"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "book-cover-cloth",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-edge",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 159.47142816586515,
+              "y": 461.1791125543149
+            },
+            {
+              "x": 35.303060286552046,
+              "y": 419.9594988809918
+            },
+            {
+              "x": 82.884132905544,
+              "y": 358.5612567338664
+            },
+            {
+              "x": 198.35504767283223,
+              "y": 396.00579757796527
+            }
+          ],
+          "id": "book-cover-cloth"
+        },
+        {
+          "corners": [
+            {
+              "x": 169.30095288910266,
+              "y": 475.0274826569953
+            },
+            {
+              "x": 298.4688569583518,
+              "y": 494.6254972914768
+            },
+            {
+              "x": 298.9343402014701,
+              "y": 483.2995782557866
+            },
+            {
+              "x": 169.18784276036206,
+              "y": 463.860618808262
+            }
+          ],
+          "id": "book-cover-edge"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "book-cover-corner",
+          "mode": "tap",
+          "screen": {
+            "x": 42.877687722920285,
+            "y": 419.6662533213211
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-smooth",
+          "mode": "hold",
+          "screen": {
+            "x": 184.2192295144976,
+            "y": 427.0575897618099
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "book-cover-open",
+          "mode": "tap",
+          "screen": {
+            "x": 119.80684270051196,
+            "y": 405.9438044507878
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 109,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 59,
+          "textures": 17
+        },
+        "p95FrameMs": 8.699999999999932,
+        "samples": 56,
+        "triangles": 45876,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "book-projector-final-phone-check",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02637251075148295,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4.5,
+      "held": null,
+      "items": [
+        {
+          "id": "projector-lens",
+          "position": {
+            "x": -0.44999998807907104,
+            "y": 0.8199999928474426,
+            "z": -0.6700000166893005
+          },
+          "screen": {
+            "x": 178.0233265025706,
+            "y": 405.6782441774065
+          },
+          "slot": {
+            "x": 178.21997030063707,
+            "y": 405.4316975692458
+          }
+        },
+        {
+          "id": "projector-knob",
+          "position": {
+            "x": -0.9300000071525574,
+            "y": 0.6700000166893005,
+            "z": 0.4600000083446502
+          },
+          "screen": {
+            "x": 122.1255001011796,
+            "y": 441.05284878092
+          },
+          "slot": {
+            "x": 121.438715046487,
+            "y": 441.8690459665883
+          }
+        },
+        {
+          "id": "projector-tray",
+          "position": {
+            "x": -0.44999998807907104,
+            "y": 1.1399999856948853,
+            "z": -0.1899999976158142
+          },
+          "screen": {
+            "x": 168.2324963047048,
+            "y": 396.9187932063117
+          },
+          "slot": {
+            "x": 168.23249554360189,
+            "y": 396.9187921243167
+          }
+        }
+      ],
+      "level": "book-projector",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "projector-lens",
+        "projector-knob",
+        "projector-tray"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides",
+          "book-projector",
+          "book-opening"
+        ],
+        "finished": true,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-projector",
+          "book-slides"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "projector-case",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "projector-glass",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "projector-base",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 106.88085956457904,
+              "y": 453.7449521003376
+            },
+            {
+              "x": 207.48347868594388,
+              "y": 465.6219462873325
+            },
+            {
+              "x": 207.60167554750743,
+              "y": 432.5417906174957
+            },
+            {
+              "x": 106.06177296163602,
+              "y": 421.1589819741063
+            }
+          ],
+          "id": "projector-case"
+        },
+        {
+          "corners": [
+            {
+              "x": 62.89574816248859,
+              "y": 495.16191281281414
+            },
+            {
+              "x": 92.19418924394444,
+              "y": 498.8732117651563
+            },
+            {
+              "x": 102.56526528377556,
+              "y": 486.1367245147454
+            },
+            {
+              "x": 73.75061619606802,
+              "y": 482.5609828582244
+            }
+          ],
+          "id": "projector-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 77.28376250041674,
+              "y": 480.2666658596026
+            },
+            {
+              "x": 230.36812368628244,
+              "y": 499.18649774530184
+            },
+            {
+              "x": 230.46184978216036,
+              "y": 490.0168356396362
+            },
+            {
+              "x": 76.9803950130692,
+              "y": 471.3005230025343
+            }
+          ],
+          "id": "projector-base"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "projector-fan",
+          "mode": "hold",
+          "screen": {
+            "x": 122.1255001011796,
+            "y": 441.05284878092
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "projector-focus",
+          "mode": "dial",
+          "screen": {
+            "x": 204.6132908205278,
+            "y": 431.83290968863497
+          },
+          "value": 45
+        },
+        {
+          "done": true,
+          "id": "projector-light",
+          "mode": "tap",
+          "screen": {
+            "x": 184.87433896556757,
+            "y": 464.4329647426184
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 173,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 88,
+          "textures": 13
+        },
+        "p95FrameMs": 8.800000000000011,
+        "samples": 42,
+        "triangles": 41944,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "production-finale-restore-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.005950389595532131,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 26.67,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "hillside-library",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06587846697158929,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 8,
+      "held": null,
+      "items": [],
+      "level": "book-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-slides",
+          "book-projector",
+          "book-opening"
+        ],
+        "finished": true,
+        "id": "hillside-library",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "book-cover",
+          "book-binding",
+          "book-press",
+          "book-catalog",
+          "book-globe",
+          "book-music",
+          "book-projector",
+          "book-slides"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "library-curtain",
+          "mode": "hold",
+          "screen": {
+            "x": 68.69985678610036,
+            "y": 396.9530910732627
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-load",
+          "mode": "tap",
+          "screen": {
+            "x": 132.89901901004112,
+            "y": 445.5176839183593
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-focus",
+          "mode": "hold",
+          "screen": {
+            "x": 192.52572852311187,
+            "y": 451.66697624123543
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "library-stories",
+          "mode": "hold",
+          "screen": {
+            "x": 223.69025482581904,
+            "y": 452.0928944530062
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.7.0",
+      "view": {
+        "calls": 435,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 218,
+          "textures": 13
+        },
+        "p95FrameMs": 9.299999999999272,
+        "samples": 600,
+        "triangles": 41062,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "production-latest-shortcut-phone",
+    "data": {
+      "level": "book-cover",
+      "season": "hillside-library",
+      "version": "0.7.0"
+    }
+  },
+  {
+    "case": "production-fourth-season-route",
+    "data": {
+      "level": "station-sign",
+      "season": "mountain-station",
+      "version": "0.7.0"
+    }
+  }
+]

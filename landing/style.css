@@ -14,3 +14,8 @@
 
 .station .art-wrap{background:radial-gradient(ellipse at 70% 20%,#f2e9c8 0%,#d4e1ca 90%)}
 .station .play-link{background:#69856a;border-color:#69856a}
+
+.book .art-wrap{background:radial-gradient(ellipse at 65% 22%,#f4e7cd 0%,#ded7c5 90%)}
+.book .play-link{background:#887568;border-color:#887568}
+.latest-season-wrap{margin-top:22px}.latest-season{display:inline-flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid #b6bba267;border-radius:9px;font-size:12px;color:#6b755e;background:#fff9e985}.latest-season span{font-size:10px;color:#9c9278}.latest-season:hover{background:#fff9e9}
+@media(min-width:960px){.season-card:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.season-card:last-child:nth-child(odd) .art-wrap{height:100%;min-height:320px}.season-card:last-child:nth-child(odd) .season-art{inset:42px 65px}.season-card:last-child:nth-child(odd) .card-content{padding:30px}}

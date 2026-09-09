@@ -1,0 +1,8 @@
+{
+  "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/",
+  "release": "quiet-workshop/v0.7.0",
+  "commit": "a3ffa43df536c5725aa0570d33282810cd833fd1",
+  "status": "public-files-verified",
+  "verifiedFiles": 4,
+  "bytes": 211630
+}

@@ -15,7 +15,7 @@ function finish(storage,id) {
 }
 test('three completed seasons remain byte-identical while the fourth starts empty',()=>{
   const storage=memory();
-  for(const season of SEASONS.filter(season=>season!==SEASON_FOUR))for(const id of seasonLevelIds(season))finish(storage,id);
+  for(const season of SEASONS.slice(0,SEASONS.indexOf(SEASON_FOUR)))for(const id of seasonLevelIds(season))finish(storage,id);
   markChapterVisited(storage,SEASON_THREE,SEASON_THREE.chapters[0].id);
   const oldEntries=[...storage.entries];
   assert.equal(seasonProgress(storage,SEASON_FOUR).completedIds.size,0);

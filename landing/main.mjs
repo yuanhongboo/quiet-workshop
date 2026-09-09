@@ -1,9 +1,7 @@
-import { seasonCardsMarkup, catalogSummary } from './cards.mjs';
+import { seasonCardsMarkup, catalogSummary, latestSeasonMarkup } from './cards.mjs';
 import { SEASONS, seasonLevelIds, seasonLabel, seasonForLevel } from '../src/season.mjs';
 import { getLevel } from '../src/levels.mjs';
 import { COLLECTION_KEY, collectionStatus, seasonProgress, selectedLevel } from '../src/progress.mjs';
-import { seasonArtwork } from '../src/season-art.mjs';
-import { gardenArtwork } from '../src/garden-art.mjs';
 import { landingSelection } from './selection.mjs';
 
 const localPreview = ['127.0.0.1','localhost','[::1]'].includes(location.hostname);
@@ -13,6 +11,7 @@ const $=id=>document.getElementById(id);
 const storage=(()=>{try{return localStorage;}catch{return {getItem:()=>null};}})();
 const href=(season,id)=>{const url=new URL(releaseUrl);url.searchParams.set('season',season.id);if(id)url.searchParams.set('level',id);return url.href;};
 $('season-catalog').innerHTML=seasonCardsMarkup(SEASONS,releaseUrl);
+$('latest-season').innerHTML=latestSeasonMarkup(SEASONS,releaseUrl);
 
 function refresh() {
   $('return-heading').textContent='今天，想收拾哪里？';

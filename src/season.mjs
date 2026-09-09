@@ -72,7 +72,22 @@ export const SEASON_FOUR = Object.freeze({
   ],
   restorationIds:['station-sign','station-bench','station-ticket','station-board','station-luggage','station-signal','station-track','station-train'],
 });
-export const SEASONS = Object.freeze([SEASON, SEASON_TWO, SEASON_THREE, SEASON_FOUR]);
+export const SEASON_FIVE = Object.freeze({
+  id: 'hillside-library', number: '05', label: '第五季', title: '风吹书页',
+  description: '山坡上的旧书屋，等你轻轻翻开下一页。',
+  story: '补好书脊，收好卡片，让纸上的风景重新亮起来。把走过的地方，留在一间安静书屋。',
+  overviewName: '书屋', openingId: 'book-opening', inspection: true, chapterReturns: true, fitIntroTitle: true,
+  overviewTitle: '把故事，<br/>慢慢留下来。',
+  openingLabel: '点亮书里的风景', reopeningLabel: '重看书屋里的故事',
+  readyHint: '故事已经亮起来，收好这一页温柔。', restoredHint: '让故事重新亮起',
+  chapters: [
+    {id:'pages',number:'一',title:'把故事修好',description:'从一张旧书封，修到一册平整的书。',levelIds:['book-cover','book-binding','book-press'],returnTitle:'纸页平了，<br/>故事留住了。',returnDescription:'书封重新展开，散页有了整齐的线，压书机也轻轻松开。亲手修好的前三件东西，回到了书屋的工作桌。'},
+    {id:'shelves',number:'二',title:'让书屋有温度',description:'给每一段故事，留一个能找到的位置。',levelIds:['book-catalog','book-globe','book-music'],returnTitle:'卡片归位，<br/>小鸟转起来。',returnDescription:'借阅卡有了次序，地球仪转向新的旅途，音乐盒上的小鸟也动了。现在的书屋，已经有了安静陪伴你的样子。'},
+    {id:'stories',number:'三',title:'把故事放出来',description:'让熟悉的风景，映在书屋墙上。',levelIds:['book-projector','book-slides','book-opening']},
+  ],
+  restorationIds:['book-cover','book-binding','book-press','book-catalog','book-globe','book-music','book-projector','book-slides'],
+});
+export const SEASONS = Object.freeze([SEASON, SEASON_TWO, SEASON_THREE, SEASON_FOUR, SEASON_FIVE]);
 export const getSeason = (id) => SEASONS.find((season) => season.id === id) || SEASON;
 export const seasonForLevel = (level) => SEASONS.find((season) => seasonLevelIds(season).includes(typeof level === 'string' ? level : level?.id)) || SEASON;
 export const seasonLabel = (season) => season.label || '第一季';
