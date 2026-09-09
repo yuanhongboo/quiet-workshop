@@ -2126,3 +2126,7 @@ body[data-season="mountain-station"] .header-actions button[aria-pressed="true"]
 body[data-season="hillside-library"] .left-shade{background:linear-gradient(90deg,#f0e9dcf0 0%,#f0e9dcc0 19%,#f0e9dc00 43%)}
 body[data-season="hillside-library"] .header-actions button[aria-pressed="true"]{background:#e0d4c4;border-color:#baab93;color:#6b5c4c}
 @media(max-width:700px){.season-tab:last-child:nth-child(odd){grid-column:1/-1}body[data-season="hillside-library"] .left-shade{background:linear-gradient(180deg,#f0e9dcf0 0%,#f0e9dcc0 25%,#f0e9dc00 42%,#f0e9dc00 75%,#f0e9dc80 100%)}}
+
+body[data-season="evening-bakery"] .left-shade{background:linear-gradient(90deg,#f1e5cff0 0%,#f1e5cfc0 19%,#f1e5cf00 43%)}
+body[data-season="evening-bakery"] .header-actions button[aria-pressed="true"]{background:#e2cfad;border-color:#b6a17d;color:#725b3e}
+@media(max-width:700px){body[data-season="evening-bakery"] .left-shade{background:linear-gradient(180deg,#f1e5cff0 0%,#f1e5cfc0 25%,#f1e5cf00 42%,#f1e5cf00 75%,#f1e5cf80 100%)}}

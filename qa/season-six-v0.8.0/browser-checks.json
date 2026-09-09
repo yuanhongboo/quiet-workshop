@@ -1,0 +1,4049 @@
+[
+  {
+    "case": "oven-full-play",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.018775620952252964,
+        "enabled": true,
+        "events": {
+          "clean": 2,
+          "done": 1,
+          "pick": 3,
+          "place": 3,
+          "switch": 1,
+          "task": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 6.32,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08348957789238233,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "bake-oven-rack",
+          "position": {
+            "x": 0,
+            "y": 0.7400000095367432,
+            "z": 0
+          },
+          "screen": {
+            "x": 796.3857691671989,
+            "y": 398.5062046229406
+          },
+          "slot": {
+            "x": 785.9102675129291,
+            "y": 422.14653275933824
+          }
+        },
+        {
+          "id": "bake-oven-handle",
+          "position": {
+            "x": 0,
+            "y": 1.5099999904632568,
+            "z": 0.7900000214576721
+          },
+          "screen": {
+            "x": 782.4142999693175,
+            "y": 340.1338462795468
+          },
+          "slot": {
+            "x": 779.7920525655065,
+            "y": 345.36193242665956
+          }
+        },
+        {
+          "id": "bake-oven-knob",
+          "position": {
+            "x": 0.7799999713897705,
+            "y": 1.5800000429153442,
+            "z": 0.6240000128746033
+          },
+          "screen": {
+            "x": 902.4818585708168,
+            "y": 333.444286233629
+          },
+          "slot": {
+            "x": 900.7589527893628,
+            "y": 340.02189412915317
+          }
+        }
+      ],
+      "level": "bake-oven",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "bake-oven-rack",
+        "bake-oven-handle",
+        "bake-oven-knob"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "bake-oven-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-glass",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 658.1758433252786,
+              "y": 264.24145548728103
+            },
+            {
+              "x": 940.3556541861626,
+              "y": 289.14038574474085
+            },
+            {
+              "x": 947.762754566661,
+              "y": 252.5807479196519
+            },
+            {
+              "x": 687.2923502102551,
+              "y": 231.52635234742715
+            }
+          ],
+          "id": "bake-oven-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 679.5589951365619,
+              "y": 450.3378656118072
+            },
+            {
+              "x": 883.3451005409222,
+              "y": 476.2112382830179
+            },
+            {
+              "x": 891.7065073898775,
+              "y": 374.75516378064856
+            },
+            {
+              "x": 680.8605763917416,
+              "y": 352.3355581479401
+            }
+          ],
+          "id": "bake-oven-glass"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bake-oven-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 932.0943971342124,
+            "y": 497.13233658302454
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-close",
+          "mode": "tap",
+          "screen": {
+            "x": 782.4143005866712,
+            "y": 340.1338438556589
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-light",
+          "mode": "tap",
+          "screen": {
+            "x": 902.4818585708168,
+            "y": 333.444286233629
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 217,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 128,
+          "textures": 12
+        },
+        "p95FrameMs": 9.200000000011642,
+        "samples": 600,
+        "triangles": 83596,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "first-chapter-return",
+    "data": {
+      "action": null,
+      "activeTask": "bakery-load",
+      "audio": {
+        "currentRms": 0.023501539717466106,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 71.78,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08546773751213241,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "bake-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "tools",
+        "chapterHighlights": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale"
+        ],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "bakery-load",
+          "mode": "hold",
+          "screen": {
+            "x": 513.7745476885764,
+            "y": 377.83484431265464
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-bake",
+          "mode": "hold",
+          "screen": {
+            "x": 620.425916069765,
+            "y": 396.25177743667285
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-serve",
+          "mode": "hold",
+          "screen": {
+            "x": 739.3353788916843,
+            "y": 491.6025953165343
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-open",
+          "mode": "tap",
+          "screen": {
+            "x": 942.182602737622,
+            "y": 472.0518441080038
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 136,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 73,
+          "textures": 8
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 6812,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "second-chapter-return-phone",
+    "data": {
+      "action": null,
+      "activeTask": "bakery-load",
+      "audio": {
+        "currentRms": 0.010807590021574874,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 105.28,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08431708185212168,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "bake-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "dough",
+        "chapterHighlights": [
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "bakery-load",
+          "mode": "hold",
+          "screen": {
+            "x": 56.55569521190914,
+            "y": 429.99451091956695
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-bake",
+          "mode": "hold",
+          "screen": {
+            "x": 121.42706678916836,
+            "y": 441.01551923870704
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-serve",
+          "mode": "hold",
+          "screen": {
+            "x": 188.557917128834,
+            "y": 493.5170481239156
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-open",
+          "mode": "tap",
+          "screen": {
+            "x": 302.2477586909668,
+            "y": 479.7302454881359
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 229,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 119,
+          "textures": 8
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 8800,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "dough-real-clean-and-placement-phone",
+    "data": {
+      "action": null,
+      "activeTask": "dough-fold",
+      "audio": {
+        "currentRms": 0.015690400023253663,
+        "enabled": true,
+        "events": {
+          "clean": 2,
+          "pick": 3,
+          "place": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 52.5,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08451499514356293,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "dough-scraper",
+          "position": {
+            "x": -1.0800000429153442,
+            "y": 0.47999998927116394,
+            "z": 0.18000000715255737
+          },
+          "screen": {
+            "x": 107.66355697638274,
+            "y": 431.3331370424281
+          },
+          "slot": {
+            "x": 104.62020942769983,
+            "y": 441.39388697565704
+          }
+        },
+        {
+          "id": "dough-roller",
+          "position": {
+            "x": 0,
+            "y": 0.4300000071525574,
+            "z": -0.6899999976158142
+          },
+          "screen": {
+            "x": 209.887347803628,
+            "y": 420.2478284273591
+          },
+          "slot": {
+            "x": 209.46967789176895,
+            "y": 420.7646845573888
+          }
+        },
+        {
+          "id": "dough-piece",
+          "position": {
+            "x": 0.12999999523162842,
+            "y": 0.47999998927116394,
+            "z": 0.029999999329447743
+          },
+          "screen": {
+            "x": 204.4583602900429,
+            "y": 436.7498380446052
+          },
+          "slot": {
+            "x": 204.42073230398452,
+            "y": 452.6087801274832
+          }
+        }
+      ],
+      "level": "bake-dough",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "dough-scraper",
+        "dough-roller",
+        "dough-piece"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "dough-board",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "dough-apron",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 74.64564928709413,
+              "y": 460.41406908908016
+            },
+            {
+              "x": 288.5042705645385,
+              "y": 483.66268420491014
+            },
+            {
+              "x": 314.5419355503305,
+              "y": 439.73437113024494
+            },
+            {
+              "x": 114.77140383824316,
+              "y": 419.6934831506564
+            }
+          ],
+          "id": "dough-board"
+        },
+        {
+          "corners": [
+            {
+              "x": 72.00143908160949,
+              "y": 475.22711661257944
+            },
+            {
+              "x": 287.55493925807184,
+              "y": 499.2706490552191
+            },
+            {
+              "x": 287.8139747454577,
+              "y": 488.2889558832425
+            },
+            {
+              "x": 71.67061634747611,
+              "y": 464.608742854642
+            }
+          ],
+          "id": "dough-apron"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "dough-fold",
+          "mode": "hold",
+          "screen": {
+            "x": 107.66355697638274,
+            "y": 431.3331370424281
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "dough-round",
+          "mode": "hold",
+          "screen": {
+            "x": 204.4583602900429,
+            "y": 436.7498380446052
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "dough-stretch",
+          "mode": "hold",
+          "screen": {
+            "x": 209.887347803628,
+            "y": 420.2478284273591
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 145,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 96,
+          "textures": 16
+        },
+        "p95FrameMs": 9.099999999998545,
+        "samples": 600,
+        "triangles": 74624,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "dough-stretch-midpoint-phone",
+    "data": {
+      "action": null,
+      "activeTask": "dough-stretch",
+      "audio": {
+        "currentRms": 0.011305531988751632,
+        "enabled": true,
+        "events": {
+          "clean": 2,
+          "pick": 3,
+          "place": 3,
+          "task": 2
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 8.12,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08451499514356293,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "dough-scraper",
+          "position": {
+            "x": -1.0800000429153442,
+            "y": 0.47999998927116394,
+            "z": 0.18000000715255737
+          },
+          "screen": {
+            "x": 104.0442218042393,
+            "y": 431.5967615815227
+          },
+          "slot": {
+            "x": 100.86383059675444,
+            "y": 442.12983580167617
+          }
+        },
+        {
+          "id": "dough-roller",
+          "position": {
+            "x": 0,
+            "y": 0.4300000071525574,
+            "z": -0.6899999976158142
+          },
+          "screen": {
+            "x": 210.4875332149173,
+            "y": 419.7051599712864
+          },
+          "slot": {
+            "x": 210.05355977852224,
+            "y": 420.2545276600091
+          }
+        },
+        {
+          "id": "dough-piece",
+          "position": {
+            "x": 0.12999999523162842,
+            "y": 0.47999998927116394,
+            "z": 0.029999999329447743
+          },
+          "screen": {
+            "x": 204.8540314360766,
+            "y": 437.3678054906747
+          },
+          "slot": {
+            "x": 204.8122774312963,
+            "y": 453.83054496140073
+          }
+        }
+      ],
+      "level": "bake-dough",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "dough-scraper",
+        "dough-roller",
+        "dough-piece"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "dough-board",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "dough-apron",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 69.59297350998145,
+              "y": 462.1128376312932
+            },
+            {
+              "x": 292.5813944552578,
+              "y": 486.9529558042458
+            },
+            {
+              "x": 319.3885441613955,
+              "y": 440.08229018336147
+            },
+            {
+              "x": 111.63022235040894,
+              "y": 418.79024238026096
+            }
+          ],
+          "id": "dough-board"
+        },
+        {
+          "corners": [
+            {
+              "x": 66.84553566772202,
+              "y": 477.55195543276966
+            },
+            {
+              "x": 291.58582486967777,
+              "y": 503.2496362105368
+            },
+            {
+              "x": 291.8743423420263,
+              "y": 491.8406974652048
+            },
+            {
+              "x": 66.47821708399483,
+              "y": 466.5312860157835
+            }
+          ],
+          "id": "dough-apron"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "dough-fold",
+          "mode": "hold",
+          "screen": {
+            "x": 104.0442218042393,
+            "y": 431.5967615815227
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "dough-round",
+          "mode": "hold",
+          "screen": {
+            "x": 204.86583410443,
+            "y": 432.7142991189801
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "dough-stretch",
+          "mode": "hold",
+          "screen": {
+            "x": 199.92535747139908,
+            "y": 433.0758224782246
+          },
+          "value": 0.599550000000005
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 145,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 96,
+          "textures": 16
+        },
+        "p95FrameMs": 9.19999999999709,
+        "samples": 600,
+        "triangles": 74624,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "dough-stretch-reload-phone",
+    "data": {
+      "action": null,
+      "activeTask": "dough-stretch",
+      "audio": {
+        "currentRms": 0.022734567344632257,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.41,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.02915092775324404,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "dough-scraper",
+          "position": {
+            "x": -1.0800000429153442,
+            "y": 0.47999998927116394,
+            "z": 0.18000000715255737
+          },
+          "screen": {
+            "x": 105.39349830760968,
+            "y": 431.5045771470788
+          },
+          "slot": {
+            "x": 102.2640270767204,
+            "y": 441.85910467575405
+          }
+        },
+        {
+          "id": "dough-roller",
+          "position": {
+            "x": 0,
+            "y": 0.4300000071525574,
+            "z": -0.6899999976158142
+          },
+          "screen": {
+            "x": 210.26388595479696,
+            "y": 419.9303781258387
+          },
+          "slot": {
+            "x": 209.83598520984208,
+            "y": 420.4670676393116
+          }
+        },
+        {
+          "id": "dough-piece",
+          "position": {
+            "x": 0.12999999523162842,
+            "y": 0.47999998927116394,
+            "z": 0.029999999329447743
+          },
+          "screen": {
+            "x": 204.70650757898983,
+            "y": 437.1374809333855
+          },
+          "slot": {
+            "x": 204.66635963980323,
+            "y": 453.37795990740307
+          }
+        }
+      ],
+      "level": "bake-dough",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "dough-scraper",
+        "dough-roller",
+        "dough-piece"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "dough-board",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "dough-apron",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 71.4761583158503,
+              "y": 461.4758000130432
+            },
+            {
+              "x": 291.060968168016,
+              "y": 485.6969259971165
+            },
+            {
+              "x": 317.5829992158284,
+              "y": 439.9709766889931
+            },
+            {
+              "x": 112.79993889506984,
+              "y": 419.16622198303793
+            }
+          ],
+          "id": "dough-board"
+        },
+        {
+          "corners": [
+            {
+              "x": 68.7665811505952,
+              "y": 476.6815987848184
+            },
+            {
+              "x": 290.0831186958284,
+              "y": 501.7367148677716
+            },
+            {
+              "x": 290.3601592676171,
+              "y": 490.4847102656363
+            },
+            {
+              "x": 68.41346522347087,
+              "y": 465.80879678233254
+            }
+          ],
+          "id": "dough-apron"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "dough-fold",
+          "mode": "hold",
+          "screen": {
+            "x": 105.39349830760968,
+            "y": 431.5045771470788
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "dough-round",
+          "mode": "hold",
+          "screen": {
+            "x": 204.71785478359345,
+            "y": 432.5473982643229
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "dough-stretch",
+          "mode": "hold",
+          "screen": {
+            "x": 199.85268789195123,
+            "y": 432.98848873520825
+          },
+          "value": 0.599550000000005
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 145,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 81,
+          "textures": 13
+        },
+        "p95FrameMs": 8.400000000000091,
+        "samples": 51,
+        "triangles": 74624,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "dough-full-play-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.01428640817259522,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 77.16,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08285700493991263,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.9,
+      "held": null,
+      "items": [
+        {
+          "id": "dough-scraper",
+          "position": {
+            "x": -1.0800000429153442,
+            "y": 0.47999998927116394,
+            "z": 0.18000000715255737
+          },
+          "screen": {
+            "x": 104.04422180423934,
+            "y": 431.5967615815228
+          },
+          "slot": {
+            "x": 100.8638305967545,
+            "y": 442.1298358016762
+          }
+        },
+        {
+          "id": "dough-roller",
+          "position": {
+            "x": 0,
+            "y": 0.4300000071525574,
+            "z": -0.6899999976158142
+          },
+          "screen": {
+            "x": 210.48753321491745,
+            "y": 419.70515997128655
+          },
+          "slot": {
+            "x": 210.05355977852233,
+            "y": 420.2545276600093
+          }
+        },
+        {
+          "id": "dough-piece",
+          "position": {
+            "x": 0.12999999523162842,
+            "y": 0.47999998927116394,
+            "z": 0.029999999329447743
+          },
+          "screen": {
+            "x": 204.85403143607664,
+            "y": 437.3678054906748
+          },
+          "slot": {
+            "x": 204.8122774312963,
+            "y": 453.83054496140096
+          }
+        }
+      ],
+      "level": "bake-dough",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "dough-scraper",
+        "dough-roller",
+        "dough-piece"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "dough-board",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "dough-apron",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 69.59297350998146,
+              "y": 462.1128376312933
+            },
+            {
+              "x": 292.58139445525785,
+              "y": 486.952955804246
+            },
+            {
+              "x": 319.3885441613956,
+              "y": 440.0822901833616
+            },
+            {
+              "x": 111.63022235040906,
+              "y": 418.7902423802611
+            }
+          ],
+          "id": "dough-board"
+        },
+        {
+          "corners": [
+            {
+              "x": 66.84553566772199,
+              "y": 477.55195543276983
+            },
+            {
+              "x": 291.5858248696778,
+              "y": 503.249636210537
+            },
+            {
+              "x": 291.87434234202635,
+              "y": 491.84069746520504
+            },
+            {
+              "x": 66.47821708399482,
+              "y": 466.53128601578373
+            }
+          ],
+          "id": "dough-apron"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "dough-fold",
+          "mode": "hold",
+          "screen": {
+            "x": 104.04422180423934,
+            "y": 431.5967615815228
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "dough-round",
+          "mode": "hold",
+          "screen": {
+            "x": 204.8590258776267,
+            "y": 435.3986181103089
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "dough-stretch",
+          "mode": "hold",
+          "screen": {
+            "x": 210.48753321491745,
+            "y": 419.70515997128655
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 145,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 81,
+          "textures": 13
+        },
+        "p95FrameMs": 8.89999999999418,
+        "samples": 600,
+        "triangles": 74624,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-oven-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02108818811814338,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.42,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.02915092775324404,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "bake-oven-rack",
+          "position": {
+            "x": 0,
+            "y": 0.7400000095367432,
+            "z": 0
+          },
+          "screen": {
+            "x": 195.00000000000009,
+            "y": 439.4755005772528
+          },
+          "slot": {
+            "x": 185.6094417383455,
+            "y": 451.2533646344353
+          }
+        },
+        {
+          "id": "bake-oven-handle",
+          "position": {
+            "x": 0,
+            "y": 1.5099999904632568,
+            "z": 0.7900000214576721
+          },
+          "screen": {
+            "x": 178.39243376014556,
+            "y": 407.36642282803535
+          },
+          "slot": {
+            "x": 176.2034844749612,
+            "y": 410.0200440969869
+          }
+        },
+        {
+          "id": "bake-oven-knob",
+          "position": {
+            "x": 0.7799999713897705,
+            "y": 1.5800000429153442,
+            "z": 0.6240000128746033
+          },
+          "screen": {
+            "x": 239.0832530618916,
+            "y": 403.92683457260995
+          },
+          "slot": {
+            "x": 236.666949565414,
+            "y": 407.2678671097019
+          }
+        }
+      ],
+      "level": "bake-oven",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "bake-oven-rack",
+        "bake-oven-handle",
+        "bake-oven-knob"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "bake-oven-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-glass",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 117.15194267380096,
+              "y": 367.1561831343636
+            },
+            {
+              "x": 259.76564835212633,
+              "y": 381.1296325682368
+            },
+            {
+              "x": 274.6735907542142,
+              "y": 360.2951631784119
+            },
+            {
+              "x": 136.99825703402135,
+              "y": 347.35469966053034
+            }
+          ],
+          "id": "bake-oven-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 129.30492251839564,
+              "y": 466.60747057861073
+            },
+            {
+              "x": 233.98153801277283,
+              "y": 478.75297502998353
+            },
+            {
+              "x": 234.55660735047243,
+              "y": 425.1682972334649
+            },
+            {
+              "x": 128.35431188742317,
+              "y": 413.8724673204768
+            }
+          ],
+          "id": "bake-oven-glass"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bake-oven-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 258.0461635929755,
+            "y": 489.1544018488463
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-close",
+          "mode": "tap",
+          "screen": {
+            "x": 178.3924342246426,
+            "y": 407.3664215847689
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-light",
+          "mode": "tap",
+          "screen": {
+            "x": 239.0832530618916,
+            "y": 403.92683457260995
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 217,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 111,
+          "textures": 10
+        },
+        "p95FrameMs": 8.5,
+        "samples": 52,
+        "triangles": 83596,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-mill-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.023486002756703123,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.42,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "bake-mill-hopper",
+          "position": {
+            "x": 0,
+            "y": 1.940000057220459,
+            "z": -0.03999999910593033
+          },
+          "screen": {
+            "x": 195.81626845003527,
+            "y": 359.85700590454707
+          },
+          "slot": {
+            "x": 195.8125136872348,
+            "y": 377.22605784631594
+          }
+        },
+        {
+          "id": "bake-mill-crank",
+          "position": {
+            "x": 0,
+            "y": 1.2000000476837158,
+            "z": 0.5899999737739563
+          },
+          "screen": {
+            "x": 182.782100888907,
+            "y": 427.2036797934352
+          },
+          "slot": {
+            "x": 180.0013190923748,
+            "y": 430.70415945757577
+          }
+        },
+        {
+          "id": "bake-mill-drawer",
+          "position": {
+            "x": 0,
+            "y": 0.23999999463558197,
+            "z": 0.28999999165534973
+          },
+          "screen": {
+            "x": 189.17886141023695,
+            "y": 484.15356352567113
+          },
+          "slot": {
+            "x": 189.1725037747696,
+            "y": 480.1654837276714
+          }
+        }
+      ],
+      "level": "bake-mill",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "bake-mill-hopper",
+        "bake-mill-crank",
+        "bake-mill-drawer"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "bake-mill-wood",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "bake-mill-plate",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 133.8227136704757,
+              "y": 465.1156961512535
+            },
+            {
+              "x": 232.57829257770055,
+              "y": 476.47720209841185
+            },
+            {
+              "x": 232.71238317571832,
+              "y": 463.4196709841364
+            },
+            {
+              "x": 133.60831788843308,
+              "y": 452.251811727164
+            }
+          ],
+          "id": "bake-mill-wood"
+        },
+        {
+          "corners": [
+            {
+              "x": 145.53445417683906,
+              "y": 445.05622630083974
+            },
+            {
+              "x": 225.78224843237587,
+              "y": 453.9735982716425
+            },
+            {
+              "x": 226.21337794959945,
+              "y": 402.4068440867838
+            },
+            {
+              "x": 144.8518317673638,
+              "y": 394.1242294764601
+            }
+          ],
+          "id": "bake-mill-plate"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bake-mill-latch",
+          "mode": "tap",
+          "screen": {
+            "x": 233.44761740892557,
+            "y": 430.122405394639
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-mill-grind",
+          "mode": "hold",
+          "screen": {
+            "x": 182.782100888907,
+            "y": 427.2036797934352
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-mill-drawer",
+          "mode": "tap",
+          "screen": {
+            "x": 176.0052540460687,
+            "y": 502.59403220367176
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 175,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 91,
+          "textures": 12
+        },
+        "p95FrameMs": 9.100000000000025,
+        "samples": 52,
+        "triangles": 84540,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-scale-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.023596561613438535,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.44,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "bake-scale-pan",
+          "position": {
+            "x": 0,
+            "y": 1.5800000429153442,
+            "z": -0.029999999329447743
+          },
+          "screen": {
+            "x": 195.60842531677568,
+            "y": 385.0611813270298
+          },
+          "slot": {
+            "x": 195.6090967035723,
+            "y": 380.9223985229549
+          }
+        },
+        {
+          "id": "bake-scale-weight",
+          "position": {
+            "x": -0.7599999904632568,
+            "y": 0.28999999165534973,
+            "z": 0.5
+          },
+          "screen": {
+            "x": 131.87771344591556,
+            "y": 480.58882869045806
+          },
+          "slot": {
+            "x": 131.80873799557762,
+            "y": 476.5947261025563
+          }
+        },
+        {
+          "id": "bake-scale-bag",
+          "position": {
+            "x": 0,
+            "y": 1.9800000190734863,
+            "z": -0.03999999910593033
+          },
+          "screen": {
+            "x": 195.8168724371017,
+            "y": 357.06305255835576
+          },
+          "slot": {
+            "x": 195.81326187724213,
+            "y": 373.76504345669986
+          }
+        }
+      ],
+      "level": "bake-scale",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "bake-scale-pan",
+        "bake-scale-weight",
+        "bake-scale-bag"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "bake-scale-face",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "bake-scale-plinth",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 150.9648293949483,
+              "y": 464.0179767477038
+            },
+            {
+              "x": 221.52359178273397,
+              "y": 472.0958680242372
+            },
+            {
+              "x": 221.88722906546607,
+              "y": 421.86675283900394
+            },
+            {
+              "x": 150.36891403937355,
+              "y": 414.32890868880696
+            }
+          ],
+          "id": "bake-scale-face"
+        },
+        {
+          "corners": [
+            {
+              "x": 113.8709656400668,
+              "y": 494.1258312002107
+            },
+            {
+              "x": 247.26809150042905,
+              "y": 510.2426540014269
+            },
+            {
+              "x": 251.79931148541257,
+              "y": 502.6920464281111
+            },
+            {
+              "x": 119.75910911152,
+              "y": 486.93141211211935
+            }
+          ],
+          "id": "bake-scale-plinth"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bake-scale-zero",
+          "mode": "dial",
+          "screen": {
+            "x": 215.72141365858536,
+            "y": 483.97442311832583
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "bake-scale-fill",
+          "mode": "hold",
+          "screen": {
+            "x": 195.81604218401165,
+            "y": 360.9036785055482
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-scale-fold",
+          "mode": "tap",
+          "screen": {
+            "x": 200.07967840169667,
+            "y": 335.86139443051644
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 182,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 94,
+          "textures": 13
+        },
+        "p95FrameMs": 9.100000000000025,
+        "samples": 54,
+        "triangles": 84798,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-mixer-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.023596561613438535,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.44,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.7,
+      "held": null,
+      "items": [
+        {
+          "id": "mixer-bowl",
+          "position": {
+            "x": 0.3199999928474426,
+            "y": 0.6000000238418579,
+            "z": -0.05000000074505806
+          },
+          "screen": {
+            "x": 221.82267726435936,
+            "y": 458.5681238075353
+          },
+          "slot": {
+            "x": 221.71765671646887,
+            "y": 474.9061791258409
+          }
+        },
+        {
+          "id": "mixer-hook",
+          "position": {
+            "x": 0.3199999928474426,
+            "y": 1.2999999523162842,
+            "z": -0.05000000074505806
+          },
+          "screen": {
+            "x": 222.17878958100883,
+            "y": 403.1679960134031
+          },
+          "slot": {
+            "x": 220.78842741611524,
+            "y": 379.895220407272
+          }
+        },
+        {
+          "id": "mixer-crank",
+          "position": {
+            "x": -1.1299999952316284,
+            "y": 1.149999976158142,
+            "z": 0.029999999329447743
+          },
+          "screen": {
+            "x": 104.30184405302762,
+            "y": 406.4224338017184
+          },
+          "slot": {
+            "x": 100.6977873214086,
+            "y": 409.7587071386575
+          }
+        }
+      ],
+      "level": "bake-mixer",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "mixer-bowl",
+        "mixer-hook",
+        "mixer-crank"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "mixer-foot",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "mixer-side",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "mixer-arm-top",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 101.08959377672608,
+              "y": 507.8483500308064
+            },
+            {
+              "x": 259.1922196669923,
+              "y": 525.6647249686189
+            },
+            {
+              "x": 259.40519733134545,
+              "y": 512.0428296668814
+            },
+            {
+              "x": 100.78702525767449,
+              "y": 494.56289577963827
+            }
+          ],
+          "id": "mixer-foot"
+        },
+        {
+          "corners": [
+            {
+              "x": 127.35588374188764,
+              "y": 437.0496166523787
+            },
+            {
+              "x": 111.09298488437388,
+              "y": 453.7422281558718
+            },
+            {
+              "x": 109.3505153413724,
+              "y": 366.9871713311615
+            },
+            {
+              "x": 125.99492872938708,
+              "y": 352.6630176928955
+            }
+          ],
+          "id": "mixer-side"
+        },
+        {
+          "corners": [
+            {
+              "x": 117.55944665307445,
+              "y": 338.24819284461574
+            },
+            {
+              "x": 216.4206501258103,
+              "y": 275.1882525604059
+            },
+            {
+              "x": 228.96984815536655,
+              "y": 264.3782789276304
+            },
+            {
+              "x": 132.5027530126534,
+              "y": 326.00405622956146
+            }
+          ],
+          "id": "mixer-arm-top"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "mixer-turn",
+          "mode": "hold",
+          "screen": {
+            "x": 126.3559093974586,
+            "y": 409.49539872281366
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "mixer-fold",
+          "mode": "hold",
+          "screen": {
+            "x": 221.8830608430959,
+            "y": 449.17429544982673
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "mixer-release",
+          "mode": "tap",
+          "screen": {
+            "x": 216.8652286197681,
+            "y": 305.6663467792111
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 154,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 86,
+          "textures": 15
+        },
+        "p95FrameMs": 9.100000000000025,
+        "samples": 54,
+        "triangles": 78954,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-dough-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.023861660661333155,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.41,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.9,
+      "held": null,
+      "items": [
+        {
+          "id": "dough-scraper",
+          "position": {
+            "x": -1.0800000429153442,
+            "y": 0.47999998927116394,
+            "z": 0.18000000715255737
+          },
+          "screen": {
+            "x": 105.44842796308536,
+            "y": 431.5007886575196
+          },
+          "slot": {
+            "x": 102.3210288948415,
+            "y": 441.8480592467336
+          }
+        },
+        {
+          "id": "dough-roller",
+          "position": {
+            "x": 0,
+            "y": 0.4300000071525574,
+            "z": -0.6899999976158142
+          },
+          "screen": {
+            "x": 210.25477776135597,
+            "y": 419.9394238817589
+          },
+          "slot": {
+            "x": 209.8271244356937,
+            "y": 420.47559996777215
+          }
+        },
+        {
+          "id": "dough-piece",
+          "position": {
+            "x": 0.12999999523162842,
+            "y": 0.47999998927116394,
+            "z": 0.029999999329447743
+          },
+          "screen": {
+            "x": 204.7005025742008,
+            "y": 437.1281018854508
+          },
+          "slot": {
+            "x": 204.6604191492252,
+            "y": 453.35951297073854
+          }
+        }
+      ],
+      "level": "bake-dough",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "dough-scraper",
+        "dough-roller",
+        "dough-piece"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "dough-board",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "dough-apron",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 71.55281509281727,
+              "y": 461.44988203423986
+            },
+            {
+              "x": 290.9991103503173,
+              "y": 485.6459722812774
+            },
+            {
+              "x": 317.50946887676105,
+              "y": 439.96633875195056
+            },
+            {
+              "x": 112.8475963576116,
+              "y": 419.1813226332389
+            }
+          ],
+          "id": "dough-board"
+        },
+        {
+          "corners": [
+            {
+              "x": 68.844784268759,
+              "y": 476.64617921164705
+            },
+            {
+              "x": 290.02197794076574,
+              "y": 501.675305367885
+            },
+            {
+              "x": 290.29855789182125,
+              "y": 490.4297045716149
+            },
+            {
+              "x": 68.49223879555984,
+              "y": 465.77941178774887
+            }
+          ],
+          "id": "dough-apron"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "dough-fold",
+          "mode": "hold",
+          "screen": {
+            "x": 105.44842796308536,
+            "y": 431.5007886575196
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "dough-round",
+          "mode": "hold",
+          "screen": {
+            "x": 204.7052966221727,
+            "y": 435.1868143274033
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "dough-stretch",
+          "mode": "hold",
+          "screen": {
+            "x": 210.25477776135597,
+            "y": 419.9394238817589
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 145,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 81,
+          "textures": 13
+        },
+        "p95FrameMs": 9.299999999999956,
+        "samples": 50,
+        "triangles": 74624,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-proof-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02100036762413282,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.53,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4,
+      "held": null,
+      "items": [
+        {
+          "id": "proof-cloth",
+          "position": {
+            "x": 0,
+            "y": 0.7300000190734863,
+            "z": -0.5899999737739563
+          },
+          "screen": {
+            "x": 208.27198865252055,
+            "y": 405.9786187805359
+          },
+          "slot": {
+            "x": 207.83242154489608,
+            "y": 407.2732316498599
+          }
+        },
+        {
+          "id": "proof-dough",
+          "position": {
+            "x": 0,
+            "y": 0.5400000214576721,
+            "z": -0.03999999910593033
+          },
+          "screen": {
+            "x": 195.9217045810081,
+            "y": 435.7445318893635
+          },
+          "slot": {
+            "x": 195.91863330054184,
+            "y": 448.9477011153882
+          }
+        },
+        {
+          "id": "proof-tag",
+          "position": {
+            "x": 0.7799999713897705,
+            "y": 0.36000001430511475,
+            "z": 0.7099999785423279
+          },
+          "screen": {
+            "x": 243.37921320760017,
+            "y": 479.5816526312528
+          },
+          "slot": {
+            "x": 242.73110707494473,
+            "y": 480.55060815732486
+          }
+        }
+      ],
+      "level": "bake-proof",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "proof-cloth",
+        "proof-dough",
+        "proof-tag"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "proof-wicker",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "proof-linen",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 107.28665540533224,
+              "y": 472.73911500750336
+            },
+            {
+              "x": 251.69524429281665,
+              "y": 488.7535545646066
+            },
+            {
+              "x": 252.09480876839015,
+              "y": 461.2024861601676
+            },
+            {
+              "x": 106.6847888647821,
+              "y": 445.8046600590004
+            }
+          ],
+          "id": "proof-wicker"
+        },
+        {
+          "corners": [
+            {
+              "x": 137.16962675487238,
+              "y": 406.22569594778065
+            },
+            {
+              "x": 275.84084598584104,
+              "y": 419.8105437410373
+            },
+            {
+              "x": 280.29780421786427,
+              "y": 413.2824106117426
+            },
+            {
+              "x": 143.14357337293148,
+              "y": 400.0185203382079
+            }
+          ],
+          "id": "proof-linen"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "proof-cover",
+          "mode": "hold",
+          "screen": {
+            "x": 208.27198865252055,
+            "y": 405.9786187805359
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "proof-grow",
+          "mode": "hold",
+          "screen": {
+            "x": 243.37921320760017,
+            "y": 479.5816526312528
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "proof-uncover",
+          "mode": "hold",
+          "screen": {
+            "x": 256.2604734295563,
+            "y": 411.46173878242473
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 215,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 116,
+          "textures": 15
+        },
+        "p95FrameMs": 9.099999999999907,
+        "samples": 64,
+        "triangles": 119808,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-peel-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02290132402676981,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.43,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 5,
+      "held": null,
+      "items": [
+        {
+          "id": "peel-handle",
+          "position": {
+            "x": -0.959999978542328,
+            "y": 0.1599999964237213,
+            "z": 0.7400000095367432
+          },
+          "screen": {
+            "x": 119.05016958667647,
+            "y": 464.843943069147
+          },
+          "slot": {
+            "x": 119.0044348323561,
+            "y": 463.0514545936216
+          }
+        },
+        {
+          "id": "peel-blade",
+          "position": {
+            "x": 0.75,
+            "y": 0.20000000298023224,
+            "z": 0.07999999821186066
+          },
+          "screen": {
+            "x": 241.80618878918253,
+            "y": 457.43905043560903
+          },
+          "slot": {
+            "x": 241.8435568179228,
+            "y": 455.05659923061927
+          }
+        },
+        {
+          "id": "peel-dough",
+          "position": {
+            "x": 0.27000001072883606,
+            "y": 0.3100000023841858,
+            "z": -0.4399999976158142
+          },
+          "screen": {
+            "x": 219.93877326022837,
+            "y": 432.01669272790537
+          },
+          "slot": {
+            "x": 219.8661078323331,
+            "y": 440.78588925128093
+          }
+        }
+      ],
+      "level": "bake-peel",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "peel-handle",
+        "peel-blade",
+        "peel-dough"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "peel-wood",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "peel-grip",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 86.83796351673553,
+              "y": 445.4832589104108
+            },
+            {
+              "x": 168.79489332692677,
+              "y": 456.3527771427189
+            },
+            {
+              "x": 189.00691351767756,
+              "y": 425.78488946622934
+            },
+            {
+              "x": 110.05629478317752,
+              "y": 415.77562373132287
+            }
+          ],
+          "id": "peel-wood"
+        },
+        {
+          "corners": [
+            {
+              "x": 246.2402151640441,
+              "y": 461.3324952692849
+            },
+            {
+              "x": 294.92239404747664,
+              "y": 467.7441162283749
+            },
+            {
+              "x": 297.41626426144865,
+              "y": 462.6131444877389
+            },
+            {
+              "x": 249.03790812978417,
+              "y": 456.2871082508682
+            }
+          ],
+          "id": "peel-grip"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "peel-flour",
+          "mode": "tap",
+          "screen": {
+            "x": 310.9896428310675,
+            "y": 478.4433369942198
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "peel-score",
+          "mode": "hold",
+          "screen": {
+            "x": 304.02671850229603,
+            "y": 466.9639061899001
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "peel-load",
+          "mode": "hold",
+          "screen": {
+            "x": 119.05016958667647,
+            "y": 464.843943069147
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 189,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 97,
+          "textures": 7
+        },
+        "p95FrameMs": 8.900000000000034,
+        "samples": 53,
+        "triangles": 76916,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bake-display-completed-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02637251075148295,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.34,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 5,
+      "held": null,
+      "items": [
+        {
+          "id": "display-door",
+          "position": {
+            "x": -0.6299999952316284,
+            "y": 0.8899999856948853,
+            "z": 0.4099999964237213
+          },
+          "screen": {
+            "x": 146.30600452238414,
+            "y": 413.9119161339808
+          },
+          "slot": {
+            "x": 145.28106644508148,
+            "y": 415.9362881266505
+          }
+        },
+        {
+          "id": "display-shelf",
+          "position": {
+            "x": 0.5899999737739563,
+            "y": 0.6800000071525574,
+            "z": -0.12999999523162842
+          },
+          "screen": {
+            "x": 235.37277320904784,
+            "y": 421.3123259397414
+          },
+          "slot": {
+            "x": 235.4049909197505,
+            "y": 418.9022271469807
+          }
+        },
+        {
+          "id": "display-basket",
+          "position": {
+            "x": 1.690000057220459,
+            "y": 0.18000000715255737,
+            "z": 0.27000001072883606
+          },
+          "screen": {
+            "x": 300.6794854638736,
+            "y": 472.5214953100818
+          },
+          "slot": {
+            "x": 300.57231311092914,
+            "y": 475.53244400603006
+          }
+        }
+      ],
+      "level": "bake-display",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "display-door",
+        "display-shelf",
+        "display-basket"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "display-glass",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "display-wood",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 193.74775131258195,
+              "y": 446.0152453906367
+            },
+            {
+              "x": 263.4570925719581,
+              "y": 455.0933033769621
+            },
+            {
+              "x": 264.6347087087527,
+              "y": 403.7181284787227
+            },
+            {
+              "x": 193.7264748598046,
+              "y": 395.1179436514604
+            }
+          ],
+          "id": "display-glass"
+        },
+        {
+          "corners": [
+            {
+              "x": 101.10991184200708,
+              "y": 456.6872002260837
+            },
+            {
+              "x": 275.323111418236,
+              "y": 480.08187214499753
+            },
+            {
+              "x": 275.618003230326,
+              "y": 469.2090784578377
+            },
+            {
+              "x": 100.77564909089838,
+              "y": 446.0603536671708
+            }
+          ],
+          "id": "display-wood"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "display-polish",
+          "mode": "hold",
+          "screen": {
+            "x": 68.68135311822778,
+            "y": 447.6342259595516
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "display-hinge",
+          "mode": "dial",
+          "screen": {
+            "x": 286.9351060451531,
+            "y": 447.82916808104216
+          },
+          "value": 30
+        },
+        {
+          "done": true,
+          "id": "display-arrange",
+          "mode": "hold",
+          "screen": {
+            "x": 121.38960574669292,
+            "y": 425.0304897749402
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 261,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 131,
+          "textures": 10
+        },
+        "p95FrameMs": 8.699999999999989,
+        "samples": 42,
+        "triangles": 94482,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bakery-bake-midpoint-phone",
+    "data": {
+      "action": null,
+      "activeTask": "bakery-bake",
+      "audio": {
+        "currentRms": 0.02398721261359267,
+        "enabled": true,
+        "events": {
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 30.85,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06587846697158929,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "bake-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bakery-load",
+          "mode": "hold",
+          "screen": {
+            "x": 56.55569521190914,
+            "y": 429.99451091956695
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "bakery-bake",
+          "mode": "hold",
+          "screen": {
+            "x": 121.42706678916836,
+            "y": 441.01551923870704
+          },
+          "value": 0.3969499999999976
+        },
+        {
+          "done": false,
+          "id": "bakery-serve",
+          "mode": "hold",
+          "screen": {
+            "x": 188.557917128834,
+            "y": 493.5170481239156
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-open",
+          "mode": "tap",
+          "screen": {
+            "x": 302.2477586909668,
+            "y": 479.7302454881359
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 391,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 197,
+          "textures": 14
+        },
+        "p95FrameMs": 9.299999999999272,
+        "samples": 600,
+        "triangles": 50456,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bakery-bake-reload-phone",
+    "data": {
+      "action": null,
+      "activeTask": "bakery-bake",
+      "audio": {
+        "currentRms": 0.023486002756703123,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.42,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "bake-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ],
+        "finished": false,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bakery-load",
+          "mode": "hold",
+          "screen": {
+            "x": 56.55569521190914,
+            "y": 429.99451091956695
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "bakery-bake",
+          "mode": "hold",
+          "screen": {
+            "x": 121.42706678916836,
+            "y": 441.01551923870704
+          },
+          "value": 0.3969499999999976
+        },
+        {
+          "done": false,
+          "id": "bakery-serve",
+          "mode": "hold",
+          "screen": {
+            "x": 188.557917128834,
+            "y": 493.5170481239156
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "bakery-open",
+          "mode": "tap",
+          "screen": {
+            "x": 302.2477586909668,
+            "y": 479.7302454881359
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 391,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 197,
+          "textures": 14
+        },
+        "p95FrameMs": 8.400000000000091,
+        "samples": 52,
+        "triangles": 50456,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bakery-finale-full-interaction-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.011652424462860233,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 75.94,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.0872948627244713,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 8,
+      "held": null,
+      "items": [],
+      "level": "bake-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display",
+          "bake-opening"
+        ],
+        "finished": true,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bakery-load",
+          "mode": "hold",
+          "screen": {
+            "x": 56.55569521190914,
+            "y": 429.99451091956695
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bakery-bake",
+          "mode": "hold",
+          "screen": {
+            "x": 121.42706678916836,
+            "y": 441.01551923870704
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bakery-serve",
+          "mode": "hold",
+          "screen": {
+            "x": 189.3210483187712,
+            "y": 492.249184779078
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bakery-open",
+          "mode": "tap",
+          "screen": {
+            "x": 302.2477586909668,
+            "y": 479.7302454881359
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 392,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 203,
+          "textures": 15
+        },
+        "p95FrameMs": 9.30000000000291,
+        "samples": 600,
+        "triangles": 52608,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "bakery-before-comparison-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 3
+        },
+        "music": {
+          "active": false,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": false,
+          "position": 76.1,
+          "readyState": 4,
+          "status": "paused",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.0872948627244713,
+        "state": "running"
+      },
+      "before": true,
+      "brewTime": 8,
+      "held": null,
+      "items": [],
+      "level": "bake-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display",
+          "bake-opening"
+        ],
+        "finished": true,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bakery-load",
+          "mode": "hold",
+          "screen": {
+            "x": 56.55569521190914,
+            "y": 429.99451091956695
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bakery-bake",
+          "mode": "hold",
+          "screen": {
+            "x": 121.42706678916836,
+            "y": 441.01551923870704
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bakery-serve",
+          "mode": "hold",
+          "screen": {
+            "x": 188.557917128834,
+            "y": 493.5170481239156
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bakery-open",
+          "mode": "tap",
+          "screen": {
+            "x": 302.2477586909668,
+            "y": 479.7302454881359
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 63,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 211,
+          "textures": 15
+        },
+        "p95FrameMs": 9.30000000000291,
+        "samples": 600,
+        "triangles": 1918,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "production-oven-light-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02844159786316944,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.25,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "evening-bakery",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "bake-oven-rack",
+          "position": {
+            "x": 0,
+            "y": 0.7400000095367432,
+            "z": 0
+          },
+          "screen": {
+            "x": 195.00000000000009,
+            "y": 439.4755005772528
+          },
+          "slot": {
+            "x": 185.6094417383455,
+            "y": 451.2533646344353
+          }
+        },
+        {
+          "id": "bake-oven-handle",
+          "position": {
+            "x": 0,
+            "y": 1.5099999904632568,
+            "z": 0.7900000214576721
+          },
+          "screen": {
+            "x": 178.39243376014556,
+            "y": 407.36642282803535
+          },
+          "slot": {
+            "x": 176.2034844749612,
+            "y": 410.0200440969869
+          }
+        },
+        {
+          "id": "bake-oven-knob",
+          "position": {
+            "x": 0.7799999713897705,
+            "y": 1.5800000429153442,
+            "z": 0.6240000128746033
+          },
+          "screen": {
+            "x": 239.0832530618916,
+            "y": 403.92683457260995
+          },
+          "slot": {
+            "x": 236.666949565414,
+            "y": 407.2678671097019
+          }
+        }
+      ],
+      "level": "bake-oven",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "bake-oven-rack",
+        "bake-oven-handle",
+        "bake-oven-knob"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display",
+          "bake-opening"
+        ],
+        "finished": true,
+        "id": "evening-bakery",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "bake-oven",
+          "bake-mill",
+          "bake-scale",
+          "bake-mixer",
+          "bake-dough",
+          "bake-proof",
+          "bake-peel",
+          "bake-display"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "bake-oven-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-glass",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 117.15194267380096,
+              "y": 367.1561831343636
+            },
+            {
+              "x": 259.76564835212633,
+              "y": 381.1296325682368
+            },
+            {
+              "x": 274.6735907542142,
+              "y": 360.2951631784119
+            },
+            {
+              "x": 136.99825703402135,
+              "y": 347.35469966053034
+            }
+          ],
+          "id": "bake-oven-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 129.30492251839564,
+              "y": 466.60747057861073
+            },
+            {
+              "x": 233.98153801277283,
+              "y": 478.75297502998353
+            },
+            {
+              "x": 234.55660735047243,
+              "y": 425.1682972334649
+            },
+            {
+              "x": 128.35431188742317,
+              "y": 413.8724673204768
+            }
+          ],
+          "id": "bake-oven-glass"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "bake-oven-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 258.0461635929755,
+            "y": 489.1544018488463
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-close",
+          "mode": "tap",
+          "screen": {
+            "x": 178.3924342246426,
+            "y": 407.3664215847689
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "bake-oven-light",
+          "mode": "tap",
+          "screen": {
+            "x": 239.0832530618916,
+            "y": 403.92683457260995
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.8.0",
+      "view": {
+        "calls": 217,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 111,
+          "textures": 10
+        },
+        "p95FrameMs": 8.400000000000091,
+        "samples": 31,
+        "triangles": 83596,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "production-fifth-season-route",
+    "data": {
+      "level": "book-cover",
+      "season": "hillside-library",
+      "version": "0.8.0"
+    }
+  },
+  {
+    "case": "landing-phone",
+    "data": {
+      "cards": 6,
+      "latest": "http://127.0.0.1:4206/dist/?season=evening-bakery",
+      "overflow": false
+    }
+  },
+  {
+    "case": "production-latest-shortcut-phone",
+    "data": {
+      "level": "bake-oven",
+      "season": "evening-bakery",
+      "version": "0.8.0"
+    }
+  }
+]

@@ -1,3 +1,4 @@
+import { bakeArtwork } from './bake-art.mjs';
 import { bookArtwork } from './book-art.mjs';
 import { stationArtwork } from './station-art.mjs';
 import { pendingChapterVisit, completedReturnChapter, markChapterVisited } from './chapter-progress.mjs';
@@ -963,7 +964,7 @@ function fitIntroTitle() {
 }
 window.addEventListener('resize', () => { view?.resize(); fitIntroTitle(); });
 function artwork(id) {
-  const seasonal = bookArtwork(id) || stationArtwork(id) || postArtwork(id) || gardenArtwork(id) || seasonArtwork(id);
+  const seasonal = bakeArtwork(id) || bookArtwork(id) || stationArtwork(id) || postArtwork(id) || gardenArtwork(id) || seasonArtwork(id);
   if (seasonal) return seasonal;
   const art = {
     coffee:

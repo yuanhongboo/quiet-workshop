@@ -1,3 +1,6 @@
+import { BAKE_EARLY_LEVELS } from './bake-early-levels.mjs';
+import { BAKE_MIDDLE_LEVELS } from './bake-middle-levels.mjs';
+import { BAKE_FINALE_LEVELS } from './bake-finale-levels.mjs';
 import { BOOK_EARLY_LEVELS } from './book-early-levels.mjs';
 import { BOOK_MIDDLE_LEVELS } from './book-middle-levels.mjs';
 import { BOOK_FINALE_LEVELS } from './book-finale-levels.mjs';
@@ -418,7 +421,8 @@ export const GARDEN_LEVELS = Object.freeze([...GARDEN_EARLY_LEVELS, ...GARDEN_MI
 export const POST_LEVELS = Object.freeze([...POST_EARLY_LEVELS, ...POST_MIDDLE_LEVELS, ...POST_FINALE_LEVELS]);
 export const STATION_LEVELS = Object.freeze([...STATION_EARLY_LEVELS, ...STATION_MIDDLE_LEVELS, ...STATION_FINALE_LEVELS]);
 export const BOOK_LEVELS = Object.freeze([...BOOK_EARLY_LEVELS, ...BOOK_MIDDLE_LEVELS, ...BOOK_FINALE_LEVELS]);
-export const ALL_LEVELS = Object.freeze([...LEVELS, ...GARDEN_LEVELS, ...POST_LEVELS, ...STATION_LEVELS, ...BOOK_LEVELS]);
+export const BAKE_LEVELS = Object.freeze([...BAKE_EARLY_LEVELS, ...BAKE_MIDDLE_LEVELS, ...BAKE_FINALE_LEVELS]);
+export const ALL_LEVELS = Object.freeze([...LEVELS, ...GARDEN_LEVELS, ...POST_LEVELS, ...STATION_LEVELS, ...BOOK_LEVELS, ...BAKE_LEVELS]);
 export function getLevel(id) {
   return ALL_LEVELS.find((level) => level.id === id) || COFFEE;
 }

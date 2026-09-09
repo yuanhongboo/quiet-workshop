@@ -1,0 +1,18 @@
+
+> quiet-workshop@0.8.0 build
+> vite build && node scripts/artifacts.mjs
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 81 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/favicon-DkzWbQVf.svg              0.34 kB │ gzip:   0.22 kB
+dist/index.html                               9.96 kB │ gzip:   3.36 kB
+dist/assets/after-the-light-BGFVd-m5.mp3  2,048.94 kB
+dist/assets/index-36GpKklJ.css               31.10 kB │ gzip:   7.46 kB
+dist/assets/index-S2Hv0e6G.js               543.02 kB │ gzip: 183.13 kB
+dist/assets/graphics-vf0JD8ka.js            569.41 kB │ gzip: 144.25 kB
+dist/assets/physics-ByaTtX8I.js           2,047.52 kB │ gzip: 755.81 kB
+✓ built in 896ms
+Manifest: 11 files, 5284468 bytes

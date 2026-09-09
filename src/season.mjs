@@ -87,7 +87,22 @@ export const SEASON_FIVE = Object.freeze({
   ],
   restorationIds:['book-cover','book-binding','book-press','book-catalog','book-globe','book-music','book-projector','book-slides'],
 });
-export const SEASONS = Object.freeze([SEASON, SEASON_TWO, SEASON_THREE, SEASON_FOUR, SEASON_FIVE]);
+export const SEASON_SIX = Object.freeze({
+  id: 'evening-bakery', number: '06', label: '第六季', title: '晚风面包房',
+  description: '晚风经过街角，等一炉温暖的面包。',
+  story: '修好旧工具，揉圆一团柔软，把烤好的面包放进窗前。让这间小店，重新有了晚归的灯。',
+  overviewName: '面包房', openingId: 'bake-opening', inspection: true, chapterReturns: true, fitIntroTitle: true,
+  overviewTitle: '留一盏灯，<br/>等一炉晚香。',
+  openingLabel: '迎接面包出炉', reopeningLabel: '重温面包房开门',
+  readyHint: '面包已经出炉，把温暖留在窗前。', restoredHint: '让面包房重新开门',
+  chapters: [
+    {id:'tools',number:'一',title:'把工具唤醒',description:'先让旧机器，重新轻轻转动。',levelIds:['bake-oven','bake-mill','bake-scale'],returnTitle:'旧工具，<br/>又能帮忙了。',returnDescription:'烤箱透出暖光，磨粉机留下细细的面粉，小秤也安稳归零。亲手修好的三件工具，一起回到了面包房。'},
+    {id:'dough',number:'二',title:'让面团长大',description:'揉一揉，给柔软留一点空间。',levelIds:['bake-mixer','bake-dough','bake-proof'],returnTitle:'面团圆了，<br/>也长大了。',returnDescription:'搅拌机重新转动，工作台收拾平整，藤篮里的面团也慢慢膨起。现在的小店，已经在等一炉面包。'},
+    {id:'evening',number:'三',title:'等一炉晚香',description:'把出炉的暖意，留在街角。',levelIds:['bake-peel','bake-display','bake-opening']},
+  ],
+  restorationIds:['bake-oven','bake-mill','bake-scale','bake-mixer','bake-dough','bake-proof','bake-peel','bake-display'],
+});
+export const SEASONS = Object.freeze([SEASON, SEASON_TWO, SEASON_THREE, SEASON_FOUR, SEASON_FIVE, SEASON_SIX]);
 export const getSeason = (id) => SEASONS.find((season) => season.id === id) || SEASON;
 export const seasonForLevel = (level) => SEASONS.find((season) => seasonLevelIds(season).includes(typeof level === 'string' ? level : level?.id)) || SEASON;
 export const seasonLabel = (season) => season.label || '第一季';

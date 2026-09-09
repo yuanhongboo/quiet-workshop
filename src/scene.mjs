@@ -1,3 +1,4 @@
+import { buildBakeScene } from './bake-scenes.mjs';
 import { buildBookScene } from './book-scenes.mjs';
 import { buildStationScene } from './station-scenes.mjs';
 import { buildPostScene } from './post-scenes.mjs';
@@ -126,7 +127,8 @@ export class WorkshopView {
     rim.position.set(4, 3, -2);
     this.scene.add(rim);
     if (!this.level.room?.custom) this.buildRoom();
-    if (this.level.sceneFamily === 'book') this.extra = buildBookScene(this);
+    if (this.level.sceneFamily === 'bake') this.extra = buildBakeScene(this);
+    else if (this.level.sceneFamily === 'book') this.extra = buildBookScene(this);
     else if (this.level.sceneFamily === 'station') this.extra = buildStationScene(this);
     else if (this.level.sceneFamily === 'post') this.extra = buildPostScene(this);
     else if (this.level.sceneFamily === 'garden') this.extra = buildGardenScene(this);

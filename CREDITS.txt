@@ -1,4 +1,4 @@
-A LITTLE RESET / 好好收拾 — 0.7.0
+A LITTLE RESET / 好好收拾 — 0.8.0
 
 Original Season One workbenches and corner-shop diorama geometry, interface,
 procedural wood, enamel, grime and dial textures, animations and synthesized
@@ -36,3 +36,5 @@ or parcels are sent by the game.
 Season four Mountain Station: original code-built miniature railway, station objects, mountain scenery and card illustrations. The train journey and timetable are fictional game scenes.
 
 Season five Pages in the Breeze: original code-built books, restoration tools, library scenery and projected story pictures. The book text and illustrations are fictional original game content.
+
+Season six Evening Bakery: original code-built bakery objects, dough deformations, bread textures and storefront illustrations. Baking actions are fictional, accelerated game interactions.

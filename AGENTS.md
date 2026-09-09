@@ -4,9 +4,9 @@
 
 The current product is a free, non-commercial game; third-party asset permissions still apply.
 
-This is a standalone, mobile-friendly browser game about cleaning, organizing and restoring. Preserve the calm, tactile experience: no countdown, punishment, forced precision or monetization prompts. Each season has one coherent setting, three chapters and nine levels; completed work accumulates in a final overview. Season one is 街角旧店. Season two is 雨后花房, released in 0.4.0. The third season, 海边来信, is released in 0.5.0. Season four 山间小站 is released in 0.6.0. Season five 风吹书页 is released in 0.7.0. Each season has nine levels; verify current receipts before making release claims.
+This is a standalone, mobile-friendly browser game about cleaning, organizing and restoring. Preserve the calm, tactile experience: no countdown, punishment, forced precision or monetization prompts. Each season has one coherent setting, three chapters and nine levels; completed work accumulates in a final overview. Season one is 街角旧店. Season two is 雨后花房, released in 0.4.0. The third season, 海边来信, is released in 0.5.0. Season four 山间小站 is released in 0.6.0. Season five 风吹书页 is released in 0.7.0. Season six 晚风面包房 is released in 0.8.0. Each season has nine levels; verify current receipts before making release claims.
 
-The user has approved fifth-season development and moving the game into this independent project. Continue authorized implementation without repeated confirmation. Product quality is judged by visible feedback and playable completion, not by engine names or screenshots alone.
+The user has approved sixth-season development and moving the game into this independent project. Continue authorized implementation without repeated confirmation. Product quality is judged by visible feedback and playable completion, not by engine names or screenshots alone.
 
 ## Structure and commands
 
