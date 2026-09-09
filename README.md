@@ -51,6 +51,7 @@ npm run preview
 - [第三季设计](docs/season-three.md)：海边来信的九关与章节回望。
 - [第二季设计](docs/season-two.md)：雨后花房的关卡和验收标准。
 - [第一季记录](docs/season-one.md)：既有九关内容和玩法。
+- [第一季历史快照](archives/legacy-v0.3.1/README.md)：独立项目前的 v0.3.1 原始源码、QA 和文件校验清单。
 - `qa/`：按版本保存测试、浏览器截图、构建清单和发布回执。
 
 ## 发布

@@ -1,0 +1,636 @@
+{
+  "formatVersion": 1,
+  "version": "0.3.1",
+  "source": "codex-demo-workspace/games/quiet-workshop",
+  "excludes": [
+    "node_modules/",
+    "dist/",
+    ".runtime/",
+    ".git/"
+  ],
+  "fileCount": 123,
+  "sourceBytes": 4614752,
+  "archive": {
+    "file": "quiet-workshop-v0.3.1-source-and-qa.tar.gz",
+    "bytes": 4138672,
+    "sha256": "85c53cf69dfa8d5cd94d088fd94697283b9a169e1fb0191069af298930787ac5"
+  },
+  "verification": "all members extracted and SHA-256 matched; source rechecked unchanged",
+  "files": {
+    ".gitignore": {
+      "bytes": 30,
+      "sha256": "65a35e814e30195618410351f3cd7dcf7978efd2b406b0d0fce4d6a66dbd0769",
+      "mode": 420
+    },
+    "BRIEF.md": {
+      "bytes": 1615,
+      "sha256": "699545b75574905a60a37f98d880ee7b31d4b12e76797725eec3ceea7563be3f",
+      "mode": 420
+    },
+    "CREDITS.txt": {
+      "bytes": 937,
+      "sha256": "8df0729fa9372d56cf63eba238ceec6e82d778054d532fd51b285f422fbd4756",
+      "mode": 420
+    },
+    "MOVED.md": {
+      "bytes": 285,
+      "sha256": "600ceb08c7f2f62f500d308a716aea77ff963f020befb54d20e376c687528a44",
+      "mode": 420
+    },
+    "README.md": {
+      "bytes": 4197,
+      "sha256": "5a5e41d04b3ba3e9052173e8ccda3b588ca2f20dbe1e2df81e7ef72c911a4e6c",
+      "mode": 420
+    },
+    "favicon.svg": {
+      "bytes": 342,
+      "sha256": "fe77e892a43be62cfd14bc3b7a7c4deffa3dc4c9a86b9206af421e02713df37e",
+      "mode": 420
+    },
+    "index.html": {
+      "bytes": 9124,
+      "sha256": "bc33666209c67113baf2c951f044cc9513d84f6a246ba0c44af1db8efdd4216e",
+      "mode": 420
+    },
+    "package-lock.json": {
+      "bytes": 35550,
+      "sha256": "a1fb8cbc1ef1d749f1288a4176c10a28260c4c8da814adce5f0ce70511557a11",
+      "mode": 420
+    },
+    "package.json": {
+      "bytes": 587,
+      "sha256": "d0bf541b85375cb4f7c3d411a68b3973b3fa5e3e81e84bcd1d63b15b610f18fa",
+      "mode": 420
+    },
+    "qa/REPORT.md": {
+      "bytes": 4219,
+      "sha256": "fcfe616d29078f1a93b39df0d9004454aa21f7b96e42ea8458e8661f1092a07f",
+      "mode": 420
+    },
+    "qa/after-desktop.jpg": {
+      "bytes": 71910,
+      "sha256": "eff5e9a4168ea06bf4467de195f103f3f05d7013713dd61996e625d82a6e9a6b",
+      "mode": 420
+    },
+    "qa/after-mobile.jpg": {
+      "bytes": 34662,
+      "sha256": "df0087962761a03957d4c6d0beec01c81da8323c66d5db5f45261afae45eb851",
+      "mode": 420
+    },
+    "qa/before-desktop.jpg": {
+      "bytes": 77378,
+      "sha256": "317de93ad72062e76b283ce779a2042c908208bc6a387397c3fb3a2bc8908511",
+      "mode": 420
+    },
+    "qa/browser-evidence.json": {
+      "bytes": 21139,
+      "sha256": "71d7d1c8ffd42e1e197d722b87f2a1f804e1e6425b82dbc087ea8aa583276756",
+      "mode": 420
+    },
+    "qa/build-manifest.json": {
+      "bytes": 1360,
+      "sha256": "eda13cda3059e18d145141713681aebae3d654f2d41f9eeebae79fcff7bcc175",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/REPORT.md": {
+      "bytes": 2164,
+      "sha256": "db4e231d96e777d231d53acc16a4f12d0e42414c6c5ca0051cea8d860fb92966",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/build-manifest.json": {
+      "bytes": 1360,
+      "sha256": "eda13cda3059e18d145141713681aebae3d654f2d41f9eeebae79fcff7bcc175",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/built-guide.jpg": {
+      "bytes": 61045,
+      "sha256": "9dfa22a0c79e82fc1448aa31d72034b48141fa462adbe80375fd84c7acddfde4",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/deployment.json": {
+      "bytes": 2597,
+      "sha256": "7403993bb90ce75fa7435972b41ff896b63a1cfd037c0716fd825ed03c8f3dfa",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/desktop-guide.jpg": {
+      "bytes": 61075,
+      "sha256": "98a7bec15b8ee6a54b3d751a5a4bc0101030ea5d816ef237528609c1e3b56a0d",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/hint-fixture.html": {
+      "bytes": 1228,
+      "sha256": "7ae2e70a0317e8403186718a5a80752639f0afbdc2fdab482bca085cd7e23514",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/phone-guide.jpg": {
+      "bytes": 35476,
+      "sha256": "286b96ffc21a631c2ee316c65d2e9e514b90a2df112dcdf3386b74628d154aae",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/phone-result.json": {
+      "bytes": 65,
+      "sha256": "1325e8bfd29f4636686bd3a7345f0118b90f63b7c7e7e810b2144c1b9daab4d9",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/previous-deployment.json": {
+      "bytes": 2597,
+      "sha256": "77fc7d1b1aefd86e94ea58076e79f76c989d8de7e5b5cf7a1fcdc86e67360e50",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/previous-v0.3.0.tar.gz": {
+      "bytes": 1403400,
+      "sha256": "cc012a92391e1efefc2e6554a9219453e93027d00d296d289dc3e41201034908",
+      "mode": 420
+    },
+    "qa/cleaning-hints-v0.3.1/tests-v0.3.1.txt": {
+      "bytes": 7686,
+      "sha256": "42e8d4f9988ee0e4bb93a01112e7b7e7102bcd58ca209283fdb6e460df4b9c6b",
+      "mode": 420
+    },
+    "qa/delivery-desktop.jpg": {
+      "bytes": 76877,
+      "sha256": "3994aaf95993c489dbbdbd5b952b562c5de8b6bd92e6fe07267329db88fe0fda",
+      "mode": 420
+    },
+    "qa/deployment.json": {
+      "bytes": 2597,
+      "sha256": "7403993bb90ce75fa7435972b41ff896b63a1cfd037c0716fd825ed03c8f3dfa",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/REPORT.md": {
+      "bytes": 2352,
+      "sha256": "a3c20d31f234d90f3916948038dbbb8003c66b07b6e5c1436d84e15cc3ae2ce2",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/after-user.jpg": {
+      "bytes": 66795,
+      "sha256": "b43398a9c0513ee09b9403178729643aa88cc6a959824227c6fb4fa1af255612",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/before-user.jpg": {
+      "bytes": 64359,
+      "sha256": "1208b4b29021788d89bf529df9a092fe12999bc662fe17aaeb42cb08e9a12d49",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/browser-qa.json": {
+      "bytes": 3529,
+      "sha256": "7dfc8f260a3f4bd5da817fa34ada2974d9a5e914a8940180db1e2ccec6d28f6d",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/deployment.json": {
+      "bytes": 2596,
+      "sha256": "a7de3dd23cd2351872ecd7380de8d9f8c5827013954f72691164749dc5f357b4",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/hold-probe.json": {
+      "bytes": 1931,
+      "sha256": "1ee0281e44fce1c6b9dbf53a3d6964b7d313eed0e9412b4caba219917ae89c27",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/recovered-qa.jpg": {
+      "bytes": 68882,
+      "sha256": "4641124c8bdfd320a68e278a6c9d3d67957c69ad26c18898bf9771c070c1cacf",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/seed.html": {
+      "bytes": 973,
+      "sha256": "9bf15a23f8043f52fc29f818d02ebb0b4d3d270a3393d2f39b1740bce6c8ed96",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/user-after.json": {
+      "bytes": 170,
+      "sha256": "a2dfe65c0eb3e97de57faf146c8cabdcd08cbaec880913d49270dd2243d76d0d",
+      "mode": 420
+    },
+    "qa/filter-recovery-v0.1.1/user-before.json": {
+      "bytes": 117,
+      "sha256": "7131fb4d8669ad42cc840d3a2e99f1ae994af7ecaf284f5238da9d543772a9ab",
+      "mode": 420
+    },
+    "qa/first-wipe-desktop.jpg": {
+      "bytes": 75303,
+      "sha256": "aa57bd6aece0ecfaa5c77096642e319f66137758bebfd69930c4768fdc9079a6",
+      "mode": 420
+    },
+    "qa/first-wipe-mobile.jpg": {
+      "bytes": 37786,
+      "sha256": "3431fccb987641b73c23624697c8437e60cf1777afaa165b4df9114979266d73",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/REPORT.md": {
+      "bytes": 4200,
+      "sha256": "1aa54d0f129ccdf0b2288cf29758ac5d1448ed0bce5908a24df911a7deff72c4",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/browser-console.json": {
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/interaction-harness.html": {
+      "bytes": 1877,
+      "sha256": "bb9e37d2c72fb13ed3a497f761d53ef3fd6d58c9cda87f43678a0f49179eb8c2",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/landscape-coffee-done.jpg": {
+      "bytes": 30904,
+      "sha256": "e602ac55ed7ebdec4cfb9abc9597610a1dad771ed98c738f24aab0a4f07f3129",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/narrow-desktop-desk.jpg": {
+      "bytes": 44812,
+      "sha256": "7d533f0e1d88f7b6e12d667b44d53828a655345d9f385a0b81bb8c552a94b1ae",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-coffee-done.jpg": {
+      "bytes": 36356,
+      "sha256": "9ef25723e8f03c0564ab7574a13d25c9013576fdce00470910f60e1f6c0a5b64",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-coffee-done.json": {
+      "bytes": 3146,
+      "sha256": "099c33c11f0fddb1549e6e9a88b74448f98f5e89e36a5c1d19ef2e2aafd7f868",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-collection.jpg": {
+      "bytes": 27561,
+      "sha256": "d9201e4b29360efb42e9113c20e64db4581c484ae2e76bd8399edbf9eeb7929e",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-desk-done.jpg": {
+      "bytes": 29879,
+      "sha256": "9392bacb272788b1bf6259d78ea3defa1a8a3d917aef2e17cd37cbe6558b844b",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-desk-done.json": {
+      "bytes": 3643,
+      "sha256": "be8bae5734b31986fb1ce4aa9932fbccb7d760a2368d0d6117608fca8beb7fda",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-record-done.jpg": {
+      "bytes": 32038,
+      "sha256": "293a1a42978ca7fc914b885d22ee54bdf6cb0b34dadd14521540ddecf92abaf6",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-record-done.json": {
+      "bytes": 3288,
+      "sha256": "0aec7878f21a2770abfcd6d3eed08b41e31b5825b69fa5e207d163fc79870501",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-tea-done.jpg": {
+      "bytes": 34644,
+      "sha256": "f7a98838349762b22b66664293979748a84a1c8d4d1e7ab97c8ebb064dcc4c42",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/phone-tea-input.json": {
+      "bytes": 4077,
+      "sha256": "db6e1830714ac5d26df6b6800dfcbd372d694ad3534f668705b7866abe7f6568",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/previous-deployment.json": {
+      "bytes": 2596,
+      "sha256": "a7de3dd23cd2351872ecd7380de8d9f8c5827013954f72691164749dc5f357b4",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/previous-v0.1.1.tar.gz": {
+      "bytes": 37743,
+      "sha256": "7630c327a6f8e5566e2a32ddce92d6b99861dea9e871b51ef26f708c3917429c",
+      "mode": 420
+    },
+    "qa/multilevel-v0.2.0/tests-v0.2.0.txt": {
+      "bytes": 2763,
+      "sha256": "da01a96ae86eae72e0950aa5b0b46b817df4f60048293a01a3679039922488ca",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/REPORT.md": {
+      "bytes": 5686,
+      "sha256": "4321a9453a9eea981625eefde5f558910fa177dcbbed55c332144e3e2dc70585",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/browser-console.json": {
+      "bytes": 1793,
+      "sha256": "bec4d379efcb8d4dddddf637fe09607ac46b510c86d05dd3601eb39aa9ad4769",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/built-opening-done.jpg": {
+      "bytes": 57365,
+      "sha256": "efb8a21ac31b85fc10ee565bb2a312f4685bea4daebd009e4f7e163332179639",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/built-opening-done.json": {
+      "bytes": 1800,
+      "sha256": "a93245868fb7ed6ba218ad662b2e2eb741c3d343cd4305cd805327038084b703",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/clean-build-startup.json": {
+      "bytes": 1974,
+      "sha256": "1798790391772cd15f9b5068fc4e7eca93fca530109dafe76edbaf4fa9499bab",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/desktop-clock-done.jpg": {
+      "bytes": 69205,
+      "sha256": "ad92ff573f9a881769c4e5fc0d3cd4ef6cb5ff0953afb51bd174e6d38dc1f0e1",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/desktop-clock-done.json": {
+      "bytes": 4348,
+      "sha256": "7d2bb4242d7d9652d306136577a9b6513f89fd6f480d02bcf5e81d46bafe4748",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/desktop-sign-done.jpg": {
+      "bytes": 71730,
+      "sha256": "229f7863e6727b35d69d866d48e82404380b22940f3a40ad992b0310832c0f86",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/desktop-sign-done.json": {
+      "bytes": 4517,
+      "sha256": "2b04ce30939ebf7e97e8f9111d9e4e0e6311f2c52e31d4ad6a6ac2242fb7d4a0",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/desktop-window-done.jpg": {
+      "bytes": 69199,
+      "sha256": "636899244f0e545f025e321476edcfea84b0d84943ae91a332a091a6ba946e8f",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/desktop-window-done.json": {
+      "bytes": 4092,
+      "sha256": "ef4759b63846fc242ffa907d981ea1324ef4adbc05a8b0ae26b2400e8263afe5",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/input-lab.html": {
+      "bytes": 1880,
+      "sha256": "0cda9c0769016a62ad6eacd14e86217fcb8712ec4ef06f9a2caa1b8cdff95026",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/local-delivery.json": {
+      "bytes": 80,
+      "sha256": "29973e0f48e38b3b63eb90d1c92c02c01b8dd2718c5420f9313490f920382889",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-clock-done.jpg": {
+      "bytes": 34659,
+      "sha256": "bcd1a998a14f137472891419a8ac8499fc5d60c364003d65beeb49d91d1db169",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-clock-done.json": {
+      "bytes": 4410,
+      "sha256": "78cd719a0f1848d30bdc4e4f0e6987d53b18b7a00b6b459237733561405c2e77",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-nine-levels.jpg": {
+      "bytes": 36662,
+      "sha256": "83c5835f7684bbbdeb51f66c5812b940f080f85aeba692a87f9727dbb7125447",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-opening-done.jpg": {
+      "bytes": 29372,
+      "sha256": "094340fcecc05408f82319c168d8abfd37fbcffe97df2747d45de3bee0340d83",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-opening-done.json": {
+      "bytes": 1790,
+      "sha256": "2b50ddcf4e64ab54c0af00533cc37bfb2172aafe2e9a6a8946367705e8f8322e",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-plant-done.jpg": {
+      "bytes": 36147,
+      "sha256": "09745c21e5265a49fdb595236b530e0effdda60f64fd093b2d23c3be04fc9092",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-plant-done.json": {
+      "bytes": 4540,
+      "sha256": "d073460d8b3e0acb83608339c75bbe465cea6322b4a6a4e6a7e7659c3d021923",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-sign-done.jpg": {
+      "bytes": 38612,
+      "sha256": "f526d1254e6f74c56ca07d6cf63662ef0b2c6b507283a7912d13d3ad0d7fd5e2",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-sign-done.json": {
+      "bytes": 4529,
+      "sha256": "4be201bd1787d7944c8cd11d485a3deb0304a78f5bf6da31c90f21569102ed81",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-window-done.jpg": {
+      "bytes": 36291,
+      "sha256": "2c8029e0d21db852a9f4c3420744db20734b7f982bec5a35c79bbf079fcc5c46",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/phone-window-done.json": {
+      "bytes": 4202,
+      "sha256": "1f22f96d10a2897309c83aed374456b2d4adbae62e7bbcccb7520d25f0cf344e",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/previous-deployment.json": {
+      "bytes": 2596,
+      "sha256": "42344678b820aee73d51fc1befe07148681e8c318d46036ac58cf15327e25d9d",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/previous-v0.2.0.tar.gz": {
+      "bytes": 1153371,
+      "sha256": "18b70891e5cda0ba400e37a89f3623a58fe814b3c7935086d4e6d54c28088193",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/release-summary.json": {
+      "bytes": 476,
+      "sha256": "98bef9edf04d3b10acc562ec5ebeef5ed3add3329b8f789c238d897e656017d3",
+      "mode": 420
+    },
+    "qa/season-one-v0.3.0/tests-v0.3.0.txt": {
+      "bytes": 7083,
+      "sha256": "e7aa0e79139342e2d58e79dddadc8724817c15ede2e687f6c826fd6ce403b830",
+      "mode": 420
+    },
+    "qa/tests.txt": {
+      "bytes": 1219,
+      "sha256": "958418f5982235a7f1a6343d2a2777d670e683c403876930960388ff8e785555",
+      "mode": 420
+    },
+    "scripts/artifacts.mjs": {
+      "bytes": 2142,
+      "sha256": "bd69e89e8de2bd7c8e2af1512f4ba660ca27a5257f14e384b406042da2ba4d48",
+      "mode": 420
+    },
+    "scripts/publish.mjs": {
+      "bytes": 3817,
+      "sha256": "7f7d18d8d25a793539a056bb0b4cf7396a42c2b21d8f42fe3b0b5826ee111fd1",
+      "mode": 420
+    },
+    "scripts/verify-public.mjs": {
+      "bytes": 1648,
+      "sha256": "2d52d1c5922082d69146896cf2d633f9b867bd5a8e430d811f38af4714e870c5",
+      "mode": 420
+    },
+    "src/action-controller.mjs": {
+      "bytes": 9948,
+      "sha256": "2c4dda93a229f19dedd924c3ab98363b70a6401c0628c33f2f0731dc84017bee",
+      "mode": 420
+    },
+    "src/audio.mjs": {
+      "bytes": 11001,
+      "sha256": "2c7281d74028820b7af64148c9fe5d2b6aecd57effeaed047ad4a8393ab5a43b",
+      "mode": 420
+    },
+    "src/cleaning-hints.mjs": {
+      "bytes": 1812,
+      "sha256": "771ba5bbe1ed92a67cfa3b9e0a642048096132e9b1576c10c55a423d2de43266",
+      "mode": 420
+    },
+    "src/core.mjs": {
+      "bytes": 14536,
+      "sha256": "94b7ab5afceebe5ec1c8342bde9f0613d5e92b69b7c45c1966a7554110945b65",
+      "mode": 420
+    },
+    "src/finishing-levels.mjs": {
+      "bytes": 10411,
+      "sha256": "a4bb5085c345a9b4b7e223e1e864fd8cffac32bbd81b69ddc87f7808346531dd",
+      "mode": 420
+    },
+    "src/finishing-scenes.mjs": {
+      "bytes": 14049,
+      "sha256": "4e10e92cdffee9347995c857cddcf03291abfc6f907fa1739aecd331a53ba655",
+      "mode": 420
+    },
+    "src/levels.mjs": {
+      "bytes": 12094,
+      "sha256": "e35afa07975821cb59275b62d432ec659f62a62811234ad83775f4337dcf5c3c",
+      "mode": 420
+    },
+    "src/main.mjs": {
+      "bytes": 37633,
+      "sha256": "7edbe0b4a71a9f155dd8ccc5c3e32a693e2182606a3b2f8bec1d1fd4a1348742",
+      "mode": 420
+    },
+    "src/materials.mjs": {
+      "bytes": 6171,
+      "sha256": "cad89b3c29f8c661a7418b16dbac02e109c7a9a9c44c2c00b20702cfd986f6e0",
+      "mode": 420
+    },
+    "src/new-scenes.mjs": {
+      "bytes": 22294,
+      "sha256": "a16afa6b4fa2f13cb261721d7145d4b3b211c4fd6491deac98321c1e536a25f0",
+      "mode": 420
+    },
+    "src/physics.mjs": {
+      "bytes": 10981,
+      "sha256": "052dad6c49d0c3359f39fd2722c2ada3dad18f77424793a21a3f77b386a16158",
+      "mode": 420
+    },
+    "src/progress.mjs": {
+      "bytes": 4553,
+      "sha256": "aff0fdd399fe7b8946ecc19f4ed31a3aef6b8092ef1e5012ff1ef80dd54dfe21",
+      "mode": 420
+    },
+    "src/restoration-levels.mjs": {
+      "bytes": 10438,
+      "sha256": "982b04c1a10f23b43cc9006c57dc30675e7d0aa332d742e5630d6b18e5606155",
+      "mode": 420
+    },
+    "src/restoration-scenes.mjs": {
+      "bytes": 18402,
+      "sha256": "1c4f8da9db20aef215c8022fa213ff343c9d6fc445006f849366ad81fb7e8f51",
+      "mode": 420
+    },
+    "src/scene.mjs": {
+      "bytes": 33311,
+      "sha256": "28caee0dfb3e341ae40e66298b751941c61291dbea4b3d494239cb9c5f25aa84",
+      "mode": 420
+    },
+    "src/season-art.mjs": {
+      "bytes": 6263,
+      "sha256": "c9e21da725c5c4f1c4e8e7e535547b122eb6a30c005bb64f7449dc8ac917505b",
+      "mode": 420
+    },
+    "src/season-scene-kit.mjs": {
+      "bytes": 5837,
+      "sha256": "d0c0175db34af7009a3308a1a1e4a027c5323ba71f0631eda89516b0a71503ad",
+      "mode": 420
+    },
+    "src/season.mjs": {
+      "bytes": 990,
+      "sha256": "9b2bcc6dd9d3c88a26e5b7def4da0e05ed115313984899f82f36f09a6ae08b2f",
+      "mode": 420
+    },
+    "src/shop-level.mjs": {
+      "bytes": 2284,
+      "sha256": "8c66ddc2ecce5b539e9ebe38c1160f014b3e7f9aa0eec3edde382f7f1eefa2b6",
+      "mode": 420
+    },
+    "src/shop-scene.mjs": {
+      "bytes": 24663,
+      "sha256": "e07e26cf8459359f470aa7b3a116339f548c116d0d637c03c1c168a911f96737",
+      "mode": 420
+    },
+    "src/surface-guide.mjs": {
+      "bytes": 7106,
+      "sha256": "576b3f2e6de7e7afe06c38b2d2965313b8f4a6f39295e7eb7372710e8453e31a",
+      "mode": 420
+    },
+    "src/task-actions.mjs": {
+      "bytes": 3156,
+      "sha256": "77caff04b1f3cdb62383d91b40c59e9582f10cfb98d7400d92823f4c0fa59b9b",
+      "mode": 420
+    },
+    "style.css": {
+      "bytes": 36352,
+      "sha256": "3da6be6666c6d44c5263bfd60beaa2b57fd64c6ca9aadfac11fb7c6b4f0483e7",
+      "mode": 420
+    },
+    "tests/action-targets.test.mjs": {
+      "bytes": 4890,
+      "sha256": "545274aa30a50e8449c39a4de859cb840b2202ffe5f6e9728c5b220d599b8307",
+      "mode": 420
+    },
+    "tests/cleaning-hints.test.mjs": {
+      "bytes": 3318,
+      "sha256": "4c12263def35b9ae18077a235e353459d68ff9a47d4280a52ad1f8f8dc1be7ed",
+      "mode": 420
+    },
+    "tests/collection.test.mjs": {
+      "bytes": 7069,
+      "sha256": "bdba850f91137d04bf4410c8c059c930bc0ecbfe7c155f14cc8eb16341f8ec55",
+      "mode": 420
+    },
+    "tests/filter-recovery.test.mjs": {
+      "bytes": 4073,
+      "sha256": "d0e93801ceaa7175719860e7e728b8f7fc1c97650410a4c291ac0ac46ab50b6e",
+      "mode": 420
+    },
+    "tests/finishing-levels.test.mjs": {
+      "bytes": 5651,
+      "sha256": "21d6ab607441cc9d8a2b7df46238c7a7f1fdff28c434d338d0465e96f5beee50",
+      "mode": 420
+    },
+    "tests/restoration-levels.test.mjs": {
+      "bytes": 9597,
+      "sha256": "1587342a070c50f9d800ee745dfc33a490e3469dc7daad49a1cc109f23d46238",
+      "mode": 420
+    },
+    "tests/season-audio.test.mjs": {
+      "bytes": 5510,
+      "sha256": "fab3581d03ce4e8d7b29835921fbdf4e29a59bbbce8bf9331b471d193adc24d2",
+      "mode": 420
+    },
+    "tests/season-progress.test.mjs": {
+      "bytes": 10380,
+      "sha256": "b4e040b7c44c87672a6140859a144810d677aa339edcae3be078ea0c34d1e461",
+      "mode": 420
+    },
+    "tests/task-actions.test.mjs": {
+      "bytes": 10018,
+      "sha256": "08e9b05090722efb8fde3060f77a013c98850b18d070ccd2198b7f204cb54b66",
+      "mode": 420
+    },
+    "tests/workshop.test.mjs": {
+      "bytes": 6556,
+      "sha256": "6b25002223bb4a182ec0b18eba9e357e05df00f7a06edfea8b6ec36e5c95cf92",
+      "mode": 420
+    },
+    "vite.config.mjs": {
+      "bytes": 346,
+      "sha256": "d6b9d821fadbbcadcf1e67863cd896a5017195f87671c92204d5119d9d62f89e",
+      "mode": 420
+    }
+  }
+}
