@@ -230,7 +230,7 @@ export class WorkshopAudio {
       this.nextTick = now + 2 / 3;
     }
   }
-  tone(frequency, duration, volume, delay = 0) {
+  tone(frequency, duration, volume, delay = 0, attack = 0.005) {
     if (!this.context || !this.enabled) return;
     const c = this.context,
       t = c.currentTime + delay,
@@ -238,7 +238,7 @@ export class WorkshopAudio {
       g = c.createGain();
     o.frequency.value = frequency;
     g.gain.setValueAtTime(0.0001, t);
-    g.gain.exponentialRampToValueAtTime(volume, t + 0.005);
+    g.gain.exponentialRampToValueAtTime(volume, t + Math.min(attack, duration * .5));
     g.gain.exponentialRampToValueAtTime(0.0001, t + duration);
     o.connect(g).connect(this.master);
     this.transients.add(o);
@@ -274,12 +274,21 @@ export class WorkshopAudio {
       g.disconnect();
     };
   }
-  play(type, id, strength = 0.7) {
+  play(type, id, strength = 0.7, cue = null) {
     if (!this.context) return;
     this.events[type] = (this.events[type] || 0) + 1;
     if (!this.enabled) return;
     if (type === 'task') {
-      if (id?.startsWith('prune-')) {
+      if (cue === 'whistle') {
+        this.noiseTap(.025, .65, 1300);
+        this.tone(392, 1.1, .036, 0, .13);
+        this.tone(523.25, 1.05, .021, .04, .14);
+      } else if (cue === 'bell') {
+        this.noiseTap(.04, .035, 2100);
+        this.tone(659.25, 1.7, .032);
+        this.tone(1321, .85, .012);
+        this.tone(1816, .4, .004);
+      } else if (id?.startsWith('prune-')) {
         this.noiseTap(0.18, 0.045, 2800);
         this.tone(970, 0.032, 0.007);
       } else if (id === 'opening-lamp') {

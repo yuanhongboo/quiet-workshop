@@ -22,13 +22,38 @@ export class ActionController {
     this.paintContact = false;
     this.point = null;
     this.controlPointer = null;
-    $('action-button').addEventListener('click', () => {
+    // A gesture keeps the task it began on, even when finish() selects the next task.
+    // Pointer ownership outlives capture: finish() releases capture before the eventual click.
+    let pointerGesture = null, keyboardGesture = null;
+    const snapshot = (task) => ({ id: task.id, mode: task.mode, state: this.context().state });
+    const activate = (gesture) => {
+      if (!gesture.canceled && gesture.mode === 'tap' &&
+          gesture.state === this.context().state && this.enabled()) this.tap(gesture.id);
+    };
+    $('action-button').addEventListener('click', (event) => {
+      const owner = pointerGesture &&
+        (event.pointerId === pointerGesture.pointerId || event.detail > 0)
+        ? pointerGesture : null;
+      if (owner) {
+        pointerGesture = null;
+        event.preventDefault();
+        activate(owner);
+        return;
+      }
+      // Detail-zero clicks with no key gesture include assistive technology activation.
+      // Keyboard gestures are handled below so browser key-repeat cannot click a new task.
+      if (keyboardGesture) return;
       const task = this.current();
       if (task?.mode === 'tap' && this.enabled()) this.tap(task.id);
     });
     $('action-button').addEventListener('pointerdown', (event) => {
+      if ((event.button !== undefined && event.button !== 0) || event.isPrimary === false ||
+          this.controlPointer !== null || this.pointer !== null) return;
       const task = this.current();
-      if (task?.mode !== 'hold' || !this.enabled()) return;
+      pointerGesture = task && this.enabled()
+        ? { ...snapshot(task), pointerId: event.pointerId }
+        : { pointerId: event.pointerId, canceled: true };
+      if (task?.mode !== 'hold' || pointerGesture.canceled) return;
       event.preventDefault();
       this.holding = task.id;
       this.controlPointer = event.pointerId;
@@ -36,26 +61,46 @@ export class ActionController {
     });
     for (const name of ['pointerup', 'pointercancel', 'lostpointercapture'])
       $('action-button').addEventListener(name, (event) => {
+        if (name === 'pointercancel' && pointerGesture?.pointerId === event.pointerId)
+          pointerGesture.canceled = true;
         if (this.controlPointer === event.pointerId) {
+          if (name === 'lostpointercapture' && pointerGesture?.pointerId === event.pointerId)
+            pointerGesture.canceled = true;
           this.stop();
           this.changed(true);
         }
       });
     $('action-button').addEventListener('keydown', (event) => {
-      const task = this.current();
-      if (!['Space', 'Enter'].includes(event.code) || task?.mode !== 'hold' || !this.enabled())
-        return;
+      if (!['Space', 'Enter'].includes(event.code)) return;
       event.preventDefault();
-      this.holding = task.id;
-      this.controlPointer = 'keyboard';
+      if (event.repeat || this.pointer !== null ||
+          (this.controlPointer !== null && this.controlPointer !== 'keyboard') ||
+          (keyboardGesture && keyboardGesture.code !== event.code)) return;
+      const task = this.current();
+      keyboardGesture = task && this.enabled() && ['tap', 'hold'].includes(task.mode)
+        ? { ...snapshot(task), code: event.code } : null;
+      if (!keyboardGesture) return;
+      if (task.mode === 'hold') {
+        this.holding = task.id;
+        this.controlPointer = 'keyboard';
+      } else if (event.code === 'Enter') activate(keyboardGesture);
     });
     $('action-button').addEventListener('keyup', (event) => {
-      if (['Space', 'Enter'].includes(event.code) && this.controlPointer === 'keyboard') {
+      if (!['Space', 'Enter'].includes(event.code)) return;
+      // Always cancel the native keyup click, including a key canceled by blur or rebind.
+      event.preventDefault();
+      if (keyboardGesture?.code !== event.code) return;
+      const owner = keyboardGesture;
+      keyboardGesture = null;
+      if (this.controlPointer === 'keyboard') {
         this.stop();
         this.changed(true);
       }
+      if (event.code === 'Space') activate(owner);
     });
     $('action-button').addEventListener('blur', () => {
+      if (pointerGesture) pointerGesture.canceled = true;
+      keyboardGesture = null;
       if (this.controlPointer !== null) {
         this.stop();
         this.changed(true);
@@ -135,7 +180,8 @@ export class ActionController {
     if (completeTask(state, id)) this.finish(id);
   }
   finish(id) {
-    this.audio.play('task', id);
+    const cue = tasksFor(this.context().state.level).find(task => task.id === id)?.sound;
+    this.audio.play('task', id, .7, cue);
     this.stop();
     this.selected = nextTask(this.context().state)?.id || null;
     this.changed(true);

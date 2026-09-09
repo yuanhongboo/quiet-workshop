@@ -1,3 +1,4 @@
+import { stationArtwork } from './station-art.mjs';
 import { pendingChapterVisit, completedReturnChapter, markChapterVisited } from './chapter-progress.mjs';
 import { postArtwork } from './post-art.mjs';
 import { SOUNDTRACK } from './soundtrack.mjs';
@@ -152,6 +153,7 @@ function refreshShop() {
     : seasonState.canOpen
       ? `${activeSeason.openingLabel} <span>↗</span>`
       : `还差 ${activeSeason.restorationIds.length - count} 处焕新`;
+  fitIntroTitle();
 }
 function notify(text) {
   $('toast').textContent = text;
@@ -947,16 +949,20 @@ $('inspect').addEventListener('click', () => {
   notify(close ? '凑近一点。点击清单，可以找到对应部位。' : '回到全景。');
 });
 function fitIntroTitle() {
-  const title = $('intro-title');
-  title.style.fontSize = '';
-  if (!level || !activeSeason.fitIntroTitle || innerWidth <= 700 || $('intro').hidden) return;
-  const longest = Math.max(...level.title.split(/<br\s*\/?\s*>/i).map(line => Array.from(line.replace(/<[^>]*>/g, '')).length));
-  const available = $('intro').getBoundingClientRect().width - 8;
-  title.style.fontSize = `${Math.min(46, available / Math.max(1, longest * 1.05))}px`;
+  for (const [title, panel, maxSize] of [
+    [$('intro-title'), $('intro'), 46],
+    [document.querySelector('#shop-panel h2'), $('shop-panel'), 38],
+  ]) {
+    title.style.fontSize = '';
+    if (!level || !activeSeason.fitIntroTitle || innerWidth <= 700 || panel.hidden) continue;
+    const longest = Math.max(...title.innerHTML.split(/<br\s*\/?\s*>/i).map(line => Array.from(line.replace(/<[^>]*>/g, '')).length));
+    const available = panel.getBoundingClientRect().width - 8;
+    title.style.fontSize = `${Math.min(maxSize, available / Math.max(1, longest * 1.05))}px`;
+  }
 }
 window.addEventListener('resize', () => { view?.resize(); fitIntroTitle(); });
 function artwork(id) {
-  const seasonal = postArtwork(id) || gardenArtwork(id) || seasonArtwork(id);
+  const seasonal = stationArtwork(id) || postArtwork(id) || gardenArtwork(id) || seasonArtwork(id);
   if (seasonal) return seasonal;
   const art = {
     coffee:

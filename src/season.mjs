@@ -57,7 +57,22 @@ export const SEASON_THREE = Object.freeze({
   ],
   restorationIds:['post-box','post-sorter','post-stamp','post-typewriter','post-parcel','post-radio','post-bicycle','post-beacon'],
 });
-export const SEASONS = Object.freeze([SEASON, SEASON_TWO, SEASON_THREE]);
+export const SEASON_FOUR = Object.freeze({
+  id: 'mountain-station', number: '04', label: '第四季', title: '山间小站',
+  description: '山风停在站台，等一列慢慢回来的小火车。',
+  story: '擦亮站名，收好行李，让车轮轻轻转动。把一段旅途，安放在山间。',
+  overviewName: '小站', openingId: 'station-opening', inspection: true, chapterReturns: true, fitIntroTitle: true,
+  overviewTitle: '让旅途，<br/>有个停靠的地方。',
+  openingLabel: '迎接小火车', reopeningLabel: '重温山间归来',
+  readyHint: '小火车停稳了，收好这一次归来。', restoredHint: '迎接小火车回来',
+  chapters: [
+    {id:'arrival',number:'一',title:'山风进站',description:'先留下一个可以坐下来的地方。',levelIds:['station-sign','station-bench','station-ticket'],returnTitle:'名字亮了，<br/>座位也留好了。',returnDescription:'站牌重新指向山谷，长椅恢复了温润的木色，第一张车票也准备好了。山间小站，开始有了等候的样子。'},
+    {id:'journeys',number:'二',title:'旅途有序',description:'把方向与行李，慢慢收好。',levelIds:['station-board','station-luggage','station-signal'],returnTitle:'行李收好，<br/>方向也清楚了。',returnDescription:'时刻牌翻到了下一程，行李放得稳稳当当，站台信号也亮了。你修好的六件东西，正在等同一趟归来。'},
+    {id:'homecoming',number:'三',title:'等列车回来',description:'让熟悉的车轮，再转一程。',levelIds:['station-track','station-train','station-opening']},
+  ],
+  restorationIds:['station-sign','station-bench','station-ticket','station-board','station-luggage','station-signal','station-track','station-train'],
+});
+export const SEASONS = Object.freeze([SEASON, SEASON_TWO, SEASON_THREE, SEASON_FOUR]);
 export const getSeason = (id) => SEASONS.find((season) => season.id === id) || SEASON;
 export const seasonForLevel = (level) => SEASONS.find((season) => seasonLevelIds(season).includes(typeof level === 'string' ? level : level?.id)) || SEASON;
 export const seasonLabel = (season) => season.label || '第一季';

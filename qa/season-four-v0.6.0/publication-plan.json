@@ -1,0 +1,23 @@
+{
+  "repository": "yuanhongboo/orbit-breaker",
+  "previousCommit": "d4f516beed4aa4a006f319e43764168a2b3b613a",
+  "prefix": "quiet-workshop/v0.6.0",
+  "files": [
+    "quiet-workshop/v0.6.0/assets/after-the-light-BGFVd-m5.mp3",
+    "quiet-workshop/v0.6.0/assets/favicon-DkzWbQVf.svg",
+    "quiet-workshop/v0.6.0/assets/graphics-DgP24Owh.js",
+    "quiet-workshop/v0.6.0/assets/index-DaBxk4ck.js",
+    "quiet-workshop/v0.6.0/assets/index-NrMt-jC2.css",
+    "quiet-workshop/v0.6.0/assets/physics-ByaTtX8I.js",
+    "quiet-workshop/v0.6.0/CREDITS.txt",
+    "quiet-workshop/v0.6.0/index.html",
+    "quiet-workshop/v0.6.0/licenses/RAPIER-APACHE-2.0.txt",
+    "quiet-workshop/v0.6.0/licenses/SALAMANDER-CC-BY-3.0.txt",
+    "quiet-workshop/v0.6.0/licenses/THREE-MIT.txt"
+  ],
+  "bytes": 5141037,
+  "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.6.0/",
+  "fixedEntry": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/",
+  "status": "local-plan-validated",
+  "remoteReleaseChecked": false
+}

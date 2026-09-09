@@ -1,0 +1,15 @@
+
+> quiet-workshop@0.6.0 build:landing
+> node scripts/build-landing.mjs
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 27 modules transformed.
+rendering chunks...
+computing gzip size...
+../landing-dist/assets/favicon-DkzWbQVf.svg    0.34 kB │ gzip:  0.22 kB
+../landing-dist/index.html                    11.98 kB │ gzip:  4.13 kB
+../landing-dist/assets/index-BkdPLtwz.css      9.98 kB │ gzip:  3.08 kB
+../landing-dist/assets/index-jwjMaBkA.js     151.10 kB │ gzip: 49.36 kB
+✓ built in 138ms
+Landing: 4 files, 173405 bytes → https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/

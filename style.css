@@ -2115,3 +2115,10 @@ body[data-season="lighthouse-post"] .header-actions button[aria-pressed="true"] 
 .shop-milestone.chapter-new { border-color:#a89264;background:#f0e4c7;color:#5b674e;box-shadow:inset 0 0 0 1px #b6a37533; }
 #chapter-continue { width:100%; }
 @media (max-width:700px) { body[data-season="lighthouse-post"] .left-shade { background:linear-gradient(180deg,#eef0e4d0 0%,#eef0e400 32%,#eef0e400 75%,#eef0e480 100%); } }
+
+body[data-season="mountain-station"] .left-shade { background:linear-gradient(90deg,#eff0e2f0 0%,#eff0e2c0 19%,#eff0e200 43%); }
+body[data-season="mountain-station"] .header-actions button[aria-pressed="true"] { background:#d5e0c7;border-color:#a3b693;color:#3f5d43; }
+@media (max-width:700px) {
+  .season-tabs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+  body[data-season="mountain-station"] .left-shade { background:linear-gradient(180deg,#eff0e2d0 0%,#eff0e200 32%,#eff0e200 75%,#eff0e280 100%); }
+}

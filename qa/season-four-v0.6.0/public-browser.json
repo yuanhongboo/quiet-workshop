@@ -1,0 +1,10 @@
+{
+  "error": null,
+  "level": "station-sign",
+  "season": "mountain-station",
+  "start": "\n        开始收拾↗\n      ",
+  "startEnabled": true,
+  "title": "好好收拾 · 第四季：山间小站",
+  "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.6.0/?season=mountain-station&level=station-sign",
+  "version": "0.6.0"
+}

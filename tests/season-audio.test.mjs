@@ -166,3 +166,25 @@ test('coffee brewing and record needle timing keep their existing sound behavior
   audio.setSceneSound('record', 'brew', 33, 2.2, false);
   assert.equal(audio.noteIndex, 1);
 });
+
+
+test('metadata cues are bounded voices that mute and pause cancel without replaying', async () => {
+  const audio = audioFixture();
+  for (const cue of ['whistle', 'bell']) {
+    audio.play('task', 'a-configured-task', .7, cue);
+    const voices = [...audio.transients];
+    assert.ok(voices.length > 0);
+    assert.ok(voices.every(source => source.stops.some(end => end > 0 && end <= 2)), cue);
+    audio.setEnabled(false);
+    assert.equal(audio.transients.size, 0);
+    assert.ok(voices.every(source => source.stops.includes(undefined)), cue);
+    audio.play('task', 'a-configured-task', .7, cue);
+    assert.equal(audio.transients.size, 0);
+    audio.setEnabled(true);
+    audio.play('task', 'another-configured-task', .7, cue);
+    await audio.suspend();
+    assert.equal(audio.transients.size, 0);
+    await audio.unlock();
+    assert.equal(audio.transients.size, 0);
+  }
+});

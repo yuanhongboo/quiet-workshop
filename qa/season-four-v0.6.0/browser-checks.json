@@ -1,0 +1,4246 @@
+[
+  {
+    "case": "station-sign-first-full-play",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.01119900154534409,
+        "enabled": true,
+        "events": {
+          "clean": 2,
+          "clink": 1,
+          "done": 1,
+          "pick": 2,
+          "place": 2,
+          "switch": 1,
+          "task": 3
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 50.02,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.0844769203919263,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.6,
+      "held": null,
+      "items": [
+        {
+          "id": "station-sign-name",
+          "position": {
+            "x": 0,
+            "y": 1.7599999904632568,
+            "z": -0.08699999749660492
+          },
+          "screen": {
+            "x": 817.4303677538178,
+            "y": 268.94207975105945
+          },
+          "slot": {
+            "x": 815.3210668471318,
+            "y": 271.93389877185723
+          }
+        },
+        {
+          "id": "station-sign-arrow",
+          "position": {
+            "x": 0.1599999964237213,
+            "y": 0.9399999976158142,
+            "z": 0.10999999940395357
+          },
+          "screen": {
+            "x": 831.8251066351216,
+            "y": 394.39892946192776
+          },
+          "slot": {
+            "x": 830.8227314347364,
+            "y": 396.61175954700013
+          }
+        }
+      ],
+      "level": "station-sign",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "station-sign-name",
+        "station-sign-arrow"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "station-sign-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-plinth",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 661.0173549156156,
+              "y": 303.7732484926377
+            },
+            {
+              "x": 982.6422807967256,
+              "y": 326.0820191327547
+            },
+            {
+              "x": 990.5298490997844,
+              "y": 228.19490732196297
+            },
+            {
+              "x": 661.4687186291884,
+              "y": 211.9728858644908
+            }
+          ],
+          "id": "station-sign-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 620.5153089669021,
+              "y": 510.6609317879978
+            },
+            {
+              "x": 988.4446885642822,
+              "y": 553.191436376768
+            },
+            {
+              "x": 990.3804061281148,
+              "y": 530.830293553061
+            },
+            {
+              "x": 620.4152287816177,
+              "y": 489.76772243775355
+            }
+          ],
+          "id": "station-sign-plinth"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-sign-align",
+          "mode": "dial",
+          "screen": {
+            "x": 817.4303677538178,
+            "y": 268.94207975105945
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "station-sign-tighten",
+          "mode": "hold",
+          "screen": {
+            "x": 817.4303677538178,
+            "y": 268.94207975105945
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-point",
+          "mode": "tap",
+          "screen": {
+            "x": 831.8251066351216,
+            "y": 394.39892946192776
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 117,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 79,
+          "textures": 13
+        },
+        "p95FrameMs": 8.800000000017462,
+        "samples": 600,
+        "triangles": 44202,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "first-chapter-return",
+    "data": {
+      "action": null,
+      "activeTask": "station-open-shutters",
+      "audio": {
+        "currentRms": 0.011470642135364532,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 42.17,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06587846697158929,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "station-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "arrival",
+        "chapterHighlights": [
+          "station-sign",
+          "station-bench",
+          "station-ticket"
+        ],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "station-open-shutters",
+          "mode": "hold",
+          "screen": {
+            "x": 723.7136284720735,
+            "y": 249.04474072218417
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "station-set-signal",
+          "mode": "tap",
+          "screen": {
+            "x": 882.33067103741,
+            "y": 462.1712397162928
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "station-arrive-train",
+          "mode": "hold",
+          "screen": {
+            "x": 835.0990559182599,
+            "y": 419.0265167458999
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "station-arrival-bell",
+          "mode": "tap",
+          "screen": {
+            "x": 825.0539809714321,
+            "y": 289.53522779731355
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 182,
+        "dpr": 2,
+        "height": 720,
+        "memory": {
+          "geometries": 102,
+          "textures": 8
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 23082,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "case": "second-chapter-return-phone",
+    "data": {
+      "action": null,
+      "activeTask": "station-open-shutters",
+      "audio": {
+        "currentRms": 0.01841625457337476,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 4,
+          "playing": true,
+          "position": 23.6,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06810676755884078,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "station-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": "journeys",
+        "chapterHighlights": [
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": true,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "operate",
+      "started": false,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "station-open-shutters",
+          "mode": "hold",
+          "screen": {
+            "x": 210.6407049490896,
+            "y": 351.1508179604116
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "station-set-signal",
+          "mode": "tap",
+          "screen": {
+            "x": 306.395553887933,
+            "y": 485.2953745077383
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "station-arrive-train",
+          "mode": "hold",
+          "screen": {
+            "x": 278.0889619195224,
+            "y": 458.93791044624777
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "station-arrival-bell",
+          "mode": "tap",
+          "screen": {
+            "x": 274.24400253077516,
+            "y": 377.31511724052586
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 222,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 120,
+          "textures": 11
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 35438,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "hold-release-does-not-consume-next-tap",
+    "data": {
+      "action": null,
+      "activeTask": "station-sign-point",
+      "audio": {
+        "currentRms": 0.008166329797419538,
+        "enabled": true,
+        "events": {
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 9.62,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.053484501160512066,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "station-sign-name",
+          "position": {
+            "x": 0,
+            "y": 1.7599999904632568,
+            "z": -0.08699999749660492
+          },
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592074
+          },
+          "slot": {
+            "x": 194.7547335571591,
+            "y": 365.6040594502412
+          }
+        },
+        {
+          "id": "station-sign-arrow",
+          "position": {
+            "x": 0.1599999964237213,
+            "y": 0.9399999976158142,
+            "z": 0.10999999940395357
+          },
+          "screen": {
+            "x": 205.89997006864007,
+            "y": 439.0616735004397
+          },
+          "slot": {
+            "x": 204.70620446987175,
+            "y": 440.20161646544614
+          }
+        }
+      ],
+      "level": "station-sign",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "station-sign-name",
+        "station-sign-arrow"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "station-sign-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-plinth",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 106.190943758421,
+              "y": 385.04246750197905
+            },
+            {
+              "x": 293.31157182068955,
+              "y": 397.7538462712594
+            },
+            {
+              "x": 294.33097954109536,
+              "y": 340.01064155690347
+            },
+            {
+              "x": 105.30233741553556,
+              "y": 329.19545297652235
+            }
+          ],
+          "id": "station-sign-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 80.89863901912926,
+              "y": 512.1010726068268
+            },
+            {
+              "x": 295.06036580209735,
+              "y": 531.97243274606
+            },
+            {
+              "x": 295.3122266672737,
+              "y": 518.2932362355498
+            },
+            {
+              "x": 80.62286369618465,
+              "y": 498.9181512048415
+            }
+          ],
+          "id": "station-sign-plinth"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-sign-align",
+          "mode": "dial",
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592074
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "station-sign-tighten",
+          "mode": "hold",
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592074
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "station-sign-point",
+          "mode": "tap",
+          "screen": {
+            "x": 205.89997006864007,
+            "y": 439.0616735004397
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 108,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 62,
+          "textures": 13
+        },
+        "p95FrameMs": 9,
+        "samples": 600,
+        "triangles": 42872,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "fresh-tap-after-hold-works",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.015849999615037698,
+        "enabled": true,
+        "events": {
+          "task": 2
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 9.94,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.053484501160512066,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "station-sign-name",
+          "position": {
+            "x": 0,
+            "y": 1.7599999904632568,
+            "z": -0.08699999749660492
+          },
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592074
+          },
+          "slot": {
+            "x": 194.7547335571591,
+            "y": 365.6040594502412
+          }
+        },
+        {
+          "id": "station-sign-arrow",
+          "position": {
+            "x": 0.1599999964237213,
+            "y": 0.9399999976158142,
+            "z": 0.10999999940395357
+          },
+          "screen": {
+            "x": 205.89997006864007,
+            "y": 439.0616735004397
+          },
+          "slot": {
+            "x": 204.70620446987175,
+            "y": 440.20161646544614
+          }
+        }
+      ],
+      "level": "station-sign",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "station-sign-name",
+        "station-sign-arrow"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "ready",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "station-sign-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-plinth",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 106.190943758421,
+              "y": 385.04246750197905
+            },
+            {
+              "x": 293.31157182068955,
+              "y": 397.7538462712594
+            },
+            {
+              "x": 294.33097954109536,
+              "y": 340.01064155690347
+            },
+            {
+              "x": 105.30233741553556,
+              "y": 329.19545297652235
+            }
+          ],
+          "id": "station-sign-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 80.89863901912926,
+              "y": 512.1010726068268
+            },
+            {
+              "x": 295.06036580209735,
+              "y": 531.97243274606
+            },
+            {
+              "x": 295.3122266672737,
+              "y": 518.2932362355498
+            },
+            {
+              "x": 80.62286369618465,
+              "y": 498.9181512048415
+            }
+          ],
+          "id": "station-sign-plinth"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-sign-align",
+          "mode": "dial",
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592074
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "station-sign-tighten",
+          "mode": "hold",
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592074
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-point",
+          "mode": "tap",
+          "screen": {
+            "x": 205.89997006864007,
+            "y": 439.0616735004397
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 108,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 62,
+          "textures": 13
+        },
+        "p95FrameMs": 9,
+        "samples": 600,
+        "triangles": 42872,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-sign-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.023861660661333155,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.41,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.6,
+      "held": null,
+      "items": [
+        {
+          "id": "station-sign-name",
+          "position": {
+            "x": 0,
+            "y": 1.7599999904632568,
+            "z": -0.08699999749660492
+          },
+          "screen": {
+            "x": 197.1126854397131,
+            "y": 364.073207802498
+          },
+          "slot": {
+            "x": 194.75584964581753,
+            "y": 365.8852848668247
+          }
+        },
+        {
+          "id": "station-sign-arrow",
+          "position": {
+            "x": 0.1599999964237213,
+            "y": 0.9399999976158142,
+            "z": 0.10999999940395357
+          },
+          "screen": {
+            "x": 205.8497561466899,
+            "y": 438.997251701756
+          },
+          "slot": {
+            "x": 204.66135440735488,
+            "y": 440.1380935692511
+          }
+        }
+      ],
+      "level": "station-sign",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "station-sign-name",
+        "station-sign-arrow"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "station-sign-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-plinth",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 106.5847285740989,
+              "y": 385.16231666784154
+            },
+            {
+              "x": 292.85860831377636,
+              "y": 397.9017809170032
+            },
+            {
+              "x": 293.87457029247275,
+              "y": 340.4476469776105
+            },
+            {
+              "x": 105.69881617660825,
+              "y": 329.5840547604803
+            }
+          ],
+          "id": "station-sign-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 81.42175247878338,
+              "y": 511.6526418817676
+            },
+            {
+              "x": 294.58105841901335,
+              "y": 531.502924257161
+            },
+            {
+              "x": 294.8319732764097,
+              "y": 517.89539502443
+            },
+            {
+              "x": 81.14689938181908,
+              "y": 498.5358234758024
+            }
+          ],
+          "id": "station-sign-plinth"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-sign-align",
+          "mode": "dial",
+          "screen": {
+            "x": 197.1126854397131,
+            "y": 364.073207802498
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "station-sign-tighten",
+          "mode": "hold",
+          "screen": {
+            "x": 197.1126854397131,
+            "y": 364.073207802498
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-point",
+          "mode": "tap",
+          "screen": {
+            "x": 205.8497561466899,
+            "y": 438.997251701756
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 108,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 62,
+          "textures": 13
+        },
+        "p95FrameMs": 9.300000000000011,
+        "samples": 53,
+        "triangles": 42872,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-bench-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.022734567344632257,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.41,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "station-bench-back-slat",
+          "position": {
+            "x": 0,
+            "y": 0.8100000023841858,
+            "z": -0.3499999940395355
+          },
+          "screen": {
+            "x": 203.2591952425921,
+            "y": 406.60978586406503
+          },
+          "slot": {
+            "x": 200.46257315289645,
+            "y": 409.2743371107955
+          }
+        },
+        {
+          "id": "station-bench-seat-slat",
+          "position": {
+            "x": 0,
+            "y": 0.550000011920929,
+            "z": -0.14000000059604645
+          },
+          "screen": {
+            "x": 198.3270950669392,
+            "y": 432.812240850649
+          },
+          "slot": {
+            "x": 198.3298081341619,
+            "y": 428.6885744671786
+          }
+        },
+        {
+          "id": "station-bench-arm",
+          "position": {
+            "x": 1.4600000381469729,
+            "y": 0.8799999952316284,
+            "z": -0.019999999552965164
+          },
+          "screen": {
+            "x": 320.4644436295292,
+            "y": 417.8593867252692
+          },
+          "slot": {
+            "x": 319.92767916489777,
+            "y": 411.9355870654627
+          }
+        }
+      ],
+      "level": "station-bench",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "station-bench-back-slat",
+        "station-bench-seat-slat",
+        "station-bench-arm"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "station-bench-back",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-bench-seat",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 96.22666873761295,
+              "y": 385.1763416878513
+            },
+            {
+              "x": 312.7268170436964,
+              "y": 401.34200373789776
+            },
+            {
+              "x": 313.23716371855505,
+              "y": 379.28380002710634
+            },
+            {
+              "x": 95.81557488697008,
+              "y": 363.93122655175193
+            }
+          ],
+          "id": "station-bench-back"
+        },
+        {
+          "corners": [
+            {
+              "x": 76.90352692357077,
+              "y": 431.977728223497
+            },
+            {
+              "x": 300.18110707839196,
+              "y": 450.71646778922286
+            },
+            {
+              "x": 305.7878314789891,
+              "y": 443.0941598262337
+            },
+            {
+              "x": 85.86414219103813,
+              "y": 424.9640583336468
+            }
+          ],
+          "id": "station-bench-seat"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-bench-fasten",
+          "mode": "tap",
+          "screen": {
+            "x": 320.4644436295292,
+            "y": 417.8593867252692
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-bench-sand",
+          "mode": "hold",
+          "screen": {
+            "x": 203.300158444777,
+            "y": 381.3990736189607
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-bench-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 189.9133466831288,
+            "y": 441.24233252769193
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 104,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 60,
+          "textures": 11
+        },
+        "p95FrameMs": 9.299999999999956,
+        "samples": 54,
+        "triangles": 50768,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-ticket-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.02667717581422636,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.32,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4,
+      "held": null,
+      "items": [
+        {
+          "id": "station-ticket-roll",
+          "position": {
+            "x": -1.0499999523162842,
+            "y": 1.0800000429153442,
+            "z": -0.119999997317791
+          },
+          "screen": {
+            "x": 111.89244872766048,
+            "y": 394.5734384492876
+          },
+          "slot": {
+            "x": 105.66343931816688,
+            "y": 399.2062271768623
+          }
+        },
+        {
+          "id": "station-ticket-handle",
+          "position": {
+            "x": 1,
+            "y": 1.0499999523162842,
+            "z": 0.12999999523162842
+          },
+          "screen": {
+            "x": 277.44473104291893,
+            "y": 415.44207113305
+          },
+          "slot": {
+            "x": 243.2754879561245,
+            "y": 415.2953724562
+          }
+        },
+        {
+          "id": "station-ticket-type",
+          "position": {
+            "x": -0.10000000149011612,
+            "y": 1.0499999523162842,
+            "z": 0.04600000008940697
+          },
+          "screen": {
+            "x": 185.51509573830907,
+            "y": 406.45763602140255
+          },
+          "slot": {
+            "x": 183.68673014587796,
+            "y": 408.08866287532146
+          }
+        }
+      ],
+      "level": "station-ticket",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "station-ticket-roll",
+        "station-ticket-handle",
+        "station-ticket-type"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "station-ticket-body",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-ticket-tray",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-ticket-apron",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 148.66386832983608,
+              "y": 425.06342980241806
+            },
+            {
+              "x": 225.1005693105683,
+              "y": 431.1435841805291
+            },
+            {
+              "x": 225.36506986455595,
+              "y": 385.51078513504626
+            },
+            {
+              "x": 148.26257105349185,
+              "y": 380.035720618457
+            }
+          ],
+          "id": "station-ticket-body"
+        },
+        {
+          "corners": [
+            {
+              "x": 101.6312318939468,
+              "y": 498.75692967649456
+            },
+            {
+              "x": 218.8872422453762,
+              "y": 509.8216482066353
+            },
+            {
+              "x": 230.1155718656065,
+              "y": 496.21097045310734
+            },
+            {
+              "x": 115.71755744475912,
+              "y": 485.7294040707258
+            }
+          ],
+          "id": "station-ticket-tray"
+        },
+        {
+          "corners": [
+            {
+              "x": 63.27716252092526,
+              "y": 515.7599806419624
+            },
+            {
+              "x": 269.86729202108233,
+              "y": 536.0759434744748
+            },
+            {
+              "x": 270.03580944850745,
+              "y": 524.6231184887171
+            },
+            {
+              "x": 62.99205091081231,
+              "y": 504.70280134995335
+            }
+          ],
+          "id": "station-ticket-apron"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-ticket-feed",
+          "mode": "hold",
+          "screen": {
+            "x": 111.89244872766048,
+            "y": 394.5734384492876
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-ticket-punch",
+          "mode": "hold",
+          "screen": {
+            "x": 277.44473104291893,
+            "y": 415.44207113305
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-ticket-present",
+          "mode": "tap",
+          "screen": {
+            "x": 168.91001108653165,
+            "y": 490.637970711033
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 129,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 73,
+          "textures": 16
+        },
+        "p95FrameMs": 9.299999999999956,
+        "samples": 41,
+        "triangles": 55302,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-board-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.027528082733019738,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.31,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 3.8,
+      "held": null,
+      "items": [
+        {
+          "id": "board-destination",
+          "position": {
+            "x": 0,
+            "y": 1.3899999856948853,
+            "z": -0.012000000104308128
+          },
+          "screen": {
+            "x": 193.7204847729171,
+            "y": 392.38206464765136
+          },
+          "slot": {
+            "x": 192.4598615141649,
+            "y": 393.5583818581958
+          }
+        },
+        {
+          "id": "board-greeting",
+          "position": {
+            "x": 0,
+            "y": 0.8399999737739563,
+            "z": -0.012000000104308128
+          },
+          "screen": {
+            "x": 193.73240007814633,
+            "y": 438.1641703401551
+          },
+          "slot": {
+            "x": 192.48358284277896,
+            "y": 439.4584932545454
+          }
+        },
+        {
+          "id": "board-crank",
+          "position": {
+            "x": 1.5,
+            "y": 1.1299999952316284,
+            "z": -0.27000001072883606
+          },
+          "screen": {
+            "x": 326.33470269114576,
+            "y": 418.26752731680415
+          },
+          "slot": {
+            "x": 325.01948919805204,
+            "y": 419.8001395045141
+          }
+        }
+      ],
+      "level": "station-board",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "board-destination",
+        "board-greeting",
+        "board-crank"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "board-top-rail",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "board-side",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "board-base",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 88.790074044679,
+              "y": 353.78673010233314
+            },
+            {
+              "x": 299.61765916457585,
+              "y": 368.87833660847895
+            },
+            {
+              "x": 299.96893337827925,
+              "y": 352.292069672078
+            },
+            {
+              "x": 88.44729443977519,
+              "y": 337.79549365003714
+            }
+          ],
+          "id": "board-top-rail"
+        },
+        {
+          "corners": [
+            {
+              "x": 96.31366520522154,
+              "y": 456.8464030991321
+            },
+            {
+              "x": 81.0252980822134,
+              "y": 470.3650212183595
+            },
+            {
+              "x": 78.14903340121309,
+              "y": 348.2659548497192
+            },
+            {
+              "x": 93.89338461487918,
+              "y": 337.8558663016524
+            }
+          ],
+          "id": "board-side"
+        },
+        {
+          "corners": [
+            {
+              "x": 80.0126094428712,
+              "y": 496.02427651639584
+            },
+            {
+              "x": 300.0345285751951,
+              "y": 517.7842606407012
+            },
+            {
+              "x": 300.30780612486507,
+              "y": 505.3194299340318
+            },
+            {
+              "x": 79.7255446069872,
+              "y": 484.0095916640748
+            }
+          ],
+          "id": "board-base"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "board-align",
+          "mode": "dial",
+          "screen": {
+            "x": 305.0073170516787,
+            "y": 401.00089435249487
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "board-flip",
+          "mode": "hold",
+          "screen": {
+            "x": 326.33470269114576,
+            "y": 418.26752731680415
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "board-lock",
+          "mode": "tap",
+          "screen": {
+            "x": 191.4443778791602,
+            "y": 471.8416912010284
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 149,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 84,
+          "textures": 19
+        },
+        "p95FrameMs": 9.300000000000011,
+        "samples": 41,
+        "triangles": 60050,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-luggage-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.027528082733019738,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.32,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4,
+      "held": null,
+      "items": [
+        {
+          "id": "luggage-wheel",
+          "position": {
+            "x": 1.0800000429153442,
+            "y": 0.27000001072883606,
+            "z": -0.10000000149011612
+          },
+          "screen": {
+            "x": 285.7506644841707,
+            "y": 481.7626112753434
+          },
+          "slot": {
+            "x": 286.86132760325984,
+            "y": 485.4344479321743
+          }
+        },
+        {
+          "id": "luggage-handle",
+          "position": {
+            "x": 0,
+            "y": 1.409999966621399,
+            "z": -0.6499999761581421
+          },
+          "screen": {
+            "x": 208.62619872160496,
+            "y": 367.7380736145651
+          },
+          "slot": {
+            "x": 207.71379099638497,
+            "y": 371.0300238149635
+          }
+        },
+        {
+          "id": "luggage-case",
+          "position": {
+            "x": 0,
+            "y": 0.8820000290870667,
+            "z": -0.03999999910593033
+          },
+          "screen": {
+            "x": 194.3874010617425,
+            "y": 424.9384361835516
+          },
+          "slot": {
+            "x": 194.39099712093292,
+            "y": 452.9926111843365
+          }
+        }
+      ],
+      "level": "station-luggage",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "luggage-wheel",
+        "luggage-handle",
+        "luggage-case"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "luggage-deck",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "luggage-front",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "luggage-back",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 131.64589887119524,
+              "y": 459.36482217892626
+            },
+            {
+              "x": 283.726744467578,
+              "y": 473.455782551569
+            },
+            {
+              "x": 298.4245173190451,
+              "y": 452.51779855439423
+            },
+            {
+              "x": 152.09374122218662,
+              "y": 439.55744433742296
+            }
+          ],
+          "id": "luggage-deck"
+        },
+        {
+          "corners": [
+            {
+              "x": 118.46636443410208,
+              "y": 482.8282219276879
+            },
+            {
+              "x": 286.2374715576278,
+              "y": 499.1575542562401
+            },
+            {
+              "x": 286.48403283554023,
+              "y": 486.4429257662804
+            },
+            {
+              "x": 118.26592711814462,
+              "y": 470.4635393369576
+            }
+          ],
+          "id": "luggage-front"
+        },
+        {
+          "corners": [
+            {
+              "x": 306.26337924956385,
+              "y": 438.0437318626159
+            },
+            {
+              "x": 152.923455224129,
+              "y": 424.88810161761813
+            },
+            {
+              "x": 152.77070133062597,
+              "y": 407.5378303277351
+            },
+            {
+              "x": 306.67900969745705,
+              "y": 420.23995951569606
+            }
+          ],
+          "id": "luggage-back"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "luggage-strap",
+          "mode": "hold",
+          "screen": {
+            "x": 214.38481719665631,
+            "y": 426.64099419224056
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "luggage-roll",
+          "mode": "hold",
+          "screen": {
+            "x": 228.2094960468984,
+            "y": 369.1922937927697
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "luggage-brake",
+          "mode": "tap",
+          "screen": {
+            "x": 123.89803585493988,
+            "y": 452.95535834664616
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 201,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 110,
+          "textures": 14
+        },
+        "p95FrameMs": 9.300000000000011,
+        "samples": 42,
+        "triangles": 79814,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-signal-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.027254737671110536,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.3,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.029150933175776488,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4.2,
+      "held": null,
+      "items": [
+        {
+          "id": "signal-lens",
+          "position": {
+            "x": 0,
+            "y": 1.659999966621399,
+            "z": 0.10499999672174454
+          },
+          "screen": {
+            "x": 190.85605426373945,
+            "y": 382.904021867926
+          },
+          "slot": {
+            "x": 189.99354689930516,
+            "y": 383.6643167579472
+          }
+        },
+        {
+          "id": "signal-lever",
+          "position": {
+            "x": 0.6399999856948853,
+            "y": 0.6299999952316284,
+            "z": -0.07000000029802322
+          },
+          "screen": {
+            "x": 248.4504503207251,
+            "y": 469.4662013650204
+          },
+          "slot": {
+            "x": 246.4174310480137,
+            "y": 484.2067076319397
+          }
+        },
+        {
+          "id": "signal-cap",
+          "position": {
+            "x": 0,
+            "y": 2.309999942779541,
+            "z": -0.3100000023841858
+          },
+          "screen": {
+            "x": 200.89751861546867,
+            "y": 319.2445461400191
+          },
+          "slot": {
+            "x": 200.88869079910597,
+            "y": 326.91179739049716
+          }
+        }
+      ],
+      "level": "station-signal",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "signal-lens",
+        "signal-lever",
+        "signal-cap"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "signal-window",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "signal-top",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "signal-base",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 165.6468059459986,
+              "y": 396.8923009773532
+            },
+            {
+              "x": 152.69478579862297,
+              "y": 408.0827447202398
+            },
+            {
+              "x": 152.1727499659806,
+              "y": 345.97202344761024
+            },
+            {
+              "x": 165.29441809014767,
+              "y": 336.3316973583808
+            }
+          ],
+          "id": "signal-window"
+        },
+        {
+          "corners": [
+            {
+              "x": 159.9791413053485,
+              "y": 332.8861920716415
+            },
+            {
+              "x": 229.49546715181452,
+              "y": 337.3783211554122
+            },
+            {
+              "x": 241.14033676061644,
+              "y": 327.44183341681975
+            },
+            {
+              "x": 173.44377498872316,
+              "y": 323.20180810121883
+            }
+          ],
+          "id": "signal-top"
+        },
+        {
+          "corners": [
+            {
+              "x": 130.30688613172563,
+              "y": 516.6414831897522
+            },
+            {
+              "x": 241.2819381942039,
+              "y": 527.7235027356977
+            },
+            {
+              "x": 241.43016057821924,
+              "y": 511.9867612499338
+            },
+            {
+              "x": 130.1039875307771,
+              "y": 501.19562947425794
+            }
+          ],
+          "id": "signal-base"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "signal-polish",
+          "mode": "hold",
+          "screen": {
+            "x": 190.85605426373945,
+            "y": 382.904021867926
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "signal-align",
+          "mode": "dial",
+          "screen": {
+            "x": 189.6723351663885,
+            "y": 383.94746396815134
+          },
+          "value": 45
+        },
+        {
+          "done": true,
+          "id": "signal-pull",
+          "mode": "tap",
+          "screen": {
+            "x": 248.31787573012792,
+            "y": 481.79839080016734
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 136,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 77,
+          "textures": 14
+        },
+        "p95FrameMs": 9.300000000000011,
+        "samples": 41,
+        "triangles": 54070,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-track-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.027528082733019738,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.32,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 4.8,
+      "held": null,
+      "items": [
+        {
+          "id": "track-front-rail",
+          "position": {
+            "x": 0.949999988079071,
+            "y": 0.2750000059604645,
+            "z": 0.09000000357627869
+          },
+          "screen": {
+            "x": 270.0748982541728,
+            "y": 464.6492398914653
+          },
+          "slot": {
+            "x": 270.006698906435,
+            "y": 468.1680360797408
+          }
+        },
+        {
+          "id": "track-rear-rail",
+          "position": {
+            "x": 0.949999988079071,
+            "y": 0.2750000059604645,
+            "z": -0.4900000095367432
+          },
+          "screen": {
+            "x": 281.0453055033457,
+            "y": 447.3150342122973
+          },
+          "slot": {
+            "x": 280.9694125206746,
+            "y": 450.7468192361273
+          }
+        },
+        {
+          "id": "track-lever",
+          "position": {
+            "x": -1.4700000286102295,
+            "y": 0.6800000071525574,
+            "z": 0.6200000047683716
+          },
+          "screen": {
+            "x": 61.14650849646174,
+            "y": 427.85935931656735
+          },
+          "slot": {
+            "x": 61.89924959817257,
+            "y": 449.8491912119414
+          }
+        }
+      ],
+      "level": "station-track",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "track-front-rail",
+        "track-rear-rail",
+        "track-lever"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "track-timber",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "track-steel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "track-housing",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 93.83058094049746,
+              "y": 475.8356717928045
+            },
+            {
+              "x": 320.43617686624566,
+              "y": 501.4637501141536
+            },
+            {
+              "x": 320.8781997265211,
+              "y": 487.9437560495741
+            },
+            {
+              "x": 93.48856491434044,
+              "y": 462.778680315196
+            }
+          ],
+          "id": "track-timber"
+        },
+        {
+          "corners": [
+            {
+              "x": 92.7268413476989,
+              "y": 453.6575916006076
+            },
+            {
+              "x": 177.60745158428438,
+              "y": 462.90830944001254
+            },
+            {
+              "x": 177.55532639655993,
+              "y": 451.2943176321787
+            },
+            {
+              "x": 92.42511813271152,
+              "y": 442.1977227057607
+            }
+          ],
+          "id": "track-steel"
+        },
+        {
+          "corners": [
+            {
+              "x": 39.865512008988105,
+              "y": 472.00787568619614
+            },
+            {
+              "x": 74.64943184307967,
+              "y": 475.95668029352487
+            },
+            {
+              "x": 74.03746806396994,
+              "y": 456.3181091550649
+            },
+            {
+              "x": 39.08183492625697,
+              "y": 452.4777556799383
+            }
+          ],
+          "id": "track-housing"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "track-tighten",
+          "mode": "hold",
+          "screen": {
+            "x": 216.94840780874068,
+            "y": 450.97021911189495
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "track-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 96.15535870842392,
+            "y": 477.7939154101986
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "track-switch",
+          "mode": "dial",
+          "screen": {
+            "x": 61.805618167275256,
+            "y": 447.1139966967464
+          },
+          "value": 60
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 153,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 85,
+          "textures": 14
+        },
+        "p95FrameMs": 9.300000000000011,
+        "samples": 43,
+        "triangles": 36830,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-train-finished-fixture-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.0245655808890913,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.33,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 5.5,
+      "held": null,
+      "items": [
+        {
+          "id": "train-wheelset",
+          "position": {
+            "x": 0,
+            "y": 0.3400000035762787,
+            "z": 0.5450000166893005
+          },
+          "screen": {
+            "x": 182.12317068331265,
+            "y": 465.27386961668566
+          },
+          "slot": {
+            "x": 181.7583797405654,
+            "y": 465.740964660664
+          }
+        },
+        {
+          "id": "train-cab",
+          "position": {
+            "x": -0.8600000143051147,
+            "y": 1.100000023841858,
+            "z": 0
+          },
+          "screen": {
+            "x": 126.12207394298645,
+            "y": 382.5959719874518
+          },
+          "slot": {
+            "x": 126.86721177521936,
+            "y": 425.47393486366934
+          }
+        },
+        {
+          "id": "train-whistle-part",
+          "position": {
+            "x": -0.6899999976158142,
+            "y": 1.830000042915344,
+            "z": 0.12999999523162842
+          },
+          "screen": {
+            "x": 135.33355835953742,
+            "y": 328.455245480617
+          },
+          "slot": {
+            "x": 135.55148784515723,
+            "y": 343.1295315667826
+          }
+        }
+      ],
+      "level": "station-train",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "train-wheelset",
+        "train-cab",
+        "train-whistle-part"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "train-boiler",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "train-chassis",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "train-front",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 161.01572373412725,
+              "y": 434.0345097831975
+            },
+            {
+              "x": 267.19713877950437,
+              "y": 445.0586446130635
+            },
+            {
+              "x": 267.7094719968303,
+              "y": 417.37571781759914
+            },
+            {
+              "x": 160.77921665392736,
+              "y": 406.80930453421627
+            }
+          ],
+          "id": "train-boiler"
+        },
+        {
+          "corners": [
+            {
+              "x": 89.38218352672872,
+              "y": 451.1131055396263
+            },
+            {
+              "x": 279.5163622646008,
+              "y": 471.7230933010706
+            },
+            {
+              "x": 279.81552380519014,
+              "y": 458.0090427144717
+            },
+            {
+              "x": 89.02117954977477,
+              "y": 437.79998933931273
+            }
+          ],
+          "id": "train-chassis"
+        },
+        {
+          "corners": [
+            {
+              "x": 288.01753801560255,
+              "y": 449.6097837112215
+            },
+            {
+              "x": 299.40535349271033,
+              "y": 431.22362234885975
+            },
+            {
+              "x": 300.7141157795044,
+              "y": 382.14922418283146
+            },
+            {
+              "x": 289.2222478429707,
+              "y": 399.1448016131084
+            }
+          ],
+          "id": "train-front"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "train-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 293.8365654056986,
+            "y": 499.7771770108485
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "train-wheels",
+          "mode": "hold",
+          "screen": {
+            "x": 182.12317068331265,
+            "y": 465.27386961668566
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "train-whistle",
+          "mode": "tap",
+          "screen": {
+            "x": 135.33355835953742,
+            "y": 328.455245480617
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 245,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 132,
+          "textures": 14
+        },
+        "p95FrameMs": 9.300000000000011,
+        "samples": 45,
+        "triangles": 45680,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "train-mid-arrival-phone",
+    "data": {
+      "action": null,
+      "activeTask": "station-arrive-train",
+      "audio": {
+        "currentRms": 0.018192053923693784,
+        "enabled": true,
+        "events": {
+          "task": 2
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 41.77,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06587846697158929,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "station-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-open-shutters",
+          "mode": "hold",
+          "screen": {
+            "x": 210.6407049490896,
+            "y": 351.1508179604116
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-set-signal",
+          "mode": "tap",
+          "screen": {
+            "x": 306.395553887933,
+            "y": 485.2953745077383
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "station-arrive-train",
+          "mode": "hold",
+          "screen": {
+            "x": 278.0889619195224,
+            "y": 458.93791044624777
+          },
+          "value": 0.41228799999999793
+        },
+        {
+          "done": false,
+          "id": "station-arrival-bell",
+          "mode": "tap",
+          "screen": {
+            "x": 274.24400253077516,
+            "y": 377.31511724052586
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 465,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 240,
+          "textures": 12
+        },
+        "p95FrameMs": 8.900000000001455,
+        "samples": 600,
+        "triangles": 59510,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "train-mid-arrival-reload-phone",
+    "data": {
+      "action": null,
+      "activeTask": "station-arrive-train",
+      "audio": {
+        "currentRms": 0.0245655808890913,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 0.33,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.028759365844946937,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [],
+      "level": "station-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ],
+        "finished": false,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ]
+      },
+      "stage": "operate",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-open-shutters",
+          "mode": "hold",
+          "screen": {
+            "x": 210.6407049490896,
+            "y": 351.1508179604116
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-set-signal",
+          "mode": "tap",
+          "screen": {
+            "x": 306.395553887933,
+            "y": 485.2953745077383
+          },
+          "value": 1
+        },
+        {
+          "done": false,
+          "id": "station-arrive-train",
+          "mode": "hold",
+          "screen": {
+            "x": 278.0889619195224,
+            "y": 458.93791044624777
+          },
+          "value": 0.41228799999999793
+        },
+        {
+          "done": false,
+          "id": "station-arrival-bell",
+          "mode": "tap",
+          "screen": {
+            "x": 274.24400253077516,
+            "y": 377.31511724052586
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 465,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 240,
+          "textures": 12
+        },
+        "p95FrameMs": 9.399999999999975,
+        "samples": 44,
+        "triangles": 59510,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "station-finale-full-interaction-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.004912613286586456,
+        "enabled": true,
+        "events": {
+          "done": 1,
+          "switch": 1,
+          "task": 2
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 2,
+          "playing": true,
+          "position": 99.44,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.08445713731702731,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 7,
+      "held": null,
+      "items": [],
+      "level": "station-opening",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train",
+          "station-opening"
+        ],
+        "finished": true,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ]
+      },
+      "stage": "done",
+      "started": true,
+      "surfaces": [],
+      "surfacesScreen": [],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-open-shutters",
+          "mode": "hold",
+          "screen": {
+            "x": 210.6407049490896,
+            "y": 351.1508179604116
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-set-signal",
+          "mode": "tap",
+          "screen": {
+            "x": 306.395553887933,
+            "y": 485.2953745077383
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-arrive-train",
+          "mode": "hold",
+          "screen": {
+            "x": 278.0889619195224,
+            "y": 458.93791044624777
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-arrival-bell",
+          "mode": "tap",
+          "screen": {
+            "x": 274.24400253077516,
+            "y": 377.31511724052586
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 465,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 240,
+          "textures": 12
+        },
+        "p95FrameMs": 10,
+        "samples": 600,
+        "triangles": 59510,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "production-season-three-route",
+    "data": {
+      "action": null,
+      "activeTask": "post-box-oil",
+      "audio": {
+        "currentRms": 0.01597971299931596,
+        "enabled": true,
+        "events": {},
+        "music": {
+          "active": false,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": false,
+          "position": 22.79,
+          "readyState": 4,
+          "status": "paused",
+          "streaming": true,
+          "theme": "lighthouse-post",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06587846697158929,
+        "state": "suspended"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "post-box-lid",
+          "position": {
+            "x": 0.1299995481967926,
+            "y": 0.01587831974029541,
+            "z": 0.8899993300437927
+          },
+          "screen": {
+            "x": 184.26681936985463,
+            "y": 530.228384315933
+          },
+          "slot": {
+            "x": 189.69380186819404,
+            "y": 387.173418198697
+          }
+        },
+        {
+          "id": "post-box-name",
+          "position": {
+            "x": -1.429995894432068,
+            "y": 0.01587655022740364,
+            "z": 0.7699992060661316
+          },
+          "screen": {
+            "x": 58.57933695370603,
+            "y": 514.7052732421422
+          },
+          "slot": {
+            "x": 190.72196314190745,
+            "y": 454.9296953901754
+          }
+        }
+      ],
+      "level": "post-box",
+      "operation": 0,
+      "paused": false,
+      "placed": [],
+      "pouring": false,
+      "progress": 0,
+      "season": {
+        "canOpen": false,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [],
+        "finished": false,
+        "id": "lighthouse-post",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": []
+      },
+      "stage": "clean",
+      "started": false,
+      "surfaces": [
+        {
+          "done": false,
+          "id": "post-box-front",
+          "progress": 0
+        },
+        {
+          "done": false,
+          "id": "post-box-side",
+          "progress": 0
+        },
+        {
+          "done": false,
+          "id": "post-box-lip",
+          "progress": 0
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 128.61547945556123,
+              "y": 479.63638634835706
+            },
+            {
+              "x": 258.605391391159,
+              "y": 490.88998717657006
+            },
+            {
+              "x": 259.61625695937033,
+              "y": 404.930842438638
+            },
+            {
+              "x": 127.58641416110356,
+              "y": 395.6185688756495
+            }
+          ],
+          "id": "post-box-front"
+        },
+        {
+          "corners": [
+            {
+              "x": 272.43816091347236,
+              "y": 488.0971811109853
+            },
+            {
+              "x": 285.4219235146015,
+              "y": 471.487705050412
+            },
+            {
+              "x": 287.1006643444317,
+              "y": 370.71158048830455
+            },
+            {
+              "x": 273.93055843498973,
+              "y": 383.80631070384106
+            }
+          ],
+          "id": "post-box-side"
+        },
+        {
+          "corners": [
+            {
+              "x": 132.62692296812293,
+              "y": 361.73228112899847
+            },
+            {
+              "x": 252.36683277212512,
+              "y": 369.3948264595281
+            },
+            {
+              "x": 252.46509095906907,
+              "y": 359.922687625702
+            },
+            {
+              "x": 132.52248207409548,
+              "y": 352.45939497141086
+            }
+          ],
+          "id": "post-box-lip"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": false,
+          "id": "post-box-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 195.00000000000009,
+            "y": 506.6653906777104
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-box-open",
+          "mode": "tap",
+          "screen": {
+            "x": 184.26681936985463,
+            "y": 530.228384315933
+          },
+          "value": 0
+        },
+        {
+          "done": false,
+          "id": "post-box-flag",
+          "mode": "tap",
+          "screen": {
+            "x": 277.7349710280208,
+            "y": 430.6440411717523
+          },
+          "value": 0
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 136,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 80,
+          "textures": 17
+        },
+        "p95FrameMs": 0,
+        "samples": 0,
+        "triangles": 51250,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "landing-phone",
+    "data": {
+      "cards": [
+        {
+          "season": "street-shop",
+          "title": "街角旧店",
+          "url": "http://127.0.0.1:4202/dist/?season=street-shop&level=coffee"
+        },
+        {
+          "season": "rain-garden",
+          "title": "雨后花房",
+          "url": "http://127.0.0.1:4202/dist/?season=rain-garden&level=garden-pot"
+        },
+        {
+          "season": "lighthouse-post",
+          "title": "海边来信",
+          "url": "http://127.0.0.1:4202/dist/?season=lighthouse-post&level=post-box"
+        },
+        {
+          "season": "mountain-station",
+          "title": "山间小站",
+          "url": "http://127.0.0.1:4202/dist/?season=mountain-station&level=station-opening"
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "case": "production-landing-fourth-season-route",
+    "data": {
+      "level": "station-opening",
+      "season": "mountain-station",
+      "version": "0.6.0"
+    }
+  },
+  {
+    "case": "production-train-whistle-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.005524915401486997,
+        "enabled": true,
+        "events": {
+          "task": 1
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 12.64,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.053484501160512066,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "train-wheelset",
+          "position": {
+            "x": 0,
+            "y": 0.3400000035762787,
+            "z": 0.5450000166893005
+          },
+          "screen": {
+            "x": 182.0337554803963,
+            "y": 466.5980385350491
+          },
+          "slot": {
+            "x": 181.66632724018436,
+            "y": 467.06012511247974
+          }
+        },
+        {
+          "id": "train-cab",
+          "position": {
+            "x": -0.8600000143051147,
+            "y": 1.100000023841858,
+            "z": 0
+          },
+          "screen": {
+            "x": 125.68714540642794,
+            "y": 383.64919263274146
+          },
+          "slot": {
+            "x": 126.42557019486532,
+            "y": 426.9126570925125
+          }
+        },
+        {
+          "id": "train-whistle-part",
+          "position": {
+            "x": -0.6899999976158142,
+            "y": 1.830000042915344,
+            "z": 0.12999999523162842
+          },
+          "screen": {
+            "x": 134.965303910355,
+            "y": 328.92352476261703
+          },
+          "slot": {
+            "x": 135.18118512505043,
+            "y": 343.72333464297543
+          }
+        }
+      ],
+      "level": "station-train",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "train-wheelset",
+        "train-cab",
+        "train-whistle-part"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train",
+          "station-opening"
+        ],
+        "finished": true,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ]
+      },
+      "stage": "ready",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "train-boiler",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "train-chassis",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "train-front",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 160.7864623636621,
+              "y": 435.1792534167142
+            },
+            {
+              "x": 267.6980616056426,
+              "y": 446.0688574623954
+            },
+            {
+              "x": 268.20627081289973,
+              "y": 418.1162740221365
+            },
+            {
+              "x": 160.55194840603107,
+              "y": 407.6968877256097
+            }
+          ],
+          "id": "train-boiler"
+        },
+        {
+          "corners": [
+            {
+              "x": 88.66970910270145,
+              "y": 452.5278194571508
+            },
+            {
+              "x": 280.11596503053227,
+              "y": 472.9125547685689
+            },
+            {
+              "x": 280.4128263502114,
+              "y": 459.0603330512393
+            },
+            {
+              "x": 88.31172867957447,
+              "y": 439.0877214727163
+            }
+          ],
+          "id": "train-chassis"
+        },
+        {
+          "corners": [
+            {
+              "x": 288.6621458413775,
+              "y": 450.70597554362155
+            },
+            {
+              "x": 300.0957123707722,
+              "y": 432.5406747622258
+            },
+            {
+              "x": 301.39298994658344,
+              "y": 383.01652537876623
+            },
+            {
+              "x": 289.85703515782257,
+              "y": 399.7538993213752
+            }
+          ],
+          "id": "train-front"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "train-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 294.5554080269059,
+            "y": 501.14240279194223
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "train-wheels",
+          "mode": "hold",
+          "screen": {
+            "x": 182.0337554803963,
+            "y": 466.5980385350491
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "train-whistle",
+          "mode": "tap",
+          "screen": {
+            "x": 134.965303910355,
+            "y": 328.92352476261703
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 245,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 132,
+          "textures": 14
+        },
+        "p95FrameMs": 9.299999999999272,
+        "samples": 600,
+        "triangles": 45680,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "production-audio-pause-phone",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.008581894976323496,
+        "enabled": true,
+        "events": {
+          "task": 1
+        },
+        "music": {
+          "active": false,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": false,
+          "position": 12.7,
+          "readyState": 4,
+          "status": "paused",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.053484501160512066,
+        "state": "suspended"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "train-wheelset",
+          "position": {
+            "x": 0,
+            "y": 0.3400000035762787,
+            "z": 0.5450000166893005
+          },
+          "screen": {
+            "x": 182.0337554803963,
+            "y": 466.5980385350491
+          },
+          "slot": {
+            "x": 181.66632724018436,
+            "y": 467.06012511247974
+          }
+        },
+        {
+          "id": "train-cab",
+          "position": {
+            "x": -0.8600000143051147,
+            "y": 1.100000023841858,
+            "z": 0
+          },
+          "screen": {
+            "x": 125.68714540642794,
+            "y": 383.64919263274146
+          },
+          "slot": {
+            "x": 126.42557019486532,
+            "y": 426.9126570925125
+          }
+        },
+        {
+          "id": "train-whistle-part",
+          "position": {
+            "x": -0.6899999976158142,
+            "y": 1.830000042915344,
+            "z": 0.12999999523162842
+          },
+          "screen": {
+            "x": 134.965303910355,
+            "y": 328.92352476261703
+          },
+          "slot": {
+            "x": 135.18118512505043,
+            "y": 343.72333464297543
+          }
+        }
+      ],
+      "level": "station-train",
+      "operation": 0,
+      "paused": true,
+      "placed": [
+        "train-wheelset",
+        "train-cab",
+        "train-whistle-part"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train",
+          "station-opening"
+        ],
+        "finished": true,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ]
+      },
+      "stage": "ready",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "train-boiler",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "train-chassis",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "train-front",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 160.7864623636621,
+              "y": 435.1792534167142
+            },
+            {
+              "x": 267.6980616056426,
+              "y": 446.0688574623954
+            },
+            {
+              "x": 268.20627081289973,
+              "y": 418.1162740221365
+            },
+            {
+              "x": 160.55194840603107,
+              "y": 407.6968877256097
+            }
+          ],
+          "id": "train-boiler"
+        },
+        {
+          "corners": [
+            {
+              "x": 88.66970910270145,
+              "y": 452.5278194571508
+            },
+            {
+              "x": 280.11596503053227,
+              "y": 472.9125547685689
+            },
+            {
+              "x": 280.4128263502114,
+              "y": 459.0603330512393
+            },
+            {
+              "x": 88.31172867957447,
+              "y": 439.0877214727163
+            }
+          ],
+          "id": "train-chassis"
+        },
+        {
+          "corners": [
+            {
+              "x": 288.6621458413775,
+              "y": 450.70597554362155
+            },
+            {
+              "x": 300.0957123707722,
+              "y": 432.5406747622258
+            },
+            {
+              "x": 301.39298994658344,
+              "y": 383.01652537876623
+            },
+            {
+              "x": 289.85703515782257,
+              "y": 399.7538993213752
+            }
+          ],
+          "id": "train-front"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "train-oil",
+          "mode": "hold",
+          "screen": {
+            "x": 294.5554080269059,
+            "y": 501.14240279194223
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "train-wheels",
+          "mode": "hold",
+          "screen": {
+            "x": 182.0337554803963,
+            "y": 466.5980385350491
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "train-whistle",
+          "mode": "tap",
+          "screen": {
+            "x": 134.965303910355,
+            "y": 328.92352476261703
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 245,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 132,
+          "textures": 14
+        },
+        "p95FrameMs": 9.299999999999272,
+        "samples": 600,
+        "triangles": 45680,
+        "width": 390
+      }
+    }
+  },
+  {
+    "case": "production-fresh-enter-after-pointer-hold",
+    "data": {
+      "action": null,
+      "activeTask": null,
+      "audio": {
+        "currentRms": 0.01968180427303373,
+        "enabled": true,
+        "events": {
+          "task": 2
+        },
+        "music": {
+          "active": true,
+          "awaitingContext": false,
+          "ducked": false,
+          "enabled": true,
+          "error": null,
+          "loop": true,
+          "loopSeconds": 122.171361,
+          "networkState": 1,
+          "playRequests": 1,
+          "playing": true,
+          "position": 29.68,
+          "readyState": 4,
+          "status": "playing",
+          "streaming": true,
+          "theme": "mountain-station",
+          "title": "光落在窗台",
+          "unlocked": true
+        },
+        "peakRms": 0.06587846697158929,
+        "state": "running"
+      },
+      "before": false,
+      "brewTime": 0,
+      "held": null,
+      "items": [
+        {
+          "id": "station-sign-name",
+          "position": {
+            "x": 0,
+            "y": 1.7599999904632568,
+            "z": -0.08699999749660492
+          },
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592063
+          },
+          "slot": {
+            "x": 194.7547335571591,
+            "y": 365.6040594502411
+          }
+        },
+        {
+          "id": "station-sign-arrow",
+          "position": {
+            "x": 0.1599999964237213,
+            "y": 0.9399999976158142,
+            "z": 0.10999999940395357
+          },
+          "screen": {
+            "x": 205.89997006864007,
+            "y": 439.0616735004395
+          },
+          "slot": {
+            "x": 204.70620446987175,
+            "y": 440.2016164654461
+          }
+        }
+      ],
+      "level": "station-sign",
+      "operation": 0,
+      "paused": false,
+      "placed": [
+        "station-sign-name",
+        "station-sign-arrow"
+      ],
+      "pouring": false,
+      "progress": 1,
+      "season": {
+        "canOpen": true,
+        "chapter": null,
+        "chapterHighlights": [],
+        "completed": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train",
+          "station-opening"
+        ],
+        "finished": true,
+        "id": "mountain-station",
+        "pendingChapter": null,
+        "preview": false,
+        "restored": [
+          "station-sign",
+          "station-bench",
+          "station-ticket",
+          "station-board",
+          "station-luggage",
+          "station-signal",
+          "station-track",
+          "station-train"
+        ]
+      },
+      "stage": "ready",
+      "started": true,
+      "surfaces": [
+        {
+          "done": true,
+          "id": "station-sign-enamel",
+          "progress": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-plinth",
+          "progress": 1
+        }
+      ],
+      "surfacesScreen": [
+        {
+          "corners": [
+            {
+              "x": 106.190943758421,
+              "y": 385.042467501979
+            },
+            {
+              "x": 293.31157182068955,
+              "y": 397.7538462712593
+            },
+            {
+              "x": 294.33097954109536,
+              "y": 340.01064155690335
+            },
+            {
+              "x": 105.30233741553556,
+              "y": 329.1954529765223
+            }
+          ],
+          "id": "station-sign-enamel"
+        },
+        {
+          "corners": [
+            {
+              "x": 80.89863901912926,
+              "y": 512.1010726068268
+            },
+            {
+              "x": 295.06036580209735,
+              "y": 531.9724327460599
+            },
+            {
+              "x": 295.3122266672737,
+              "y": 518.2932362355496
+            },
+            {
+              "x": 80.62286369618465,
+              "y": 498.9181512048414
+            }
+          ],
+          "id": "station-sign-plinth"
+        }
+      ],
+      "taskSurfacesScreen": [],
+      "tasks": [
+        {
+          "done": true,
+          "id": "station-sign-align",
+          "mode": "dial",
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592063
+          },
+          "value": 0
+        },
+        {
+          "done": true,
+          "id": "station-sign-tighten",
+          "mode": "hold",
+          "screen": {
+            "x": 197.12228627712392,
+            "y": 363.79775270592063
+          },
+          "value": 1
+        },
+        {
+          "done": true,
+          "id": "station-sign-point",
+          "mode": "tap",
+          "screen": {
+            "x": 205.89997006864007,
+            "y": 439.0616735004395
+          },
+          "value": 1
+        }
+      ],
+      "version": "0.6.0",
+      "view": {
+        "calls": 108,
+        "dpr": 1,
+        "height": 844,
+        "memory": {
+          "geometries": 62,
+          "textures": 13
+        },
+        "p95FrameMs": 9.099999999998545,
+        "samples": 600,
+        "triangles": 42872,
+        "width": 390
+      }
+    }
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "repository": "yuanhongboo/orbit-breaker",
+  "previousCommit": "d4f516beed4aa4a006f319e43764168a2b3b613a",
+  "prefix": "quiet-workshop/v0.6.0",
+  "files": [
+    "quiet-workshop/v0.6.0/assets/after-the-light-BGFVd-m5.mp3",
+    "quiet-workshop/v0.6.0/assets/favicon-DkzWbQVf.svg",
+    "quiet-workshop/v0.6.0/assets/graphics-DgP24Owh.js",
+    "quiet-workshop/v0.6.0/assets/index-DaBxk4ck.js",
+    "quiet-workshop/v0.6.0/assets/index-NrMt-jC2.css",
+    "quiet-workshop/v0.6.0/assets/physics-ByaTtX8I.js",
+    "quiet-workshop/v0.6.0/CREDITS.txt",
+    "quiet-workshop/v0.6.0/index.html",
+    "quiet-workshop/v0.6.0/licenses/RAPIER-APACHE-2.0.txt",
+    "quiet-workshop/v0.6.0/licenses/SALAMANDER-CC-BY-3.0.txt",
+    "quiet-workshop/v0.6.0/licenses/THREE-MIT.txt"
+  ],
+  "bytes": 5141037,
+  "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/v0.6.0/",
+  "fixedEntry": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/",
+  "version": "0.6.0",
+  "commit": "e46dab748ae495828bbf2f5a9931e08fee8398a3",
+  "status": "content-published",
+  "publishedAt": "2026-09-09T01:50:18.297Z"
+}
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 27 modules transformed.
+rendering chunks...
+computing gzip size...
+../landing-dist/assets/favicon-DkzWbQVf.svg    0.34 kB │ gzip:  0.22 kB
+../landing-dist/index.html                    11.98 kB │ gzip:  4.13 kB
+../landing-dist/assets/index-BkdPLtwz.css      9.98 kB │ gzip:  3.08 kB
+../landing-dist/assets/index-jwjMaBkA.js     151.10 kB │ gzip: 49.36 kB
+✓ built in 139ms
+Landing: 4 files, 173405 bytes → https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/
+{
+  "repository": "yuanhongboo/orbit-breaker",
+  "previousCommit": "e46dab748ae495828bbf2f5a9931e08fee8398a3",
+  "prefix": "quiet-workshop",
+  "release": "quiet-workshop/v0.6.0",
+  "files": [
+    "quiet-workshop/assets/favicon-DkzWbQVf.svg",
+    "quiet-workshop/assets/index-BkdPLtwz.css",
+    "quiet-workshop/assets/index-jwjMaBkA.js",
+    "quiet-workshop/index.html"
+  ],
+  "bytes": 173405,
+  "url": "https://yuanhongboo.github.io/orbit-breaker/quiet-workshop/",
+  "manifestSha256": "da214f40d0a8d223d4d0b33443d765c6454cca012ea4d480723acc9b0fe0b356",
+  "version": "0.6.0",
+  "commit": "3d2941d8dacad386c200b30aaab879f5b96c77c0",
+  "status": "content-published",
+  "publishedAt": "2026-09-09T01:50:34.555Z"
+}
